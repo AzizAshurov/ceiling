@@ -1,1 +1,54 @@
-@import "./normalize.scss"
+@import "./_normalize";
+@import "./clg_section/_hero";
+@import "./clg_section/_trash";
+@import "./clg_section/_hell";
+@import "./az_components/_btn";
+
+
+/*
+  Подключает шфрит
+  @include font('Inter', normal, 400, '../resources/fonts/inter/inter-regular');
+  обрати внимание, что в @include ты пишеь название шрифта без расширения, он сам подтянет woff и woff2
+ */ 
+ @mixin font($fname, $fstyle, $fweight, $furl) {
+    @font-face {
+      font-family: $fname;
+      font-style: $fstyle;
+      font-weight: $fweight;
+      font-stretch: 100%;
+      src: url("#{$furl}.woff2") format("woff2"),
+        url("#{$furl}.woff") format("woff");
+  
+      font-display: swap;
+    }
+}
+@include font('Bebas', normal, 700, '../fonts/bebas/BebasNeuePro-Bold');
+@include font('Roboto', normal, 700, '../fonts/roboto/Roboto-Bold');
+@include font('Roboto', normal, 400, '../fonts/roboto/Roboto-Regular');
+
+html {
+    --fz-modifier: 0.520834;
+    --base-size: 1vw;
+    font-size: #{'calc(var(--fz-modifier) * var(--base-size))'};//calc(0.342466 * var(--base-size)); //10px for 1920×1000
+}
+ 
+body {
+    font-size: 1.6rem;
+    font-family: 'roboto', sans-serif;
+    
+}
+
+.container {
+    max-width: 117rem;
+    margin-left: auto; 
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+

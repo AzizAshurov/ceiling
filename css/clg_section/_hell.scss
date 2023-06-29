@@ -1,0 +1,117 @@
+.hell {
+    background: #F4F4F4;
+    position: relative;
+    padding-top: 7rem;
+}
+
+.hell__container {
+    height: auto;
+}
+
+.hell__content {
+    
+    
+}
+
+.hell__title {
+    
+    max-width: 56rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: #F0C45B;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    font-family: "bebas", sans-serif;
+    font-weight: 700;
+    color: #232529;
+    font-size: 7.09rem;
+    line-height: 116.9%;
+    text-transform: uppercase;
+    margin-bottom: 12.6rem;
+    
+}
+
+.hell__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+
+.hell__info {
+position: relative;
+}
+
+.hell__info-title {
+    color: #232529;
+    font-size: 5.64rem;
+    font-family: "bebas", sans-serif;
+    font-weight: 700;
+    line-height: 116.9%;
+    position: relative;
+    margin-left: 6.5rem;
+}
+
+
+.hell__info-title::before {
+    content: "";
+    --card-gap: -3rem;
+    position: absolute;
+    left: var(--card-gap);
+    top: var(--card-gap);
+    display: block;
+    border: 5px solid #FFFFFF ;
+    width: #{'calc(100% - 2 * var(--card-gap))'};
+    height: #{'calc(100% - 2 * var(--card-gap))'};
+    border-radius: inherit;
+    transform: skew(-0.06turn, 18deg);
+    
+}
+
+.hell__info-desc {
+    color: #282828;
+    font-size: 1.8rem;
+    font-family: "roboto", sans-serif;
+    line-height: 148.9%;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.hell__info-desc::before {
+    content: "";
+    position: absolute;
+    color: white;
+    margin-left: 4rem;
+}
+
+.hell-text--bold {
+    font-family: "roboto", sans-serif;
+    font-weight: bold;
+    
+}
+
+
+
+.hell__media {
+    
+}
+
+.hell__media-char {
+    
+    object-fit: fill;
+}
+
+.hell__media-text {
+    color: #232529;
+    text-align: center;
+    font-size: 23.96px;
+    font-family: "bebas", sans-serif;
+    font-weight: 700;
+    line-height: 116.9%;
+    background: #F0C45B;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    text-transform: uppercase;
+}

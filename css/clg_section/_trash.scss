@@ -1,0 +1,117 @@
+.trash {
+    position: relative;
+    padding-top: 8.5rem;
+    
+}
+
+.trash::before {
+    content: "";
+    --clip: polygon(0 0, 100% 0%, 100% 100%, 43% 100%, 0 25%);
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #FFCF57;
+    clip-path: var(--clip);
+    -webkit-clip-path: var(--clip);
+    top: 0;
+    left: 0;
+}
+
+.trash__container {
+    height: auto;
+}
+
+.trash__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.trash__img {
+    z-index: 1;
+    object-fit: fill;
+    width: 50%;
+    height: 85%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.trash__offer {
+    z-index: 3;
+}
+
+.trash__offer-title {
+    margin-left: 0.6rem;
+    font-family: "bebas", sans-serif;
+    font-weight: 700;
+    font-size: 7.09rem;
+    color: #232529;
+    text-transform: uppercase;
+    line-height: 116.9%;
+    margin-bottom: 3.52rem;
+    
+}
+
+.trash__offer-subtitle {
+    display: inline;
+
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2.026rem;
+    background: #fff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 148.9%;
+    
+
+}
+
+.trash__offer-desc {
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.806rem;
+    line-height: 148.9%;
+    padding-top: 2.4rem;
+}
+
+.trash-text--bold {
+    font-weight: bold;
+}
+
+
+.trash__card {
+    display: inline;
+    background: #F0C45B;
+    z-index: 3;
+    padding-top: 3.5rem;
+    margin-top: 10.8rem;
+    padding-left: 5rem;
+    margin-left: 2rem;
+    padding-bottom: 12rem;
+    
+}
+
+
+.trash__card-title {
+    font-family: "roboto", sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 148.9%;
+}
+
+.trash__card-desc {
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 148.9%;
+    
+}
+
+.trash-desc--bold {
+    font-weight: bold;
+    color: white;
+    font-size: 2.7rem;
+}
