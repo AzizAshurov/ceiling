@@ -374,6 +374,8 @@ template {
      object-fit: contain;
   z-index: 2;
   position: relative;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 .hero__media-bullet {
@@ -475,7 +477,7 @@ template {
 
 .trash {
   position: relative;
-  padding-top: 8.5rem;
+  padding-top: 7.4rem;
 }
 
 .trash::before {
@@ -557,7 +559,7 @@ template {
   background: #F0C45B;
   z-index: 3;
   padding-top: 3.5rem;
-  margin-top: 10.8rem;
+  margin-top: 11.4rem;
   padding-left: 5rem;
   margin-left: 2rem;
   padding-bottom: 12rem;
@@ -586,7 +588,7 @@ template {
 .hell {
   background: #F4F4F4;
   position: relative;
-  padding-top: 7rem;
+  padding-top: 7.3rem;
   z-index: -2;
 }
 
@@ -609,7 +611,7 @@ template {
   font-size: 7.09rem;
   line-height: 116.9%;
   text-transform: uppercase;
-  margin-bottom: 12.6rem;
+  margin-bottom: 13.2rem;
 }
 
 .hell__content {
@@ -831,7 +833,7 @@ template {
   font-style: normal;
   font-weight: 700;
   line-height: 116.9%;
-  padding-top: 1.3rem;
+  padding-top: 0.9rem;
   padding-left: 4.1rem;
 }
 
@@ -879,6 +881,143 @@ template {
   z-index: 2;
   position: relative;
   padding-left: 24.7rem;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.purity__top {
+  position: relative;
+}
+
+.purity__top::before {
+  content: "";
+  background: #139FE4;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.purity__top-container {
+  height: auto;
+}
+
+.purity__top-title {
+  position: relative;
+  z-index: 2;
+  color: #FFF;
+  font-size: 5.6rem;
+  font-family: "bebas", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 116.9%;
+  text-transform: uppercase;
+  padding-top: 10.5rem;
+  padding-left: 0.5rem;
+}
+
+.purity__text-bold {
+  font-weight: 700;
+}
+
+.purity__top-list {
+  position: relative;
+  z-index: 2;
+  color: #FFF;
+  font-size: 1.8rem;
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148.9%;
+  margin-top: 0rem;
+  margin-left: -0.8rem;
+  margin-bottom: 8.6rem;
+}
+
+.purity__top-media {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.purity__top-img {
+  width: 100%;
+  height: 113%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 2;
+  position: relative;
+  padding-left: 58.3rem;
+  margin-top: -5.5rem;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
+.purity__bottom {
+  position: relative;
+}
+
+.purity__bottom::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: #F4F4F4;
+  top: 0;
+  left: 0;
+}
+
+.purity__bottom-container {
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.purity__bottom-desc {
+  color: #282828;
+  font-size: 1.8rem;
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148.9%;
+  z-index: 3;
+}
+
+.purity__bottom-bullet-bold {
+  font-weight: 700;
+}
+
+.understand {
+  position: relative;
+}
+
+.understand-container {
+  height: auto;
+}
+
+.understand__media {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.understand__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 2;
+  position: relative;
 }
 
 /*
@@ -892,6 +1031,14 @@ template {
   font-weight: 700;
   font-stretch: 100%;
   src: url("../fonts/bebas/BebasNeuePro-Bold.woff2") format("woff2"), url("../fonts/bebas/BebasNeuePro-Bold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bebas";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url("../fonts/bebas/BebasNeuePro-Regular.woff2") format("woff2"), url("../fonts/bebas/BebasNeuePro-Regular.woff") format("woff");
   font-display: swap;
 }
 @font-face {

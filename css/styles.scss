@@ -4,6 +4,9 @@
 @import "./clg_section/_hell";
 @import "./az_components/_btn";
 @import "./clg_section/_horror";
+@import "./clg_section/_purity";
+@import "./clg_section/_experience";
+
 
 
 /*
@@ -24,6 +27,7 @@
     }
 }
 @include font('Bebas', normal, 700, '../fonts/bebas/BebasNeuePro-Bold');
+@include font('Bebas', normal, 400, '../fonts/bebas/BebasNeuePro-Regular');
 @include font('Roboto', normal, 700, '../fonts/roboto/Roboto-Bold');
 @include font('Roboto', normal, 400, '../fonts/roboto/Roboto-Regular');
 

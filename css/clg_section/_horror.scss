@@ -1,5 +1,6 @@
 .horror {
     position: relative;
+    
 }
 
 .horror::before {
@@ -52,7 +53,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
-    padding-top: 1.3rem;
+    padding-top: 0.9rem;
     padding-left: 4.1rem;
     
 }
@@ -100,5 +101,5 @@
     z-index: 2;
     position: relative;
     padding-left: 24.7rem;
-    
+    object-position: bottom;
 }

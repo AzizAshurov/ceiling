@@ -1,0 +1,32 @@
+.understand {
+    position: relative;
+    
+}
+
+.understand-container {
+    height: auto;
+    
+}
+
+.understand__media {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.understand__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 2;
+    position: relative;
+   
+}
+
+.understand__info {
+    
+}
