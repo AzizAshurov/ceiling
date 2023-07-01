@@ -6,6 +6,8 @@
 @import "./clg_section/_horror";
 @import "./clg_section/_purity";
 @import "./clg_section/_experience";
+@import "./clg_section/_lead";
+@import "./clg_section/_trust";
 
 
 
@@ -26,10 +28,13 @@
       font-display: swap;
     }
 }
-@include font('Bebas', normal, 700, '../fonts/bebas/BebasNeuePro-Bold');
-@include font('Bebas', normal, 400, '../fonts/bebas/BebasNeuePro-Regular');
+@include font('Bebas', normal, 700, '../fonts/bebasneue/BebasNeueBold');
+@include font('Bebas', normal, 400, '../fonts/bebasneue/BebasNeueRegular');
 @include font('Roboto', normal, 700, '../fonts/roboto/Roboto-Bold');
 @include font('Roboto', normal, 400, '../fonts/roboto/Roboto-Regular');
+@include font('gilroy', normal, 400, '../fonts/gilroy/Gilroy-Regular');
+
+
 
 html {
     --fz-modifier: 0.520834;

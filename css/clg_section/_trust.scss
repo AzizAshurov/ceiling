@@ -1,0 +1,137 @@
+.trust {
+    position: relative;
+}
+
+.trust__container {
+    height: 117rem;
+}
+
+.trust__title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.trust__title-text {
+    color: #232529;
+    font-size: 4.47rem;
+    font-family: 'Bebas', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.9%;
+    padding-top: 5.4rem;
+    padding-bottom: 6rem;    
+    padding-left: 0.5rem;
+}
+
+.trust__title-text::before {
+    content: "";
+    background: #F0C45B;
+    position: absolute;
+    z-index: -1;
+    width: 108rem;
+    height: 23rem;
+    left: 0;
+    top: 0;
+    clip-path: polygon(0 0, 86% 0, 100% 100%, 0% 100%);
+}
+
+.trust__title-media {
+    margin-left: 16.8rem;
+    margin-top: 3.5rem;
+}
+
+.trust__title-media-img {
+    
+}
+
+.trust__subtitle {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 32.4rem;
+    padding-top: 4.9rem;
+    color: #FFF;
+    font-size: 4.47rem;
+    font-family: 'Bebas', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.9%;
+    text-transform: uppercase;
+}
+
+.trust__subtitle::before {
+    content: "";
+    background: #129EE1;
+    position: absolute;
+    z-index: -1;
+    width: 108rem;
+    height: 18.5rem;
+    right: 0;
+    top: 22.9rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 11% 100%);
+}
+
+.trust__subtitle-desc {
+    padding-left: 63.3rem;
+    padding-top: 4.6rem;
+    color: #282828;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 148.9%;
+}
+
+.trust__founder-about-title {
+    display: inline-block;
+    color: #FFF;
+    font-size: 2.53rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 148.9%;
+    border-radius: 3rem;
+    background: #129EE1;
+    margin-left: 34.5rem;
+    margin-top: 0.5rem;
+    padding-bottom: 3.2rem;
+    padding-top: 3.4rem;
+    padding-left: 5.8rem;
+    padding-right: 6.6rem;
+}
+
+.trust__founder-bold {
+    font-weight: 700;
+    font-size: 3.533rem;
+}
+
+
+.trust__founder-about-subtitle {
+    color: #282828;
+    font-size: 1.8rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 148.9%;
+}
+
+.trust__founder-bold {
+    font-weight: 700;
+}
+
+.trust__founder-about-subtitle-hl {
+    color: #129EE1;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+.trust__founder-about-desc {
+    color: #282828;
+    font-size: 1.8rem;
+    font-family: 'roboto' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 148.9%;
+}
+
+

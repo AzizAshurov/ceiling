@@ -63,7 +63,7 @@ position: relative;
     line-height: 116.9%;
     position: relative;
     margin-left: 6.5rem;
-    margin-bottom: 9.1rem;
+    margin-bottom: 8.8rem;
     
 }
 
@@ -76,6 +76,7 @@ position: relative;
     height: 20.6rem;
     top: -3.2rem;
     left: -4.7rem;
+    padding-right: 6.2rem;
     
     border: 0.7rem solid #FFFFFF ;
     transform: skew(0.485turn, 0deg);
@@ -113,21 +114,18 @@ position: relative;
 }
 
 .hell-text--hl {
+    display: inline-block;
     font-family: "roboto", sans-serif;
     font-weight: 700;
+    background: #fff;
+    margin-top: -1.3rem;
+    margin-left: -7.8rem;
+    padding-left: 7.8rem;
+    padding-right: 4.4rem;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
 }
 
-.hell-text--hl::before {
-    content: "";
-    position: absolute;
-    background: #fff;
-    width: 40.6rem;
-    height: 6.9rem;
-    top: 0rem;
-    left: -8rem;
-    z-index: -1;
-    
-}
 
 .hell__media {
     display: block;
@@ -140,6 +138,7 @@ position: relative;
 }
 
 .hell__media-text {
+    display: inline-block;
     color: #232529;
     text-align: center;
     font-size: 23.96px;
@@ -147,8 +146,11 @@ position: relative;
     font-weight: 700;
     line-height: 116.9%;
     background: #F0C45B;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
     text-transform: uppercase;
-    margin-top: -0.5rem;
+    margin-top: -0.9rem;
+    margin-left: 2rem;
+    padding-top: 2.5rem;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+    padding-right: 5.5rem;
 }

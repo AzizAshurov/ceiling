@@ -53,21 +53,17 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
-    padding-top: 0.9rem;
-    padding-left: 4.1rem;
-    
+    background: #F0C45B;
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding-top: 2rem;
+    padding-left: 3.6rem;
+    padding-right: 3.4rem;
+    padding-bottom: 2.3rem;
+    margin-top: 1.4rem;
 }
 
-.horror__text-subtitle::before {
-    content: "";
-    position: absolute;
-    width: 40rem;
-    height: 9.8rem;
-    background: #F0C45B;
-    z-index: -1;
-    left: 0.5rem;
-    top: 24.4rem;
-}
+
 
 .horror_info-desc {
     color: #282828;
@@ -76,7 +72,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 148.9%;
-    padding-top: 3.4rem;
+    margin-top: 1rem;
     padding-left: 0.5rem;
 }
 
