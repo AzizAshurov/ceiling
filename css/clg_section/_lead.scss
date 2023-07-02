@@ -1,6 +1,6 @@
 .lead {
     position: relative;
-    margin-bottom: 10rem;
+    z-index: 1;
 }
 
 .lead__container {
@@ -46,20 +46,33 @@
     margin-left: 10.5rem;
 }
 
+.lead__media {
+
+}
+
+.lead__media-img {
+    padding-left: 10.6rem;
+}
+
 .lead__form {
     position: relative;
     display: grid;
     gap: 2rem;
+    width: 12rem;
+    margin-left: 12rem;
+    margin-top: 5.6rem;
+    margin-bottom: 8rem;
     
 }
 
 .input {
     display: flex;
     flex-direction: row-reverse;
-    padding: 3rem 18.9rem;
+    padding: 2rem 17.6rem;
     background: #fff;
     border-radius: 80px;
-    
+    position: relative;
+   
 }
 
 .input__field {
@@ -71,7 +84,7 @@
     line-height: normal;
     width: 100%;
     height: 100%;
-    
+    margin-bottom: 1rem;
 }
 
 .lead__form-btn {
@@ -81,6 +94,14 @@
 button {
     background: transparent;
     border: none;
+    
+ }
+
+
+ .lead__form-btn {
+    display: inline-block;
+    padding: 2rem 7.9rem;
+    font-weight: 400;
  }
 
 .input__icon {

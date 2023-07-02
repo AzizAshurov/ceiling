@@ -8,6 +8,25 @@
 @import "./clg_section/_experience";
 @import "./clg_section/_lead";
 @import "./clg_section/_trust";
+@import "./clg_section/_art";
+@import "./clg_section/_how-work";
+@import "./clg_section/_get-price";
+@import "./clg_section/_service";
+@import "./clg_section/_warranty";
+@import "./clg_section/_budda";
+@import "./clg_section/_compare";
+@import "./clg_section/_meeting";
+@import "./clg_section/_facepalm";
+@import "./clg_section/_drywall";
+@import "./clg_section/_hard";
+@import "./clg_section/_ceil-types";
+@import "./clg_section/_lighting";
+@import "./clg_section/_bracing";
+@import "./clg_section/_fake";
+@import "./clg_section/_toxicity";
+@import "./clg_section/_cta";
+
+
 
 
 
@@ -32,7 +51,11 @@
 @include font('Bebas', normal, 400, '../fonts/bebasneue/BebasNeueRegular');
 @include font('Roboto', normal, 700, '../fonts/roboto/Roboto-Bold');
 @include font('Roboto', normal, 400, '../fonts/roboto/Roboto-Regular');
+@include font('Roboto', normal, 900, '../fonts/roboto/Roboto-black');
 @include font('gilroy', normal, 400, '../fonts/gilroy/Gilroy-Regular');
+@include font('montserrat', normal, 400, '../fonts/montserrat/montserrat-Bold');
+
+
 
 
 

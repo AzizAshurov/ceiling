@@ -1,0 +1,101 @@
+.get-price {
+    background: #FBFBFB;
+    background-size: cover;
+}
+
+.get-price_container {
+    height: auto;
+}
+
+.get-price__top {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.get-price__title {
+    color: #232529;
+    font-size: 4.75rem;
+    font-family: 'bebas', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.9%;
+    padding-top: 9.3rem;
+    padding-left: 0.4rem;
+}
+
+.get-price__features {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 52.5rem;
+    margin-top: -7.9rem;
+   
+}
+
+.get-price-feature {
+    background: #16c079;
+}
+
+.get-price__item-img {
+
+}
+
+.get-price-feature__desc {
+    color: #282828;
+    font-size: 1.28rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.4%;
+}
+
+.quiz{
+
+}
+
+
+.get-price__quiz {
+
+}
+
+
+
+
+.quiz__hint {
+
+}
+
+.get-price__end-title {
+    color: #282828;
+    font-size: 1.8rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115.4%;
+}
+
+.get-price__end-subtitle {
+    color: #282828;
+    font-size: 1.5rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+}
+
+.get-price__boss-title {
+    color: #282828;
+    font-size: 1.8rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115.4%;
+}
+
+.get-price__boss-subtitle {
+    color: #282828;
+    font-size: 1.5;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+}

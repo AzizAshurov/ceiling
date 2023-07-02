@@ -1,0 +1,97 @@
+.art {
+    position: relative;
+    background: #FBFBFB;
+    background-size: cover;
+    z-index: 0;
+}
+
+.art__container {
+    height: 122.7rem;
+}
+
+.art__title {
+    color: #232529;
+    font-size: 7.7rem;
+    font-family: 'bebas', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.9%;
+    padding-top: 10.1rem;
+    padding-left: 0.4rem;
+}
+
+.art__subtitle {
+    color: #232529;
+    font-size: 4.5rem;
+    font-family: 'bebas', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.9%;
+    padding-top: 1.1rem;
+    padding-left: 0.5rem;
+}
+
+.art__subtitle::before {
+    content: "";
+    background: #F0C45B;
+    position: absolute;
+    z-index: -1;
+    width: 154rem;
+    height: 16.4rem;
+    left: 0;
+    top: 22.1rem;
+    clip-path: polygon(0 0, 93% 0, 100% 100%, 0% 100%);
+}
+
+.art__columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.art__column {
+    margin-left: 6.4rem;
+
+    
+}
+
+.art__column:nth-of-type(2) {
+    background: #fff;
+    margin-left: 8rem;
+    
+}
+
+.art__column-card {
+    display: flex;
+}
+
+.art__column-card::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url(../img/land/art/check-mark.svg);
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 5rem;
+}
+
+.art__column-text {
+    color: #282828;
+    font-size: 2rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 148.9%;
+}
+
+.art__column-text-bold {
+    color: #129EE1;
+    font-size: 2.4rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 148.9%;
+}
+
+
