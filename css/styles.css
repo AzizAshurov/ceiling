@@ -1804,6 +1804,7 @@ button {
   line-height: 116.9%;
   padding-top: 2.2rem;
   margin-left: -0.5rem;
+  margin-bottom: 10.3rem;
 }
 
 .how-work__title::before {
@@ -1819,17 +1820,143 @@ button {
           clip-path: polygon(0 0, 86.5% 0, 100% 100%, 0% 100%);
 }
 
-.how-work__lines {
-  display: flex;
-  flex-wrap: wrap;
+.how-work__line-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6rem;
+  counter-reset: number 0;
+  margin-bottom: 10.2rem;
 }
 
-.how-work__line {
-  counter-reset: number 0;
+.how-work__card-top {
+  position: relative;
+}
+
+.how-work__card-top:nth-last-child(3):before {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: 3;
+  background: url(../img/land/how-work/01.svg);
+  background-size: contain;
+  width: 11.6rem;
+  height: 2.9rem;
+  margin-top: 14.6rem;
+  margin-left: 29rem;
+}
+
+.how-work__card-top:nth-last-child(3)::after {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: 2;
+  background: url(../img/land/how-work/line.png);
+  background-size: contain;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.how-work__card-top:nth-last-child(2):after {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: 3;
+  background: url(../img/land/how-work/02.svg);
+  background-size: contain;
+  width: 11.6rem;
+  height: 2.9rem;
+  margin-top: -17.2rem;
+  margin-left: 23.8rem;
+}
+
+.how-work__card-top:nth-last-child(1):after {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: 3;
+  background: url(../img/land/how-work/03.svg);
+  background-size: contain;
+  width: 2.96rem;
+  height: 12rem;
+  margin-top: -2rem;
+  margin-left: 22rem;
+}
+
+.how-work__line-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6rem;
+  counter-reset: number 3;
+  padding-bottom: 12.4rem;
+}
+
+.how-work__card-bottom {
+  position: relative;
+}
+
+.how-work__card-bottom:nth-last-child(3):before {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: 3;
+  background: url(../img/land/how-work/04.svg);
+  background-size: contain;
+  width: 11.6rem;
+  height: 2.9rem;
+  margin-top: 14.6rem;
+  margin-left: -12.4rem;
+}
+
+.how-work__card-bottom:nth-last-child(2):before {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: 3;
+  background: url(../img/land/how-work/05.svg);
+  background-size: contain;
+  width: 11.6rem;
+  height: 2.9rem;
+  margin-top: 1.6rem;
+  margin-left: -20.2rem;
+}
+
+.how-work__card-bottom:nth-child(1) {
+  order: 2;
+}
+
+.how-work__card-bottom:nth-child(2) {
+  order: 1;
 }
 
 .how-work__step {
+  font-size: 3rem;
+  font-family: "Bebas", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 116.9%;
+  margin-left: -1rem;
   counter-increment: number;
+}
+
+.how-work__step::before {
+  content: counter(number, decimal-leading-zero);
+  color: #129EE1;
+  font-size: 5.7rem;
+  font-family: "Bebas", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 116.9%;
+}
+
+.how-work__step-desc {
+  color: #282828;
+  font-size: 2rem;
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148.9%;
+  margin-left: 4.2rem;
+  margin-top: 0.4rem;
 }
 
 .get-price {
@@ -1837,35 +1964,53 @@ button {
   background-size: cover;
 }
 
-.get-price_container {
-  height: auto;
-}
-
 .get-price__top {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: auto 64rem;
 }
 
-.get-price__title {
+.get-price__title-desc {
   color: #232529;
   font-size: 4.75rem;
   font-family: "bebas", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 116.9%;
-  padding-top: 9.3rem;
-  padding-left: 0.4rem;
+  margin-top: 9.8rem;
+  margin-left: -1rem;
 }
 
 .get-price__features {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 52.5rem;
-  margin-top: -7.9rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.7rem;
+  margin-left: -0.9rem;
+  margin-top: 9.8rem;
 }
 
 .get-price-feature {
-  background: #16c079;
+  position: relative;
+  border-radius: 2.1rem;
+  background: #fff;
+  width: 21rem;
+  height: 21rem;
+  padding-left: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.get-price-feature:nth-child(1) {
+  padding-top: 5.3rem;
+}
+
+.get-price-feature:nth-child(3) {
+  padding-top: 4.5rem;
+  padding-left: 2rem;
+}
+
+.get-price-feature:nth-child(2) {
+  padding-top: 4.5rem;
 }
 
 .get-price-feature__desc {
@@ -1875,6 +2020,54 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: 115.4%;
+  padding-top: 2.3rem;
+}
+
+.quiz {
+  display: grid;
+  grid-template-columns: auto 40rem;
+}
+
+.quiz__head {
+  display: flex;
+}
+
+.quiz__head-title {
+  display: inline-block;
+  position: relative;
+  color: #282828;
+  font-size: 1.4rem;
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115.4%;
+}
+
+.qiuz__pagination {
+  color: #282828;
+  text-align: right;
+  font-size: 1.4rem;
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115.4%;
+}
+
+.quiz__step-title {
+  color: #282828;
+  font-size: 2.3rem;
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115.4%;
+}
+
+.quiz__hint {
+  background: #FFF;
+  margin-left: 5rem;
+  margin-right: -1.4rem;
+  margin-top: 5.1rem;
+  margin-bottom: 10rem;
 }
 
 .get-price__end-title {
@@ -1884,6 +2077,9 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 115.4%;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  margin-bottom: 1rem;
 }
 
 .get-price__end-subtitle {
@@ -1893,6 +2089,9 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: 145%;
+  padding-left: 3rem;
+  margin-bottom: 21.7rem;
+  margin-top: 0rem;
 }
 
 .get-price__boss-title {
@@ -1902,6 +2101,7 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 115.4%;
+  padding-left: 2.9rem;
 }
 
 .get-price__boss-subtitle {
@@ -1911,19 +2111,49 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: 145%;
+  margin-top: -1.2rem;
+  padding-left: 2.9rem;
+  padding-bottom: 3rem;
 }
 
-.service__title {
+.service {
+  position: relative;
+}
+
+.service::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 27.85%;
+  width: 100%;
+  background: #129EE1;
+}
+
+.service__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.service__footer-offer-title {
   color: #FFF;
   font-size: 4.7rem;
   font-family: "Bebas", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 116.9%;
+  padding-top: 8.8rem;
+  margin-left: -1rem;
+  margin-bottom: 11.5rem;
+}
+
+.service__list {
+  position: relative;
+  padding-top: 7.8rem;
+  padding-left: 1.6rem;
 }
 
 .service__list-title {
-  color: #8a1515;
+  color: #fff;
   font-size: 2.8rem;
   font-family: "Bebas", sans-serif;
   font-style: normal;
@@ -1932,12 +2162,17 @@ button {
 }
 
 .service__list-bullets {
-  color: #7e1f1f;
+  display: grid;
+  grid-template-rows: auto;
+  gap: 0.5rem;
+  color: #fff;
   font-size: 2.1rem;
   font-family: "roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 148.9%;
+  margin-top: 0.9rem;
+  margin-left: -2.2rem;
 }
 
 .service__subtitle {
@@ -1947,9 +2182,35 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 116.9%;
+  margin-top: 5.2rem;
+  margin-left: -1rem;
+  margin-bottom: 10.5rem;
 }
 
-.service__info-desc {
+.service__subtitle::before {
+  content: "";
+  background: #F0C45B;
+  position: absolute;
+  z-index: -1;
+  width: 138rem;
+  height: 23.2rem;
+  left: 0;
+  top: 37.3rem;
+  -webkit-clip-path: polygon(0 0, 89% 0, 100% 100%, 12.2% 100%, 0% 49.2%);
+          clip-path: polygon(0 0, 89% 0, 100% 100%, 12.2% 100%, 0% 49.2%);
+}
+
+.service__middle {
+  display: grid;
+  grid-template-columns: auto 70rem;
+}
+
+.service__middle-info {
+  margin-left: -1rem;
+  margin-top: -2rem;
+}
+
+.service__middle-info-desc {
   color: #282828;
   font-size: 2rem;
   font-family: "roboto", sans-serif;
@@ -1958,31 +2219,44 @@ button {
   line-height: 148.9%;
 }
 
-.service__text-bold {
+.service__middle-info-desc:nth-child(2) {
+  margin-top: -0.6rem;
+}
+
+.service__middle-info-bold {
   font-weight: 700;
 }
 
-.service__text-hl {
+.service__middle-info-hl {
+  display: inline-block;
   font-weight: 700;
-  color: #8b1b1b;
+  color: #fff;
+  background: #129EE1;
+  margin-left: -0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: 0.9rem;
 }
 
 .service__media {
-  position: absolute;
-  width: 120rem;
-  height: 32.8rem;
-  display: flex;
-  right: 0;
+  width: 100%;
+  margin-top: -0.5rem;
+  margin-left: 1rem;
+}
+
+.service__media-pic {
+  width: 100%;
+  height: 100%;
 }
 
 .service__media-img {
-  width: 99.9%;
-  height: 99.8%;
+  display: block;
   -o-object-fit: contain;
      object-fit: contain;
-  z-index: 2;
-  -webkit-clip-path: polygon(0 0, 83% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 83% 0, 100% 100%, 0% 100%);
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(81.3% 0, 100% 62%, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(81.3% 0, 100% 62%, 100% 100%, 0 100%, 0 0);
 }
 
 .service__after-title {
@@ -1995,6 +2269,24 @@ button {
   border-radius: 3rem;
   background: #129EE1;
   display: inline-block;
+  margin-left: -1rem;
+  margin-top: -2.3rem;
+  padding: 2.3rem 6.2rem;
+}
+
+.service__after-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 5.1rem;
+}
+
+.service__after-column {
+  display: flex;
+  margin-left: -1rem;
+}
+
+.service__after-column:nth-child(2) {
+  margin-left: -8rem;
 }
 
 .service__after-column-offer {
@@ -2006,13 +2298,20 @@ button {
   line-height: 116.9%;
 }
 
-.service__after-column-info {
+.service__after-column-info-desc {
   color: #282828;
   font-size: 2rem;
   font-family: "roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 148.9%;
+  padding-left: 2.4rem;
+  margin-top: 1.2rem;
+  margin-bottom: 3.1rem;
+}
+
+.service__text-bold {
+  font-weight: 700;
 }
 
 .warranty {
@@ -2028,9 +2327,12 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 116.9%;
+  padding-top: 6.4rem;
+  margin-left: -1rem;
 }
 
 .warranty__subtitle {
+  position: relative;
   color: #FFF;
   font-size: 4.7rem;
   font-family: "Bebas", sans-serif;
@@ -2040,6 +2342,17 @@ button {
   border-radius: 3rem;
   background: #129EE1;
   display: inline-block;
+  margin-left: 69.1rem;
+  margin-top: 2.8rem;
+  padding-left: 2rem;
+  padding-right: 2.2rem;
+  right: -1rem;
+  padding-top: 2.64rem;
+  padding-bottom: 3.2rem;
+}
+
+.warranty__cards {
+  display: grid;
 }
 
 .warranty__card-offer {

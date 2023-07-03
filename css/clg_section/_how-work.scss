@@ -16,7 +16,7 @@
     line-height: 116.9%;
     padding-top: 2.2rem;
     margin-left: -0.5rem;
-    
+    margin-bottom: 10.3rem;
 }
 
 .how-work__title::before {
@@ -31,17 +31,153 @@
     clip-path: polygon(0 0, 86.5% 0, 100% 100%, 0% 100%);
 }
 
-.how-work__lines {
-    display: flex;
-    flex-wrap: wrap;
-
+.how-work__line-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6rem;
+    counter-reset: number 0;
+    margin-bottom: 10.2rem;
 }
 
-.how-work__line {
-    counter-reset: number 0;
+.how-work__card-top {
+    position: relative;
+    
+}
+
+
+.how-work__card-top:nth-last-child(3):before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 3;
+    background: url(../img/land/how-work/01.svg);
+    background-size: contain;
+    width: 11.6rem;
+    height: 2.9rem;
+    margin-top: 14.6rem;
+    margin-left: 29rem;
+}
+
+.how-work__card-top:nth-last-child(3)::after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 2;
+    background: url(../img/land/how-work/line.png);
+    background-size: contain;
+
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+
+.how-work__card-top:nth-last-child(2):after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 3;
+    background: url(../img/land/how-work/02.svg);
+    background-size: contain;
+    width: 11.6rem;
+    height: 2.9rem;
+    margin-top: -17.2rem;
+    margin-left: 23.8rem;
+}
+
+.how-work__card-top:nth-last-child(1):after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 3;
+    background: url(../img/land/how-work/03.svg);
+    background-size: contain;
+    width: 2.96rem;
+    height: 12rem;
+    margin-top: -2rem;
+    margin-left: 22rem;
+}
+
+
+.how-work__line-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6rem;
+    counter-reset: number 3;
+    padding-bottom: 12.4rem;
+}
+
+.how-work__card-bottom {
+    position: relative;
+    
+}
+
+.how-work__card-bottom:nth-last-child(3):before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 3;
+    background: url(../img/land/how-work/04.svg);
+    background-size: contain;
+    width: 11.6rem;
+    height: 2.9rem;
+    margin-top: 14.6rem;
+    margin-left: -12.4rem;
+}
+
+.how-work__card-bottom:nth-last-child(2):before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 3;
+    background: url(../img/land/how-work/05.svg);
+    background-size: contain;
+    width: 11.6rem;
+    height: 2.9rem;
+    margin-top: 1.6rem;
+    margin-left: -20.2rem;
+}
+
+
+.how-work__card-bottom:nth-child(1) {
+    order: 2;
+}
+
+.how-work__card-bottom:nth-child(2) {
+    order: 1;
 }
 
 .how-work__step {
+    font-size: 3rem;
+    font-family: 'Bebas', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116.9%;
+    margin-left: -1rem;
     counter-increment: number;
 }
+
+.how-work__step::before {
+    content: counter(number, decimal-leading-zero);
+    color: #129EE1;
+    font-size: 5.7rem;
+    font-family: 'Bebas', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.9%;
+    
+}
+
+
+.how-work__step-desc {
+    color: #282828;
+    font-size: 2rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 148.9%;
+    margin-left: 4.2rem;
+    margin-top: 0.4rem;
+}
+
+
 

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    
+
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/libs/swiper.css">  
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Натяжные потолки</title>
@@ -484,49 +486,48 @@
             <div class="how-work__title">
                 <h2 class="how-work__title">КАК БУДЕТ <br>ОРГАНИЗОВАНА РАБОТА?<h2>
             </div>
-            
-            <div class="how-work__lines"> 
-                <div class="how-work__line">
-                    <div class="how-work__card">
-                        <h3 class="how-work__step">
-                        <span class="how-work__step-count">01</span>/06</h3>
+             
+                <div class="how-work__line-top">
+                    <div class="how-work__card-top">
+                        <h3 class="how-work__step">/06</h3>
                         <p class="how-work__step-desc">Мы связываемся с вами 
                         <br>и выясняем детали и 
                         <br>ваши пожелания</p>
                     </div>
                     
-                    <div class="how-work__card">
-                        <h3 class="how-work__step">
-                        <span class="how-work__step-count">02</span>/06</h3>
+                    <div class="how-work__card-top">
+                        <h3 class="how-work__step">/06</h3>
                         <p class="how-work__step-desc">Оперативно производим 
                         <br>замер и составляем 
                         <br>конечную смету</p>
                     </div>
 
-                    <div class="how-work__card">
-                        <h3 class="how-work__step">
-                        <span class="how-work__step-count">03</span>/06</h3>
+                    <div class="how-work__card-top">
+                        <h3 class="how-work__step">/06</h3>
                         <p class="how-work__step-desc">Заключаем 
                         <br>официальный 
                         <br>договор</p>
                     </div>
                 </div>
 
-                <div class="how-work__line">
-                    <h3 class="how-work__step">
-                    <span class="how-work__step-count">06</span>/06</h3>
-                    <p class="how-work__step-desc">Выполняем 
-                    <br>работу</p>
+                <div class="how-work__line-bottom">
+                    <div class="how-work__card-bottom">
+                        <h3 class="how-work__step">/06</h3>
+                        <p class="how-work__step-desc">Вы вносите 
+                        <br>предоплату</p>
+                    </div>
 
-                    <h3 class="how-work__step">
-                    <span class="how-work__step-count">05</span>/06</h3>
-                    <p class="how-work__step-desc">Назначаем день 
-                    <br>и обговариваем сроки</p>
+                    <div class="how-work__card-bottom">
+                        <h3 class="how-work__step">/06</h3>
+                        <p class="how-work__step-desc">Назначаем день 
+                        <br>и обговариваем сроки</p>
+                    </div>
 
-                    <h3 class="how-work__step">
-                    <span class="how-work__step-count">04</span>/06</h3>
-                    <p class="how-work__step-desc">Вы вносите 
-                    <br>предоплату</p>
+                    <div class="how-work__card-bottom">
+                        <h3 class="how-work__step">/06</h3>
+                        <p class="how-work__step-desc">Выполняем 
+                        <br>работу</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -537,10 +538,12 @@
     <section class="get-price">
         <div class="container get-price_container">
             <div class="get-price__top">
-                <h2 class="get-price__title">Рассчитайте стоимость 
-                <br>натяжных потолков
-                <br>и по вашим параметрам
-                <br>за 1 минуту и получите:</h2>
+                <div class="get-price__title">
+                    <h2 class="get-price__title-desc">Рассчитайте стоимость 
+                    <br>натяжных потолков
+                    <br>и по вашим параметрам
+                    <br>за 1 минуту и получите:</h2>
+                </div>
 
                 <div class="get-price__features">
                     <div class="get-price-feature">
@@ -565,62 +568,66 @@
                 </div>
             </div>
 
-            <div class="quiz get-price__quiz">
-                <div class="quiz__head">
-                    <img src="" alt="" class="quiz__head-icon">
-                    <h3 class="quiz__head-title"></h3>
-                    <div class="siwper-pagination qiuz__pagination"></div>
-                </div>
-                <div class="quiz__steps">
-                    <form class="swiper quiz__swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide quiz__step">
-                                <h4 class="quiz__step-title"></h4>
-                                <fieldset class="quiz__step-fieldset">
-                                    <div class="form-select form-control">
-                                        <div class="input__label">Откуда вы узнали о нас?</div>
-                                            <select class="form-select__input"
-                                                name="from_source"
-                                                tabindex="-1" 
-                                            required>
-                                                <option value="" disabled selected>Откуда вы узнали о нас?</option>
-                                                <option value="Друзья">Друзья</option>
-                                                <option value="Реклама">Реклама</option>
-                                                <option value="Случайно">Случайно</option>
-                                    </select>
-                                    <button class="form-select__toggle input__field" type="button">Выберите вариант ответа</button>
-                                    <ul class="form-select__list">
-                                        <li><button class="form-select__button" type="button">Друзья</button></li>
-                                        <li><button class="form-select__button" type="button">Реклама</button></li>
-                                        <li><button class="form-select__button" type="button">Случайно</button></li>
-                                    </ul>
-                                    </div>
-                                </fieldset>
-                            </div>
-                            <div class="swiper-slide quiz__step">
-                                <h4 class="quiz__step-title"></h4>
-                                <fieldset class="quiz__step-fieldset">
-                                    label>
-                                </fieldset>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="quiz__hint">
+            <div class="quiz">
+                <div class="get-price__quiz">
+                    <div class="quiz__head">
+                        <img src="/img/land/get-price/calc.svg" alt="" class="quiz__head-icon">
+                        <h3 class="quiz__head-title">Калькулятор стоимости проекта + бонусы</h3>
+                        <div class="siwper-pagination qiuz__pagination">1/5</div>
+                    </div>
+                    <div class="quiz__steps">
+                        <form class="swiper quiz__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide quiz__step">
+                                    <h4 class="quiz__step-title"></h4>
+                                    <fieldset class="quiz__step-fieldset">
+                                        <div class="form-select form-control">
+                                            <div class="input__label">Укажите Вашу площадь</div>
+                                                <select class="form-select__input"
+                                                    name="from_source"
+                                                    tabindex="-1" 
+                                                    required>
+                                                    <option value="" disabled selected>до 10м<sup>2</sup>
+                                                    </option>
+                                                    <option value="Друзья">Друзья</option>
+                                                    <option value="Реклама">Реклама</option>
+                                                    <option value="Случайно">Случайно</option>
+                                                </select>
+                                        <button class="form-select__toggle input__field" type="button">Выберите вариант ответа</button>
+                                        <ul class="form-select__list">
+                                            <li><button class="form-select__button" type="button">Друзья</button></li>
+                                            <li><button class="form-select__button" type="button">Реклама</button></li>
+                                            <li><button class="form-select__button" type="button">Случайно</button></li>
+                                        </ul>
+                                        </div>
+                                    </fieldset>
+                                </div>
 
+                                <div class="swiper-slide quiz__step">
+                                    <h4 class="quiz__step-title"></h4>
+                                    <fieldset class="quiz__step-fieldset">
+                                        <label for=""></label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="quiz__hint">
+
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
-            <div class="quiz__hint">
-                <h3 class="get-price__end-title">В конце теста вы узнаете</h3>
-                <p class="get-price__end-subtitle">Как не дать себя обсчитать при заrазе 
-                <br>натяжных потолков. 7 моментов на 
-                <br>которые следует обратить внимание 
-                <br>при замере</p>
+                <div class="quiz__hint">
+                    <h3 class="get-price__end-title">В конце теста вы узнаете</h3>
+                    <p class="get-price__end-subtitle">Как не дать себя обсчитать при заrазе 
+                    <br>натяжных потолков. 7 моментов на 
+                    <br>которые следует обратить внимание 
+                    <br>при замере</p>
 
-                <p class="get-price__boss-title">Имя фамилия</p>
-                <p class="get-price__boss-subtitle">Руководитель компании</p>
+                    <p class="get-price__boss-title">Имя фамилия</p>
+                    <p class="get-price__boss-subtitle">Руководитель компании</p>
+                </div>
             </div>
         </div>
     </section>
@@ -630,35 +637,44 @@
     <section class="service">
         <div class="container service__container">
             
-            <h2 class="service__title">Вы платите только 
-            <br>после того,  как вас всё <br>устроило.</h2>
-            
-            <div class="service__list">
-                <h3 class="service__list-title">После окончания 
-                <br>работ мы выдадим вам:</h3>
-                <ul class="service__list-bullets">
-                    <li>Паспорт на потолок</li>
-                    <li>Гарантийный талон на 15 лет</li>
-                    <li>Сервисное обслуживание на 2 года</li>
-                </ul>
+            <div class="service__footer">
+                <div class="service__footer-offer">
+                    <h2 class="service__footer-offer-title">Вы платите только 
+                    <br>после того,  как вас всё <br>устроило.</h2>
+                </div>
+                
+                <div class="service__list">
+                    <h3 class="service__list-title">После окончания 
+                    <br>работ мы выдадим вам:</h3>
+                    <ul class="service__list-bullets">
+                        <li>Паспорт на потолок</li>
+                        <li>Гарантийный талон на 15 лет</li>
+                        <li>Сервисное обслуживание на 2 года</li>
+                    </ul>
+                </div>
             </div>
-
-            <h2 class="service__subtitle">—  ТО ЕСТЬ ОН МОЖЕТ СЛОМАТЬСЯ?
-            <br>ЗАЧЕМ МНЕ СЕРВИСНОЕ ОБСЛУЖИВАНИЕ?</h2>
-
             
-                <p class="service__info-desc"><span class="service__text-bold">Нет, конечно, нет :)</span>
-                <br><span class="service__text-hl">Ваш потолок не обвиснет,<br>не потускнеет и не порвётся.</span></p>
-                <p class="service__info-desc">Сервисное обслуживание 
-                <br>распространяется на случаи, которые 
-                <br>не зависят от качества нашей работы 
-                <br>или качества материала.</p>
+                <h2 class="service__subtitle">—  ТО ЕСТЬ ОН МОЖЕТ СЛОМАТЬСЯ?
+                <br>ЗАЧЕМ МНЕ СЕРВИСНОЕ ОБСЛУЖИВАНИЕ?</h2>
+
+            <div class="service__middle">
+                <div class="service__middle-info">
+                    <p class="service__middle-info-desc"><span class="service__middle-info-bold">
+                    Нет, конечно, нет :)</span>
+                    <br><span class="service__middle-info-hl">Ваш потолок не обвиснет,
+                    <br>не потускнеет и не порвётся.</span></p>
+                    <p class="service__middle-info-desc">Сервисное обслуживание 
+                    <br>распространяется на случаи, которые 
+                    <br>не зависят от качества нашей работы 
+                    <br>или качества материала.</p>
+                </div>
         
                 <div class="service__media">
                     <picture class="service__media-pic">
                         <img class="service__media-img" src="./img/land/service/ceiling.png" alt="">
                     </picture> 
                 </div>
+            </div>
             
 
             <h2 class="service__after-title">Если</h2>
@@ -666,20 +682,24 @@
             <div class="service__after-columns">
                 <div class="service__after-column">
                     <h2 class="service__after-column-offer">01</h2>
-                    <p class="service__after-column-info">Вас затопил любимый сосед
-                    <br><span class="service__text-bold">- вы звоните нам.</span></p>
-                    <p class="service__after-column-info">Мы бесплатно приедем, 
-                    <br>сольём воду и вернём потолок 
-                    <br>в исходное положение.</p>
+                    <div class="service__after-column-info">
+                        <p class="service__after-column-info-desc">Вас затопил любимый сосед
+                        <br><span class="service__text-bold">- вы звоните нам.</span></p>
+                        <p class="service__after-column-info-desc">Мы бесплатно приедем, 
+                        <br>сольём воду и вернём потолок 
+                        <br>в исходное положение.</p>
+                    </div>
                 </div>
 
                 <div class="service__after-column">
                     <h2 class="service__after-column-offer">02</h2>
-                    <p class="service__after-column-info">Кто-то из гостей 
-                    <br>проткнул потолок ножом
-                    <br><span class="service__text-bold">- вы звоните нам.</span></p>
-                    <p class="service__after-column-info">Мы приедем, залатаем дыру 
-                    <br>и вернём всё, как было.</p>
+                    <div class="service__after-column-info">
+                        <p class="service__after-column-info-desc">Кто-то из гостей 
+                        <br>проткнул потолок ножом
+                        <br><span class="service__text-bold">- вы звоните нам.</span></p>
+                        <p class="service__after-column-info-desc">Мы приедем, залатаем дыру 
+                        <br>и вернём всё, как было.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1453,6 +1473,6 @@
 
 
 
-
+<script src="./js/libs/swiper.js"></script>
 </body>
 </html>

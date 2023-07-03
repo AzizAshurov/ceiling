@@ -4,36 +4,60 @@
 }
 
 .get-price_container {
-    height: auto;
+
 }
 
 .get-price__top {
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: auto 64rem;
 }
 
-.get-price__title {
+.get-price__title-desc {
     color: #232529;
     font-size: 4.75rem;
     font-family: 'bebas', sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
-    padding-top: 9.3rem;
-    padding-left: 0.4rem;
+    margin-top: 9.8rem;
+    margin-left: -1rem;
 }
 
 .get-price__features {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 52.5rem;
-    margin-top: -7.9rem;
-   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.7rem;
+    margin-left: -0.9rem;
+    margin-top: 9.8rem; 
+    
 }
 
 .get-price-feature {
-    background: #16c079;
+    position: relative;
+    border-radius: 2.1rem;
+    background: #fff;
+    width: 21rem;
+    height: 21rem;
+    padding-left: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
 }
+
+.get-price-feature:nth-child(1) {
+    padding-top: 5.3rem;
+}
+
+.get-price-feature:nth-child(3) {
+    padding-top: 4.5rem;
+    padding-left: 2rem;
+}
+
+.get-price-feature:nth-child(2) {
+    padding-top: 4.5rem;
+}
+
+
 
 .get-price__item-img {
 
@@ -46,10 +70,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: 115.4%;
+    padding-top: 2.3rem;
 }
 
-.quiz{
 
+.quiz{
+    display: grid;
+    grid-template-columns: auto 40rem;
 }
 
 
@@ -57,11 +84,71 @@
 
 }
 
+.get-price__quiz {
+
+}
+
+.quiz__head {
+    display: flex;
+}
 
 
+.quiz__head-icon {
+
+}
+
+.quiz__head-title {
+    display: inline-block;
+    position: relative;
+    color: #282828;
+    font-size: 1.4rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.4%;
+}
+
+.qiuz__pagination {
+    color: #282828;
+    text-align: right;
+    font-size: 1.4rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.4%;
+}
+
+.quiz__steps {
+
+}
+
+.quiz__swiper {
+
+}
+
+.swiper-wrapper {
+
+}
+
+.quiz__step {
+
+}
+
+.quiz__step-title {
+    color: #282828;
+    font-size: 2.3rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.4%;
+}
 
 .quiz__hint {
-
+    background: #FFF;
+    margin-left: 5rem;
+    margin-right: -1.4rem;
+    margin-top: 5.1rem;
+    margin-bottom: 10rem;
 }
 
 .get-price__end-title {
@@ -71,6 +158,9 @@
     font-style: normal;
     font-weight: 700;
     line-height: 115.4%;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    margin-bottom: 1rem;
 }
 
 .get-price__end-subtitle {
@@ -80,6 +170,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 145%;
+    padding-left: 3rem;
+    margin-bottom: 21.7rem;
+    margin-top: 0rem;
 }
 
 .get-price__boss-title {
@@ -89,6 +182,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 115.4%;
+    padding-left: 2.9rem;
 }
 
 .get-price__boss-subtitle {
@@ -98,4 +192,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 145%;
+    margin-top: -1.2rem;
+    padding-left: 2.9rem;
+    padding-bottom: 3rem;
 }

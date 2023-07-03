@@ -20,9 +20,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
+    padding-top: 6.4rem;
+    margin-left: -1rem;
 }
 
 .warranty__subtitle{
+    position: relative;
     color: #FFF;
     font-size: 4.7rem;
     font-family: 'Bebas', sans-serif;
@@ -32,9 +35,18 @@
     border-radius: 3rem;
     background: #129EE1;
     display: inline-block;
+    margin-left: 69.1rem;;
+    margin-top: 2.8rem;
+    padding-left: 2rem;
+    padding-right: 2.2rem;
+    right: -1rem;
+    padding-top: 2.64rem;
+    padding-bottom: 3.2rem;
+    
 }
 
 .warranty__cards {
+    display: grid;
 
 }
 
