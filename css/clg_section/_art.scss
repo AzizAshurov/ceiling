@@ -1,12 +1,12 @@
 .art {
     position: relative;
     background: #FBFBFB;
-    background-size: cover;
+    
     z-index: 0;
 }
 
 .art__container {
-    height: 122.7rem;
+    
 }
 
 .art__title {
@@ -17,7 +17,7 @@
     font-weight: 700;
     line-height: 116.9%;
     padding-top: 10.1rem;
-    padding-left: 0.4rem;
+    margin-left: -1rem;
 }
 
 .art__subtitle {
@@ -27,8 +27,9 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
-    padding-top: 1.1rem;
-    padding-left: 0.5rem;
+    padding-top: 5.5rem;
+    margin-left: -1rem;
+    padding-bottom: 3.45rem;
 }
 
 .art__subtitle::before {
@@ -36,7 +37,7 @@
     background: #F0C45B;
     position: absolute;
     z-index: -1;
-    width: 154rem;
+    width: 154.1rem;
     height: 16.4rem;
     left: 0;
     top: 22.1rem;
@@ -45,25 +46,50 @@
 
 .art__columns {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: auto 58rem;
+    
 }
 
 .art__column {
-    margin-left: 6.4rem;
-
+    padding-top: 5rem;
+    padding-left: 6.4rem;
+    display: flex;
+    flex-direction: column;
     
 }
 
 .art__column:nth-of-type(2) {
+    box-shadow: -20px 0px 74px 0px rgba(0, 0, 0, 0.05);
     background: #fff;
-    margin-left: 8rem;
-    
+    margin-left: 0.7rem;
+    margin-right: -1rem;
+    padding-left: 9.7rem;
+    padding-bottom: 3.8rem;
 }
 
 .art__column-card {
     display: flex;
 }
+
+.art__column-card:nth-child(2) {
+    margin-top: -0.7rem;
+}
+
+.art__column-card:nth-child(3) {
+    margin-top: -0.8rem;
+}
+
+.art__column-card:nth-child(4) {
+    margin-top: -0.7rem;
+}
+
+.art__column-card:nth-child(5) {
+    margin-top: -0.7rem;
+}
+
+
+
+
 
 .art__column-card::before {
     content: "";
@@ -73,7 +99,8 @@
     background-size: contain;
     width: 2rem;
     height: 2rem;
-    margin-top: 5rem;
+    margin-top: 2.5rem;
+    margin-left: -1.4rem;
 }
 
 .art__column-text {
@@ -83,6 +110,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 148.9%;
+    padding-left: 2.5rem;
 }
 
 .art__column-text-bold {

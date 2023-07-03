@@ -4,7 +4,7 @@
 }
 
 .how-work__container {
-    height: 83.5rem;
+    
 }
 
 .how-work__title {
@@ -14,8 +14,9 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
-    padding-top: 4.2rem;
-    padding-left: 0.5rem;
+    padding-top: 2.2rem;
+    margin-left: -0.5rem;
+    
 }
 
 .how-work__title::before {
@@ -32,5 +33,15 @@
 
 .how-work__lines {
     display: flex;
-    padding-top: 10rem;
+    flex-wrap: wrap;
+
 }
+
+.how-work__line {
+    counter-reset: number 0;
+}
+
+.how-work__step {
+    counter-increment: number;
+}
+

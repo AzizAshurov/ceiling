@@ -37,7 +37,7 @@
 
 .hell__content {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: auto 56rem ;
 }
 
 
@@ -50,7 +50,7 @@ position: relative;
     position: absolute;
     display: block;
     color: #fff;
-    margin-left: -2.4rem;
+    margin-left: -3.9rem;
     margin-top: 14.2rem;
     font-size: 35rem;
 }
@@ -62,7 +62,7 @@ position: relative;
     font-weight: 700;
     line-height: 116.9%;
     position: relative;
-    margin-left: 6.5rem;
+    margin-left: 5rem;
     margin-bottom: 8.8rem;
     
 }
@@ -70,12 +70,11 @@ position: relative;
 .hell__info-title::before {
     content: "";
     position: absolute;
-    display: block;
-    max-width: 58.4rem;
-    width: 100%;
-    height: 20.6rem;
-    top: -3.2rem;
-    left: -4.7rem;
+    display: block; 
+    width: 59.7rem;
+    height: 22rem;
+    top: -3.5rem;
+    left: -4.97rem;
     padding-right: 6.2rem;
     
     border: 0.7rem solid #FFFFFF ;
@@ -89,7 +88,7 @@ position: relative;
     line-height: 148.9%;
     font-style: normal;
     font-weight: 400;
-    margin-left: 7.9rem;
+    margin-left: 6.4rem;
     position: relative;
 }
 
@@ -104,8 +103,8 @@ position: relative;
 }
 
 .hell__info-desc:nth-of-type(4) {
-    padding-top: 0.8rem;
-    margin-bottom: 10.2rem;
+    padding-top: 1rem;
+    margin-bottom: 9.5rem;
 }
 
 .hell-text--bold {
@@ -134,22 +133,23 @@ position: relative;
 .hell__media-char {
     margin-top: -16.4rem;
     object-fit: contain;
-    padding-left: 2rem;
+    padding-left: 1.1rem;
 }
 
-.hell__media-text {
+.hell__media-desc {
+    white-space: nowrap;
     display: inline-block;
     color: #232529;
     text-align: center;
-    font-size: 23.96px;
+    font-size: 2.4rem;
     font-family: "bebas", sans-serif;
     font-weight: 700;
-    line-height: 116.9%;
+    line-height: 120.9%;
     background: #F0C45B;
     text-transform: uppercase;
     margin-top: -0.9rem;
-    margin-left: 2rem;
-    padding-top: 2.5rem;
+    margin-left: 1rem;
+    padding-top: 2.2rem;
     padding-left: 5rem;
     padding-bottom: 3rem;
     padding-right: 5.5rem;

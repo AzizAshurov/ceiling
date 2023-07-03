@@ -1,34 +1,12 @@
 @import "./_normalize";
-@import "./clg_section/_hero";
-@import "./clg_section/_trash";
-@import "./clg_section/_hell";
-@import "./az_components/_btn";
-@import "./clg_section/_horror";
-@import "./clg_section/_purity";
-@import "./clg_section/_experience";
-@import "./clg_section/_lead";
-@import "./clg_section/_trust";
-@import "./clg_section/_art";
-@import "./clg_section/_how-work";
-@import "./clg_section/_get-price";
-@import "./clg_section/_service";
-@import "./clg_section/_warranty";
-@import "./clg_section/_budda";
-@import "./clg_section/_compare";
-@import "./clg_section/_meeting";
-@import "./clg_section/_facepalm";
-@import "./clg_section/_drywall";
-@import "./clg_section/_hard";
-@import "./clg_section/_ceil-types";
-@import "./clg_section/_lighting";
-@import "./clg_section/_bracing";
-@import "./clg_section/_fake";
-@import "./clg_section/_toxicity";
-@import "./clg_section/_cta";
 
 
 
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 /*
   Подключает шфрит
@@ -84,4 +62,36 @@ h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+
+@import "./az_components/_btn";
+@import "./az_components/_input";
+
+
+
+@import "./clg_section/_hero";
+@import "./clg_section/_trash";
+@import "./clg_section/_hell";
+@import "./clg_section/_horror";
+@import "./clg_section/_purity";
+@import "./clg_section/_experience";
+@import "./clg_section/_lead";
+@import "./clg_section/_trust";
+@import "./clg_section/_art";
+@import "./clg_section/_how-work";
+@import "./clg_section/_get-price";
+@import "./clg_section/_service";
+@import "./clg_section/_warranty";
+@import "./clg_section/_budda";
+@import "./clg_section/_compare";
+@import "./clg_section/_meeting";
+@import "./clg_section/_facepalm";
+@import "./clg_section/_drywall";
+@import "./clg_section/_hard";
+@import "./clg_section/_ceil-types";
+@import "./clg_section/_lighting";
+@import "./clg_section/_bracing";
+@import "./clg_section/_fake";
+@import "./clg_section/_toxicity";
+@import "./clg_section/_cta";
 
