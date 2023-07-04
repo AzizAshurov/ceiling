@@ -3036,4 +3036,12 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.hero {
+  background: url(../img/thank-u/hero/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 5rem;
 }/*# sourceMappingURL=styles.css.map */
