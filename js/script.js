@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
           prevEl: '.quiz__button-prev',
         },
       });
+
+      const example = new Swiper('.image__swiper');
 })
   
   

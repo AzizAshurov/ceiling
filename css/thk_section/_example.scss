@@ -1,0 +1,42 @@
+.example {
+
+}
+
+.example__container {
+
+}
+
+.example__offer {
+
+}
+
+.example__offer::before {
+    content: "";
+    background: #F0C45B;
+    position: absolute;
+    width: 108.2rem;
+    height: 23rem;
+    left: 0;
+    clip-path: polygon(0 0, 86% 0%, 100% 100%, 0% 100%);
+    z-index: -1;
+}
+
+.example__offer-title {
+    color: #232529;
+    font-family: 'Bebas', sans-serif;
+    font-size: 4.47rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.9%;
+    padding-top: 3.3rem;
+    padding-bottom: 5rem;
+    margin-left: -1rem;
+}
+
+.image-slider {
+
+}
+
+.image-slider__img {
+    max-width: 100%;
+}

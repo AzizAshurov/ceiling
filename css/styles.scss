@@ -34,6 +34,9 @@
 @include font('montserrat', normal, 400, '../fonts/montserrat/montserrat-Bold');
 
 
+$tablet: 992px;
+
+
 
 
 
@@ -66,7 +69,9 @@ h1,h2,h3,h4,h5,h6 {
 
 @import "./az_components/_btn";
 @import "./az_components/_input";
-
+@import "./az_components/_quiz";
+@import "./az_components/_swiper-overrides";
+@import "./az_components/_select";
 
 
 @import "./clg_section/_hero";
@@ -98,3 +103,5 @@ h1,h2,h3,h4,h5,h6 {
 @import "./thk_section/_hero-thk";
 @import "./thk_section/_yandex";
 @import "./thk_section/_similar";
+@import "./thk_section/_example";
+@import "./thk_section/_recommendation";
