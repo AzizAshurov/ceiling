@@ -11,7 +11,18 @@ document.addEventListener('DOMContentLoaded', function () {
         },
       });
 
-      const example = new Swiper('.image__swiper');
+      const example = new Swiper('.example__swiper', {
+        // Кол-ва слайдов на показ за раз
+        slidesPerView: 3,
+        // Отступ между слайдерами 
+        spaceBetween: 30,
+        // Пагинация
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+
+        }
+      });
 })
   
   
