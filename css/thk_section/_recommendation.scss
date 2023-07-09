@@ -1,14 +1,18 @@
 .recommendation {
-
+    background: #FBFBFB;
+    position: relative;
+    z-index: 0;
 }
 
 .recommendation__container {
-
+    
 }
 
 .recommendation__offer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 3.2rem;
+    margin-left: 5.7rem;
 }
 
 .recommendation__offer-title {
@@ -24,10 +28,11 @@
     content: "";
     background: #F0C45B;
     position: absolute;
-    width: 108.2rem;
-    height: 23rem;
-    left: 0;
-    clip-path: polygon(0 0, 86% 0%, 100% 100%, 0% 100%);
+    width: 61.6rem;
+    height: 23.2rem;
+    margin-left: -7.2rem;
+    margin-top: -3.2rem;
+    clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
     z-index: -1;
 }
 
@@ -38,34 +43,33 @@
     font-style: normal;
     font-weight: 400;
     line-height: 148.9%;
+    padding-left: 8rem;
+    padding-top: 2rem;
 }
 
 .recommendation__content {
-
-}
-
-.recommendation__media-bg {
-    width: 100%;
-    position: absolute;
-}
-
-.recommendation__media-pic-bg {
-    width: 100%;
-    height: 100%;
-}
-
-.recommendation__media-img-bg {
-    display: block;
-    object-fit: contain;
-    position: relative;
-    z-index: -1;
-    width: 100%;
-    height: 100%
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
 .recommendation__media {
     width: 100%;
+    
+}
+
+.recommendation__media::before {
+    content: "";
+    background-image: url(/img/thank-u/recommendation/circle.png);
+    background-repeat: no-repeat;
+    display: block;
+    object-fit: contain;
+    width: 69rem;
+    height: 69rem;
     position: absolute;
+    left: 32%;
+    top: 8.3%;
+    z-index: -1;
 }
 
 .recommendation__media-pic {
@@ -76,19 +80,164 @@
 .recommendation__media-img {
     display: block;
     object-fit: contain;
-    width: 100%;
+    width: 143%;
     height: 100%;
+    position: relative;
+    margin-left: -36.9rem;
+    margin-top: -7rem;
+}
+
+.recommendation__media-bullets {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 3.3rem;
 }
 
 .recommendation__media-bullet {
 
+    display: flex;
+}
+
+.recommendation__media-bullet::before {
+    content: "";
+    border-radius: 4rem;
+    background: #FFF;
+    box-shadow: 0px 15px 74px 0px rgba(0, 0, 0, 0.05);
+    width: 43.9rem;
+    height: 16.1rem;
+    position: absolute;
+    z-index: -1;
+}
+
+.recommendation__media-bullet:nth-child(1) {
+    display: flex;
+    position: relative;
+    top: -16%;
+    left: -58%;
+}
+
+.recommendation__media-bullet:nth-child(2) {
+    display: flex;
+    position: relative;
+    top: -16%;
+    left: 16%;
+}
+
+.recommendation__media-bullet:nth-child(3) {
+    display: flex;
+    position: relative;
+    top: -3%;
+    left: -70%;
+    z-index: 1;
+}
+
+.recommendation__media-bullet:nth-child(4) {
+    display: flex;
+    position: relative;
+    top: -3%;
+    left: 28%;
+    z-index: 1;
+}
+
+.recommendation__media-bullet:nth-child(5) {
+    display: flex;
+    position: relative;
+    top: 10%;
+    left: -76%;
+    z-index: 1;
+}
+
+.recommendation__media-bullet:nth-child(6) {
+    display: flex;
+    position: relative;
+    top: 10%;
+    left: 34%;
+    z-index: 1;
 }
 
 .recommendation__media-bullet-icon {
-
+    position: relative;
+    width: 5.8rem;
+    height: 5.8rem;
+    left: 4.6rem;
+    top: 3.5rem;
 }
 
 .recommendation__media-bullet-desc {
+    color: #282828;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 148.9%;
+    position: relative;
+    left: 6.1rem;
+    top: 1.4rem;
+}
+
+
+.recommendation__media-bullet-desc-bold {
+    font-weight: 700;
+}
+
+.recommendation__bottom {
 
 }
+
+.recommendation__bottom:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 21rem;
+    left: 0;
+    z-index: -1;
+    background: #129EE1;
+}
+
+.recommendation__bottom-title {
+    color: #FFF;
+    font-family: 'Bebas', sans-serif;
+    font-size: 4.7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.9%;
+    padding-top: 2.2rem;
+    padding-bottom: 6rem;
+    margin-left: -0.5rem;
+}
+
+.recommendation-slides {
+    margin-top: 5rem;
+    
+}
+
+.recommendation__swiper.swiper {
+    margin-bottom: 3rem;
+}
+
+.recommendation__slide {
+    height: 31rem;
+}
+
+.recommendation__img {
+    border-radius: 3rem;
+    display: block;
+    
+    width: 100%;
+    height: 31rem;
+}
+
+.recommendation__pagination.swiper-pagination {
+    display: block;
+    position: relative;
+    margin-top: 5.9rem;
+}
+
+
+
+
+
+
+
 
