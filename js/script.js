@@ -37,17 +37,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
 
-      const rewies = new Swiper('.rewies__swiper', {
+      const rewiestop = new Swiper('.rewies-top__swiper', {
         slidesPerView: 3,
         spaceBetween: 30,
         loop: true,
         pagination: {
-          el: ".swiper-pagination",
+          el: ".rewies-top-pagination",
           clickable: true,
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".rewies-top-button-next",
+          prevEl: ".rewies-top-button-prev",
         },
 
       // // Кол-ва слайдов на показ за раз
@@ -56,14 +56,14 @@ document.addEventListener('DOMContentLoaded', function () {
       // spaceBetween: 20,
       });
 
-      const rewies2 = new Swiper('.rewies2__swiper', {
+      const rewiesbottom = new Swiper('.rewies-bottom__swiper', {
         cssMode: true,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".rewies-bottom-button-next",
+        prevEl: ".rewies-bottom-button-prev",
       },
       pagination: {
-        el: ".swiper-pagination",
+        el: ".rewies-bottom-pagination",
       },
       mousewheel: true,
       keyboard: true,
