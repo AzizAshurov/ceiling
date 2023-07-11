@@ -1,9 +1,20 @@
-.faq{
+.faq {
     background: #FBFBFB;
 }
 
-.faq__container {
+.faq::before {
+    content: "";
+    background: #FFCF57;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(40% 63%, 100% 63%, 100% 100%, 0 100%, 0 12%);
 
+    
+}
+
+.faq__container {
+    max-width: 83rem;
 }
 
 .faq__top {
@@ -18,6 +29,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
+    margin-bottom: 1.4rem;
 }
 
 .faq-card__question-title {
@@ -30,12 +42,71 @@
 }
 
 
-.faq__answer-desc {
+.faq-card__answer-desc {
     color: #464646;
     font-family: 'gilroy', sans-serif;
     font-size: 1.7rem;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
+    
 }
+
+.faq__bottom {
+    padding-bottom: 13.3rem;
+    text-align: center;
+}
+
+.faq-card {
+    --toggler-line-width: 100%;
+    --toggler-line-height: 0.2rem;
+    --closer-width: 3rem;
+    --closer-height: 2rem;
+}
+
+.faq-card__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #F9FAFB;
+}
+
+.faq-card__answer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    border-left: 1px solid rgba(0, 0, 0, 0.10);
+    border-right: 1px solid rgba(0, 0, 0, 0.10);
+    background: #F9FAFB;
+}
+
+.bayan--opened .bayan__toggler::before,
+.bayan--opened .bayan__toggler::after {
+    background: #A768BD;
+}
+
+.bayan--opened .faq-card__question-title {
+    color: #129EE1;
+}
+
+.faq__bottom {
+    margin-top: 3.6rem;
+}
+
+
 

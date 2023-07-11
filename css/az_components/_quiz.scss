@@ -9,6 +9,8 @@
 
 .quiz__swiper.swiper {
     overflow-y: visible;
+    position: relative;
+    z-index: 2;
 }
 
 .quiz {
@@ -132,6 +134,7 @@
     border: 1px solid #b3b3b3;
     margin-right: 11.9rem;
     margin-left: 0.2rem;
+    margin-bottom: 2rem;
 }
 
 .field.input__field {
@@ -163,9 +166,12 @@
 
 .check__input:checked + .check__box  {
     border-radius: 1.5rem;
-    background: #1390CB;;
+    background: #fff;
     box-shadow: 0 1px 8px 0 rgba(0,0,0,.4);
     background-image: url(/img/land/get-price/chekbox/cheked-circle.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
 }
 
 
@@ -215,10 +221,10 @@
 
 .check__box-last {
     position: absolute;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     box-shadow: 0 0 0 0.3rem #1390CB;
-    margin-left: -2.7rem;
+    margin-left: -2.5rem;
     margin-top: 0.2rem;
     background: #fff;
 }
@@ -234,13 +240,36 @@
     
 }
 
-.form-select__card1--small {
-    display: flex;
-    margin-bottom: 2rem;
+.form-select__cards.form-select__card--small {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-right: 15rem;
 }
 
-.form-select__card1--big {
+.form-select__cards.form-select__card--big {
     display: flex;
     margin-bottom: 2rem;
+    padding-right: 12rem;
     height: 21.2rem;
 }
+
+.quiz--last__slide.quiz .qiuz__pagination {
+
+}
+
+
+.quiz--last__slide .quiz__buttons {
+    margin-top: 11rem;
+}
+
+.quiz--last__slide.quiz .swiper-button-prev {
+    left: 1rem;
+    top: 2rem;
+}
+
+.quiz--last__slide.quiz .swiper-button-next {
+    left: 0rem;
+    top: -7.8rem;
+    
+}
+

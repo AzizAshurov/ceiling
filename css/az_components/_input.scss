@@ -10,7 +10,7 @@
 
 
 .input__field {
-    color: rgba(0, 0, 0, 0.19);
+    outline: none;
     font-size: 1.8rem;
     font-family: 'gilroy', sans-serif;
     font-style: normal;
@@ -22,4 +22,12 @@
     border: none;
 }
 
+.input__field::placeholder {
+    color: rgba(0, 0, 0, 0.19);
+
+}
+
+.input__field:focus {
+    outline: none;
+}
 

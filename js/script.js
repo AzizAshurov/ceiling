@@ -9,6 +9,36 @@ document.addEventListener('DOMContentLoaded', function () {
           nextEl: '.quiz__button-next',
           prevEl: '.quiz__button-prev',
         },
+        on: {
+          slideChange: function () {
+            // Нужно добиться что бы когда на последней странице квиза, пропадала пагинация и менялся заголовок
+            // и менялась кнопка и её позиция
+            const lastSlideIndex = this.slides.length-1
+            // const quiz = this.El
+            // console.log(this)
+            const quiz = this.el.closest(".quiz")
+            if (lastSlideIndex == this.activeIndex) {
+            console.log(this.activeIndex)
+            console.log(this.slides.length)
+            console.log(quiz.classList)
+            quiz.classList.add("quiz--last__slide")
+            
+            } 
+            else {
+              console.log(this.activeIndex)
+              console.log(this.slides.length)
+              console.log(quiz.classList)
+              quiz.classList.remove("quiz--last__slide")
+              const title = document.getElementsByClassName('quiz__head-title')  
+              title.innerText = 'Отлично, остался последний шаг!'
+              // classList.add
+            }
+            
+            const title = document.getElementsByClassName('quiz__head-title')  
+            title.innerText = 'Отлично, остался последний шаг!'
+            
+          }
+        }
       });
 
       const example = new Swiper('.example__swiper', {
@@ -85,6 +115,16 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         },
       });
+
+      const telInputs = document.querySelectorAll('input[type="tel"]');
+      telInputs.forEach(tel => {
+        const maskOptions = {
+          mask: '+7(999) 999-99-99',
+          inputmode: 'tel',
+        };
+
+        new Inputmask(maskOptions).mask(tel);
+      })
 })
   
   

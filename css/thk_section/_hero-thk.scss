@@ -19,6 +19,7 @@
 
 .hero-thk__offer {
     margin-left: -1.7rem;
+    
 }
 
 .hero-thk__offer-name {
@@ -186,4 +187,11 @@
     font-weight: 400;
     line-height: 145%;
     opacity: 0.5;
+}
+
+
+.hero-thk { 
+    @media (max-width:$mobile) {
+        
+    }
 }

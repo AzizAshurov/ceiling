@@ -7,7 +7,7 @@
   --closer-width: 3rem;
   --closer-height: 3rem;
 
-  @media (max-width: $tablet) {
+  @media (max-width: tablet) {
 	  --closer-width: 1.6rem;
 	  --closer-height: 1.6rem;
 	  --toggler-line-height: 0.2rem;
