@@ -22,20 +22,20 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(this.slides.length)
             console.log(quiz.classList)
             quiz.classList.add("quiz--last__slide")
-            
+            const title = quiz.querySelector('.quiz__head-title')  
+            title.innerText = 'Отлично, остался последний шаг!'
             } 
             else {
               console.log(this.activeIndex)
               console.log(this.slides.length)
               console.log(quiz.classList)
               quiz.classList.remove("quiz--last__slide")
-              const title = document.getElementsByClassName('quiz__head-title')  
-              title.innerText = 'Отлично, остался последний шаг!'
+              
+              
               // classList.add
             }
             
-            const title = document.getElementsByClassName('quiz__head-title')  
-            title.innerText = 'Отлично, остался последний шаг!'
+            
             
           }
         }
