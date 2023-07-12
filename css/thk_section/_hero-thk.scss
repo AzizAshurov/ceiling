@@ -10,11 +10,54 @@
 .hero-thk__container {
 
 }
+// header
+.ceil-header {
+    padding-top: 5rem;
+    position: relative;
+    z-index: 5;
+  }
+  
+  .ceil-header__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1fr auto;
+    grid-template-columns: auto 1fr auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-gap: 4rem;
+  }
 
+  .ceil-header__slogan {
+    display: block;
+    color: #000;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    
+  }
+
+  .ceil-header__tel {
+    display: flex;
+    justify-content: end;  
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 100%;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #139FE4;
+  }
+  
+  .ceil-header__tel:hover {
+    color: #F7D06D;;
+  }
+// header
 .hero-thk__content {
     display: grid;
     grid-template-columns: auto 44rem;
-    padding-top: 5rem;
+    
 }
 
 .hero-thk__offer {
@@ -41,6 +84,7 @@
     font-weight: 400;
     line-height: 116.9%;
     margin-bottom: -1.1rem;
+    margin-top: 6.8rem;
 }
 
 .hero-thk__offer-title--hl {
@@ -194,6 +238,20 @@
 
 .hero-thk { 
     @media (max-width:$mobile) {
+        .ceil-header__container {
+            grid-gap: 0rem;
+          }
+
+        .ceil-header__tel {
+            font-size: 1.6rem;
+        }
+
+        .ceil-header__slogan {
+            display: flex;
+            width: 30%;
+            flex-wrap: wrap;
+          }
+
         .hero-thk__content {
             display: block;
         }

@@ -5318,104 +5318,6 @@ button {
   line-height: normal;
 }
 
-.market-header {
-  padding-top: 57px;
-  position: relative;
-  z-index: 5;
-}
-
-.market-header__container {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  grid-gap: 40px;
-}
-
-.market-header__logo {
-  text-align: center;
-}
-
-.market-header__logo svg {
-  margin-bottom: 10px;
-}
-
-.market-header__logo path {
-  transition: 200ms linear;
-}
-
-.market-header__logo span {
-  display: block;
-  font-size: 10px;
-  line-height: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  opacity: 0.5;
-  transition: 200ms linear;
-}
-
-.market-header__logo:hover path {
-  opacity: 1;
-}
-
-.market-header__logo:hover span {
-  opacity: 1;
-}
-
-.market-header__slogan {
-  display: block;
-  max-width: 265px;
-  font-size: 14px;
-  line-height: 130%;
-  color: #ffffff;
-  opacity: 0.5;
-}
-
-.market-header__tel {
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 100%;
-  text-align: right;
-  letter-spacing: 0.05em;
-  color: #ffffff;
-}
-
-.market-header__tel:hover {
-  color: #c61508;
-}
-
-.market-header__btn {
-  position: relative;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 100%;
-  text-align: right;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #c61508;
-  margin-left: auto;
-  margin-top: 8px;
-}
-
-.market-header__btn:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  height: 1px;
-  width: 100%;
-  background-color: #c61508;
-  transition: 200ms linear;
-}
-
-.market-header__btn:hover {
-  color: #ffffff;
-}
-
-.market-header__btn:hover:after {
-  background-color: #ffffff;
-}
-
 .hero-thk {
   background: url(../img/thank-u/hero/hero-bg.jpg);
   background-repeat: no-repeat;
@@ -5423,10 +5325,47 @@ button {
   position: relative;
 }
 
+.ceil-header {
+  padding-top: 5rem;
+  position: relative;
+  z-index: 5;
+}
+
+.ceil-header__container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  grid-gap: 4rem;
+}
+
+.ceil-header__slogan {
+  display: block;
+  color: #000;
+  font-family: "roboto", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.ceil-header__tel {
+  display: flex;
+  justify-content: end;
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 100%;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #139FE4;
+}
+
+.ceil-header__tel:hover {
+  color: #F7D06D;
+}
+
 .hero-thk__content {
   display: grid;
   grid-template-columns: auto 44rem;
-  padding-top: 5rem;
 }
 
 .hero-thk__offer {
@@ -5452,6 +5391,7 @@ button {
   font-weight: 400;
   line-height: 116.9%;
   margin-bottom: -1.1rem;
+  margin-top: 6.8rem;
 }
 
 .hero-thk__offer-title--hl {
@@ -5594,6 +5534,17 @@ button {
 }
 
 @media (max-width: 601px) {
+  .hero-thk .ceil-header__container {
+    grid-gap: 0rem;
+  }
+  .hero-thk .ceil-header__tel {
+    font-size: 1.6rem;
+  }
+  .hero-thk .ceil-header__slogan {
+    display: flex;
+    width: 30%;
+    flex-wrap: wrap;
+  }
   .hero-thk .hero-thk__content {
     display: block;
   }
@@ -6472,6 +6423,12 @@ button {
     margin-top: 1rem;
     margin-bottom: 0rem;
   }
+  .rewies .rewies-top-slide__nav .swiper-pagination {
+    margin-top: 6rem;
+  }
+  .rewies .rewies-top-slide__nav {
+    margin-bottom: 0rem;
+  }
 }
 
 .faq {
@@ -6616,6 +6573,15 @@ button {
     margin-top: 0rem;
     padding: 2rem 6.3rem;
     font-size: 1.5rem;
+  }
+  .faq .faq__top-title {
+    font-size: 2.5rem;
+  }
+  .faq .faq-card__question-title {
+    font-size: 1.5rem;
+  }
+  .faq .faq-card__answer-desc {
+    font-size: 1.4rem;
   }
   .faq .faq__bottom {
     margin-bottom: -8rem;
