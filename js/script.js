@@ -23,7 +23,9 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(quiz.classList)
             quiz.classList.add("quiz--last__slide")
             const title = quiz.querySelector('.quiz__head-title')  
-            title.innerText = 'Отлично, остался последний шаг!'
+            title.innerText = 'Отлично, остался последний шаг!' 
+            document.querySelector(".quiz__head-icon").style.display='none';
+            
             } 
             else {
               console.log(this.activeIndex)
@@ -43,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const example = new Swiper('.example__swiper', {
         // Кол-ва слайдов на показ за раз
-        slidesPerView: 3,
+        slidesPerView: 1,
         // Отступ между слайдерами 
         spaceBetween: 30,
         // Пагинация
@@ -51,12 +53,23 @@ document.addEventListener('DOMContentLoaded', function () {
           el: ".swiper-pagination",
           clickable: true,
 
-        }
+        },
+        // Адаптация
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+
+          1024: {
+            slidesPerView: 3,
+          },
+        },
       });
+
 
       const recommendation = new Swiper('.recommendation__swiper', {
         // Кол-ва слайдов на показ за раз
-        slidesPerView: 3,
+        slidesPerView: 1,
         // Отступ между слайдерами 
         spaceBetween: 30,
         // Пагинация
@@ -64,11 +77,21 @@ document.addEventListener('DOMContentLoaded', function () {
           el: ".swiper-pagination",
           clickable: true,
 
-        }
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+
       });
 
       const rewiestop = new Swiper('.rewies-top__swiper', {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
         pagination: {
@@ -79,11 +102,12 @@ document.addEventListener('DOMContentLoaded', function () {
           nextEl: ".rewies-top-button-next",
           prevEl: ".rewies-top-button-prev",
         },
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+          },
+        },
 
-      // // Кол-ва слайдов на показ за раз
-      // slidesPerView: 3,
-      // // Отступ между слайдерами 
-      // spaceBetween: 20,
       });
 
       const rewiesbottom = new Swiper('.rewies-bottom__swiper', {
@@ -97,11 +121,6 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       mousewheel: true,
       keyboard: true,
-
-      // // Кол-ва слайдов на показ за раз
-      // slidesPerView: 3,
-      // // Отступ между слайдерами 
-      // spaceBetween: 20,
       });
 
       Fancybox.bind('[data-fancybox]', {

@@ -59,3 +59,27 @@
     position: relative;
     margin-top: 5.9rem;
 }
+
+
+.example {
+    @media (max-width:$mobile) {
+
+        .example__offer::before {
+            content: "";
+            position: absolute;
+            width: 31rem;
+            height: 11.7rem;
+            top: 329.6rem;
+            clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+        }
+
+        .example__offer-title {
+            margin-bottom: 4.5rem;
+            font-size: 2.57rem;
+            font-style: normal;
+            padding-top: 6.4rem;
+            padding-bottom: 0rem;
+            margin-left: 0rem;
+        }
+    }
+}

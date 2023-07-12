@@ -70,6 +70,8 @@
 }
 
 .hero-thk__offer-desc {
+    margin-top: -8.5rem;
+    margin-left: -1.6rem;
     color: #232529;
     font-size: 4rem;
     font-family: 'Bebas', sans-serif;
@@ -192,6 +194,100 @@
 
 .hero-thk { 
     @media (max-width:$mobile) {
+        .hero-thk__content {
+            display: block;
+        }
+
+        .hero-thk__offer {  
+            margin-left: 0rem;
+            
+        }
+
+        .hero-thk__offer-title {
+            font-size: 3.4rem;
+            margin-bottom: 0rem;
+        }
+
         
+
+        .hero-thk__offer-subtitle {
+            font-size: 1.4rem;
+        }
+
+        .thk__form {
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+            padding-top: 2.7rem;
+            padding-bottom: 2.9rem;
+            margin-top: 0rem;
+            margin-bottom: 3rem;
+            margin-left: 0rem;
+        }
+
+        .thk__input {
+            border-radius: 8rem;
+            border: 0.1rem solid #EFEFEF;
+            background: #FFF;
+            padding: 2rem 4.3rem;
+        }
+
+        .input__field {
+            font-size: 1.5rem;
+        }
+
+        .input__icon {
+            margin-left: -1.4rem;
+        }
+
+        .hero-thk__offer-desc {
+            margin-top: 0rem;
+            margin-left: 0rem;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .lead__form-btn {
+            margin-top: 0rem;
+            padding: 2rem 2.3rem;
+        }
+
+        .btn__text {
+            font-size: 1.5rem;
+        }
+
+        .lead__form-bottom {
+            font-size: 1.2rem;
+            margin-top: 0rem;
+        }
+
+        .hero-thk__info {
+            display: block;
+        }
+
+        .hero-thk__info-card {
+            margin-top: 0rem;
+            align-items: center;
+            width: 29rem;
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-thk__info-card-icon{
+            margin-left: auto;
+            margin-right: auto;
+            width: 3.1rem;
+            height: 3.1rem;
+        }
+
+        .hero-thk__info-card-desc {
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        
+        .hero-thk-script {
+            font-size: 1.2rem;
+            margin-left: 1rem;
+            margin-bottom: 2.5rem;
+        }
     }
 }

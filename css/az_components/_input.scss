@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row-reverse;
     background: #fff;
-    border-radius: 80px;
+    border-radius: 8rem;
     position: relative;
     padding: 2rem 6.6rem;
     border: 0.1rem solid #fff;
@@ -29,5 +29,10 @@
 
 .input__field:focus {
     outline: none;
+}
+
+
+@media (max-width:$mobile) {
+
 }
 

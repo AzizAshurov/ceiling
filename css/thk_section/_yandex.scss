@@ -15,7 +15,7 @@
     background: #F0C45B;
     position: absolute;
     z-index: -1;
-    width: 138rem;
+    width: 145rem;
     height: 23.2rem;
     left: 0;
     clip-path: polygon(0 0, 89% 0, 100% 100%, 12.2% 100%, 0% 49.2%);
@@ -101,4 +101,52 @@
     object-fit: contain;
     width: 100%;
     height: 100%;
+}
+
+.yandex {
+    @media (max-width:$mobile) {
+        .yandex__top-title {
+            font-size: 2.5rem;
+            margin-left: 0rem;
+            padding-top: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .yandex__top::before {
+            content: "";
+            width: 31rem;
+            height: 11.7rem;
+            clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+        }
+
+        .yandex__bottom {
+            display: block;
+            padding-top: 0rem;
+            margin-left: 0rem;
+        }
+
+        .yandex__offer-title {
+            font-size: 1.8rem;
+        }
+        
+        .yandex__offer-desc {
+            font-size: 1.5rem;
+            margin-top: -1.5rem;
+            margin-bottom: 3.7rem;
+        }
+
+        .yandex__media {
+            width: 29rem;
+            height: 18rem;
+            margin-top: 0rem;
+            margin-left: 0rem;
+        }
+
+        .yandex__offer-bottom {
+            margin-left: -1rem;
+            margin-top: -1rem;
+            font-size: 1.8rem;
+
+        }
+    }
 }

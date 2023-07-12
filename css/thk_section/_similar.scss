@@ -61,4 +61,47 @@
     font-weight: 700;
 }
 
+.similar {
+    @media (max-width:$mobile) {
+
+        .similar {
+            background-position: bottom;
+        }
+
+        .similar__content {
+            display: block;
+        }
+
+        .similar__info {
+            padding-bottom: 22.7rem;
+            margin-bottom: 0;
+        }
+
+        .similar__info-title {
+            font-size: 2.5rem;
+            padding-top: 5rem;
+        
+        }
+
+        .similar__info-desc {
+            font-size: 1.5rem;
+        }
+
+        .similar__info-desc--bold {
+            font-size: 2.5rem;
+        }
+
+        .similar__content::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            left: 0;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 7% 76%, 0 100%, 0 75%, 0% 75%);
+        }
+
+
+    }
+}
+
+
 

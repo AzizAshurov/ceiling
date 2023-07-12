@@ -166,3 +166,42 @@
     filter: brightness(0) invert(1); 
     transform: rotate(180deg)
 }
+
+
+.rewies {
+    @media (max-width:$mobile) {
+        .rewies-title {
+            margin-left: 0rem;
+        }
+
+        .rewies-top-slide__nav .swiper-button-prev {
+            display: none;
+        }
+
+        .rewies-top-slide__nav .swiper-button-next {
+            display: none;
+        }
+
+        .rewies-bottom-slide__nav2 .swiper-button-prev {
+            display: none;
+        }
+
+        .rewies-bottom-slide__nav2 .swiper-button-next {
+            display: none;
+        }
+
+        .rewies-bottom__img {
+            left: 0rem;
+            margin-bottom: 1rem;
+            margin-left: 0rem;
+            width: 100%;
+            border-radius: 1rem;
+        }
+
+        .rewies-bottom-slide__nav2 {
+            margin-top: 1rem;
+            margin-bottom: 0rem;
+        }
+        
+    }
+}
