@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     const quiz = new Swiper('.quiz__swiper', {
-        pagination: {
-            el: ".qiuz__pagination",
-            type: "fraction",
-          },
+        
+        // pagination: {
+        //     el: ".qiuz__pagination",
+        //     type: "fraction",
+        //   },
         autoHeight: true,
         navigation: {
           nextEl: '.quiz__button-next',
@@ -14,28 +15,25 @@ document.addEventListener('DOMContentLoaded', function () {
             // Нужно добиться что бы когда на последней странице квиза, пропадала пагинация и менялся заголовок
             // и менялась кнопка и её позиция
             const lastSlideIndex = this.slides.length-1
-            // const quiz = this.El
-            // console.log(this)
             const quiz = this.el.closest(".quiz")
+            quiz.querySelector(".qiuz__pagination").innerText = `${this.activeIndex+1} / ${this.slides.length - 1}`
             if (lastSlideIndex == this.activeIndex) {
-            console.log(this.activeIndex)
-            console.log(this.slides.length)
-            console.log(quiz.classList)
+            console.log(quiz.querySelector('.qiuz__pagination'))
+
             quiz.classList.add("quiz--last__slide")
             const title = quiz.querySelector('.quiz__head-title')  
             title.innerText = 'Отлично, остался последний шаг!' 
             document.querySelector(".quiz__head-icon").style.display='none';
+
+            
             } 
             else {
-              console.log(this.activeIndex)
-              console.log(this.slides.length)
-              console.log(quiz.classList)
+              console.log(quiz.querySelector('.qiuz__pagination'))
               quiz.classList.remove("quiz--last__slide")
               
               const title = quiz.querySelector('.quiz__head-title')  
               title.innerText = 'Калькулятор стоимости проекта + бонусы' 
               document.querySelector(".quiz__head-icon").style.display='block';
-              // classList.add
             }
           }
         }

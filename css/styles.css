@@ -2308,7 +2308,6 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .quiz__head {
   display: flex;
-  justify-content: center;
   margin-top: 5.1rem;
   margin-left: -1.2rem;
   padding-bottom: 1.8rem;
@@ -2347,8 +2346,8 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   font-weight: 400;
   line-height: 115.4%;
   letter-spacing: normal;
-  padding-right: 6rem;
   padding-top: 2.6rem;
+  padding-left: 30rem;
 }
 
 .quiz__body {
