@@ -383,9 +383,44 @@ html {
   --tr-regular: all 0.3s ease;
   --tr: 0.3s;
 }
+@media (max-width: 1600px) {
+  html {
+    --fz-modifier: 0.625;
+  }
+}
+@media (max-width: 1536px) {
+  html {
+    --fz-modifier: 0.651042;
+  }
+}
+@media (max-width: 1366px) {
+  html {
+    --fz-modifier: 0.732065;
+  }
+}
+@media (max-width: 1280px) {
+  html {
+    --fz-modifier: 0.78125;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    --fz-modifier: 0.976567;
+  }
+}
 @media (max-width: 992px) {
   html {
     --fz-modifier: 1.008062;
+  }
+}
+@media (max-width: 810px) {
+  html {
+    --fz-modifier: 1.23457;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    --fz-modifier: 1.302089;
   }
 }
 @media (max-width: 601px) {
@@ -2219,6 +2254,11 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   padding-top: 4.5rem;
 }
 
+.get-price__item-img {
+  width: 5.5rem;
+  height: 5rem;
+}
+
 .get-price-feature__desc {
   color: #282828;
   font-size: 1.28rem;
@@ -2524,6 +2564,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   margin-bottom: 2rem;
   padding-right: 12rem;
   height: 21.2rem;
+  width: 100%;
 }
 
 .quiz__form-btn {
@@ -2568,6 +2609,67 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   font-size: 1.5rem;
 }
 
+@media (max-width: 1024px) {
+  .get-price .get-price__top {
+    display: block;
+  }
+  .get-price br {
+    display: none;
+  }
+  .get-price .get-price__title-desc {
+    margin-top: 0rem;
+    padding-top: 5rem;
+    margin-left: 0rem;
+  }
+  .get-price .get-price__features {
+    margin-top: 5rem;
+    margin-left: 0rem;
+  }
+  .get-price .get-price-feature {
+    width: 31rem;
+    height: 21rem;
+  }
+  .get-price .get-price-feature__desc {
+    font-size: 1.8rem;
+  }
+  .get-price .get-price__quiz {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .get-price .quiz {
+    width: 60rem;
+  }
+  .get-price .qiuz__pagination {
+    position: absolute;
+    margin-left: 26rem;
+  }
+  .get-price .form-select__cards.form-select__card--small {
+    padding-right: 21rem;
+  }
+  .get-price .form-select__cards.form-select__card--big {
+    padding-right: 21rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .get-price .check__img--big {
+    height: 18rem;
+  }
+  .get-price .quiz .swiper-button-next {
+    left: 39rem;
+  }
+  .get-price .quiz__step-title {
+    width: 50rem;
+  }
+  .get-price .input.quiz__input {
+    width: 50rem;
+  }
+  .get-price .quiz__hint {
+    width: 33rem;
+  }
+  .get-price .input__field {
+    width: 54rem;
+  }
+}
 @media (max-width: 992px) {
   .get-price .get-price__top {
     display: block;
@@ -2628,9 +2730,111 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-right: -13rem;
   }
+  .get-price .check--big {
+    width: 19.4rem;
+  }
   .get-price .quiz__hint {
     display: none;
     width: 100%;
+  }
+}
+@media (max-width: 810px) {
+  .get-price .get-price-feature {
+    width: 24rem;
+  }
+  .get-price .get-price__item-img {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+  .get-price .get-price-feature__desc {
+    font-size: 1.6rem;
+  }
+  .get-price .quiz__head-title {
+    font-size: 1.6rem;
+  }
+  .get-price .form-select {
+    width: 70rem;
+  }
+  .get-price .quiz__buttons {
+    width: 68.2rem;
+  }
+  .get-price .form-select__cards.form-select__card--small {
+    width: 70rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 1rem;
+  }
+  .get-price .check {
+    margin-bottom: 1.5rem;
+  }
+  .get-price .check--big {
+    width: 17.5rem;
+  }
+  .get-price .form-select__cards.form-select__card--big {
+    width: 60rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .get-price .get-price__title-desc {
+    margin-top: 0rem;
+    padding-top: 5rem;
+    margin-left: 0rem;
+    font-size: 4rem;
+  }
+  .get-price .get-price-feature {
+    width: 22rem;
+  }
+  .get-price .get-price__item-img {
+    height: 4rem;
+    width: 6.5rem;
+  }
+  .get-price .qiuz__pagination {
+    padding-right: 0;
+  }
+  .get-price .get-price-feature__desc {
+    font-size: 1.5rem;
+  }
+  .get-price .quiz__steps {
+    width: 62rem;
+  }
+  .get-price .form-select {
+    width: 62rem;
+  }
+  .get-price .input__field {
+    font-size: 1.8rem;
+  }
+  .get-price .quiz__buttons {
+    width: 62rem;
+  }
+  .get-price .quiz__button-text-prev {
+    font-size: 1.6rem;
+  }
+  .get-price .quiz__button-text-next {
+    font-size: 1.6rem;
+  }
+  .get-price .quiz .swiper-button-next {
+    left: 76%;
+  }
+  .get-price .form-select__cards.form-select__card--small {
+    width: 60rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 1rem;
+  }
+  .get-price .check {
+    margin-bottom: 1.5rem;
+  }
+  .get-price .check--big {
+    width: 15.4rem;
+  }
+  .get-price .form-select__cards.form-select__card--big {
+    width: 62rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 601px) {
@@ -2696,13 +2900,16 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     width: 28rem;
   }
   .get-price .quiz__head {
-    margin-left: 0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 0;
   }
   .get-price .quiz__head-title {
     font-size: 1.1rem;
     white-space: pre-wrap;
-    padding-left: 1rem;
+    margin-left: -7rem;
     padding-top: 2rem;
+    width: 16rem;
   }
   .get-price .quiz__head-icon {
     margin-left: 1.5rem;
@@ -2711,7 +2918,8 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   .get-price .qiuz__pagination {
     padding-top: 2rem;
     padding-right: 1.5rem;
-    width: 11rem;
+    padding-left: 0rem;
+    white-space: nowrap;
   }
   .get-price .quiz__body {
     margin-left: 0rem;
@@ -2743,6 +2951,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     width: 26rem;
     margin-top: 3.5rem;
     display: flex;
+    margin-bottom: 3rem;
   }
   .get-price .quiz .swiper-button-next {
     top: 0;
@@ -2755,6 +2964,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   }
   .get-price .form-select__cards.form-select__card--small {
     grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
   }
   .get-price .check {
     padding-left: 0rem;
@@ -2775,8 +2985,8 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   }
   .get-price .form-select__cards.form-select__card--big {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 33rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: -13rem;
   }
   .get-price .check--big {
     padding-left: 0rem;
@@ -2802,10 +3012,12 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     margin-bottom: 1rem;
   }
   .get-price .quiz--last__slide.quiz .quiz__head-title {
-    padding-left: 1.5rem;
+    margin-left: -4.8rem;
+    font-size: 1.4rem;
+    width: 29rem;
   }
   .get-price .input.quiz__input {
-    margin-right: 0rem;
+    margin-right: 0.3rem;
     margin-bottom: 2rem;
   }
   .get-price .input__field {
@@ -2827,11 +3039,15 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     top: 8rem;
   }
   .get-price .quiz--last__slide.quiz .quiz__form-btn {
-    top: -4.5rem;
+    top: -7.5rem;
     padding: 1.5rem 2.3rem;
+    text-align: center;
   }
   .get-price .quiz--last__slide.quiz .btn__text {
     font-size: 1.3rem;
+  }
+  .get-price .quiz--last__slide.quiz .btn {
+    font-size: 1.8rem;
   }
   .get-price .quiz__hint {
     display: none;
@@ -2840,7 +3056,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .quiz__buttons {
   position: relative;
-  margin-top: 5.5rem;
+  margin-top: 10rem;
 }
 
 .quiz .swiper-button-prev {

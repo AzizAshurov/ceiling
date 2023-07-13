@@ -49,9 +49,40 @@ html {
     --tr-regular: all 0.3s ease;
     --tr: 0.3s;
 
+    // @media (max-width:2560px) {
+    //   --fz-modifier: 0.390625;
+    // }
+
+    @media (max-width:1600px) {
+      --fz-modifier: 0.625;
+    }
+
+    @media (max-width:1536px) {
+      --fz-modifier: 0.651042;
+    }
+
+    @media (max-width:1366px) {
+      --fz-modifier: 0.732065;
+    }
+
+    @media (max-width:1280px) {
+      --fz-modifier: 0.78125;
+    }
+
+    @media (max-width:1024px) {
+      --fz-modifier: 0.976567;
+    }
 
     @media (max-width:$tablet) {
       --fz-modifier: 1.008062;
+    }
+    
+    @media (max-width:810px) {
+      --fz-modifier: 1.23457;
+    }
+
+    @media (max-width:768px) {
+      --fz-modifier: 1.302089;
     }
 
     @media (max-width:$mobile) {

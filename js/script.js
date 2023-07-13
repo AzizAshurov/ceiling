@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // и менялась кнопка и её позиция
             const lastSlideIndex = this.slides.length-1
             const quiz = this.el.closest(".quiz")
-            quiz.querySelector(".qiuz__pagination").innerText = `${this.activeIndex+1} / ${this.slides.length - 1}`
+            quiz.querySelector(".qiuz__pagination").innerText = `${this.activeIndex + 1} / ${this.slides.length - 1}`
             if (lastSlideIndex == this.activeIndex) {
             console.log(quiz.querySelector('.qiuz__pagination'))
 
