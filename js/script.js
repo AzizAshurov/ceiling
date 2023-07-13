@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const title = quiz.querySelector('.quiz__head-title')  
             title.innerText = 'Отлично, остался последний шаг!' 
             document.querySelector(".quiz__head-icon").style.display='none';
-            
             } 
             else {
               console.log(this.activeIndex)
@@ -33,6 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
               console.log(quiz.classList)
               quiz.classList.remove("quiz--last__slide")
               
+              const title = quiz.querySelector('.quiz__head-title')  
+              title.innerText = 'Калькулятор стоимости проекта + бонусы' 
+              document.querySelector(".quiz__head-icon").style.display='block';
               // classList.add
             }
           }

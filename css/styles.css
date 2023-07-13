@@ -2569,6 +2569,71 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   font-size: 1.5rem;
 }
 
+@media (max-width: 992px) {
+  .get-price .get-price__top {
+    display: block;
+  }
+  .get-price br {
+    display: none;
+  }
+  .get-price .get-price__title-desc {
+    margin-top: 0rem;
+    padding-top: 5rem;
+    margin-left: 0rem;
+  }
+  .get-price .get-price__features {
+    margin-top: 5rem;
+    margin-left: 0rem;
+  }
+  .get-price .get-price-feature {
+    width: 30rem;
+    height: 17rem;
+  }
+  .get-price .get-price-feature:nth-child(1) {
+    padding-top: 3rem;
+  }
+  .get-price .get-price-feature:nth-child(2) {
+    padding-top: 3rem;
+  }
+  .get-price .get-price-feature:nth-child(3) {
+    padding-top: 3rem;
+  }
+  .get-price .get-price__quiz {
+    display: block;
+  }
+  .get-price .quiz {
+    width: 100%;
+  }
+  .get-price .input__field {
+    width: 100%;
+  }
+  .get-price .form-select__list {
+    width: 100%;
+  }
+  .get-price .form-select__toggle::before {
+    border-width: 0.97rem 0.65rem 0 0.65rem;
+  }
+  .get-price .quiz__buttons {
+    width: 100%;
+  }
+  .get-price .quiz .swiper-button-next {
+    left: 80%;
+  }
+  .get-price .form-select__cards.form-select__card--small {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+  }
+  .get-price .form-select__cards.form-select__card--big {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: -13rem;
+  }
+  .get-price .quiz__hint {
+    display: none;
+    width: 100%;
+  }
+}
 @media (max-width: 601px) {
   .get-price .get-price__top {
     display: block;
