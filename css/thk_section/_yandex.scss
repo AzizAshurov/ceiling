@@ -10,16 +10,7 @@
     margin-top: -2rem;
 }
 
-.yandex__top::before {
-    content: "";
-    background: #F0C45B;
-    position: absolute;
-    z-index: -1;
-    width: 145rem;
-    height: 23.2rem;
-    left: 0;
-    clip-path: polygon(0 0, 89% 0, 100% 100%, 12.2% 100%, 0% 49.2%);
-}
+
 
 .yandex__top-title {
     padding-top: 4.5rem;
@@ -30,6 +21,18 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
+}
+
+.yandex__top-title::before {
+    content: "";
+    background: #F0C45B;
+    position: absolute;
+    z-index: -1;
+    width: 145rem;
+    height: 23.2rem;
+    margin-top: -4.4rem;
+    left: 0;
+    clip-path: polygon(0 0, 89% 0, 100% 100%, 12.2% 100%, 0% 49.2%);
 }
 
 .yandex__bottom {
@@ -104,6 +107,27 @@
 }
 
 .yandex {
+    @media (max-width:$tablet) {
+        .yandex__top-title {
+            font-size: 5rem;
+            margin-left: 0rem;
+        }
+
+        .yandex__top-title::before {
+            clip-path: none;
+            width: 100%;
+            margin-top: -5rem;
+        }
+
+        .yandex__bottom {
+            grid-template-columns: auto 48.9rem;
+            margin-left: 0rem;
+        }
+
+        
+    }
+
+
     @media (max-width:$mobile) {
         .yandex__top-title {
             font-size: 2.5rem;
@@ -128,6 +152,7 @@
         .yandex__offer-title {
             font-size: 1.8rem;
         }
+        
         
         .yandex__offer-desc {
             font-size: 1.5rem;

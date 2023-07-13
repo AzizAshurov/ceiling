@@ -1,3 +1,140 @@
+.get-price {
+    background: #FBFBFB;
+    background-size: cover;
+}
+
+.get-price_container {
+
+}
+
+.get-price__top {
+    display: grid;
+    grid-template-columns: auto 64rem;
+}
+
+.get-price__title-desc {
+    color: #232529;
+    font-size: 4.75rem;
+    font-family: 'bebas', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.9%;
+    margin-top: 9.8rem;
+    margin-left: -1rem;
+}
+
+.get-price__features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.7rem;
+    margin-left: -0.9rem;
+    margin-top: 9.8rem; 
+    
+}
+
+.get-price-feature {
+    position: relative;
+    border-radius: 2.1rem;
+    background: #fff;
+    width: 21rem;
+    height: 21rem;
+    padding-left: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+}
+
+.get-price-feature:nth-child(1) {
+    padding-top: 5.3rem;
+}
+
+.get-price-feature:nth-child(3) {
+    padding-top: 4.5rem;
+    padding-left: 2rem;
+}
+
+.get-price-feature:nth-child(2) {
+    padding-top: 4.5rem;
+}
+
+
+
+.get-price__item-img {
+
+}
+
+.get-price-feature__desc {
+    color: #282828;
+    font-size: 1.28rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.4%;
+    padding-top: 2.3rem;
+}
+
+
+
+.get-price__quiz {
+    display: grid;
+    grid-template-columns: auto 40rem;
+}
+
+
+.quiz__hint {
+    background: #FFF;
+    margin-left: 5rem;
+    margin-right: -1.4rem;
+    margin-top: 5.1rem;
+    margin-bottom: 10rem;
+}
+
+.get-price__end-title {
+    color: #282828;
+    font-size: 1.8rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115.4%;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+.get-price__end-subtitle {
+    color: #282828;
+    font-size: 1.5rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    padding-left: 3rem;
+    margin-bottom: 21.7rem;
+    margin-top: 0rem;
+}
+
+.get-price__boss-title {
+    color: #282828;
+    font-size: 1.8rem;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115.4%;
+    padding-left: 2.9rem;
+}
+
+.get-price__boss-subtitle {
+    color: #282828;
+    font-size: 1.5;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    margin-top: -1.2rem;
+    padding-left: 2.9rem;
+    padding-bottom: 3rem;
+}
+
 .quiz__swiper.swiper-autoheight .swiper-slide {
     overflow-y: visible;
 }
@@ -149,6 +286,11 @@
     padding-left: 1rem;
 }
 
+.check--big {
+    display: block;
+    padding-left: 1rem;
+}
+
 .check__input {
     position: absolute;
     width: 0.1rem;
@@ -253,10 +395,9 @@
     height: 21.2rem;
 }
 
-.quiz--last__slide.quiz .qiuz__pagination {
-
+.quiz__form-btn {
+    display: none;
 }
-
 
 .quiz--last__slide .quiz__buttons {
     margin-top: 11rem;
@@ -277,3 +418,345 @@
     padding-left: 6.5rem;
 }
 
+.quiz--last__slide.quiz .qiuz__pagination {
+    opacity: 0;
+}
+
+.quiz--last__slide.quiz .quiz__button-next {
+    opacity: 0;
+}
+
+.quiz--last__slide.quiz .quiz__form-btn {
+    display: block;
+    position: relative;
+    top: -14rem;
+    margin-top: 0rem;
+    padding: 1.5rem 2.3rem;
+}
+
+.quiz--last__slide.quiz .btn__text {
+    font-size: 1.5rem;
+}
+
+.get-price {
+    @media (max-width:$mobile) {
+        .get-price__top {
+            display: block;
+        }
+
+        .get-price__features {
+            display: block;
+            margin-left: 0rem;
+            margin-top: 0rem;
+        }
+
+        .get-price-feature {
+            width: 29rem;
+            height: 12rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .get-price-feature:nth-child(1) {
+            margin-right: 0rem;
+            padding-top: 0rem;
+            align-items: center;
+            padding-left: 3.4rem;
+            padding-right: 3.4rem;
+        }
+
+        .get-price-feature:nth-child(2) {
+            margin-right: 0rem;
+            padding-top: 0rem;
+            align-items: center;
+            padding-left: 3.4rem;
+            padding-right: 3.4rem;
+        }
+        
+        .get-price-feature:nth-child(3) {
+            margin-right: 0rem;
+            padding-top: 0rem;
+            align-items: center;
+            padding-left: 3.4rem;
+            padding-right: 3.4rem;
+        }
+
+        br {
+            display: none;
+        }
+
+        .get-price__title-desc {
+            text-align: left;
+            font-size: 2.43rem;
+            padding-top: 5rem;
+            margin-top: 0rem;
+            margin-left: 0rem;
+            margin-bottom: 3rem;
+        }
+
+        .get-price__item-img {
+            width: 5.8rem;
+            height: 3rem;
+            margin-top: 1.6rem;
+        }
+
+        .get-price-feature__desc {
+            font-size: 1.5rem;
+            padding-top: 0rem;
+            text-align: center;
+        }
+
+        .get-price__quiz {
+            display: block;
+        }
+
+        .quiz {
+            width: 28rem;
+        }
+
+        .quiz__head {
+            margin-left: 0rem;
+        }
+
+        .quiz__head-title {
+            font-size: 1.1rem;
+            white-space: pre-wrap;
+            padding-left: 1rem;
+            padding-top: 2rem;
+        }
+
+        .quiz__head-icon {
+            margin-left: 1.5rem;
+            margin-top: 2rem;
+        
+        }
+
+        .qiuz__pagination {
+            padding-top: 2rem;
+            padding-right: 1.5rem;
+            width: 11rem;
+        }
+
+        .quiz__body {
+            margin-left: 0rem;
+            padding-left: 1.5rem;
+        }
+
+        .quiz__step-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem; 
+            padding-top: 1.5rem;
+            width: 26rem;
+        }
+
+        .quiz__swiper.swiper-autoheight .swiper-slide {
+            width: 26rem;
+        }
+
+        .input__field {
+            width: 26rem;
+        }
+
+        .form-select__toggle::before {
+            border-width: 0.87rem 0.65rem 0 0.65rem;
+        }
+
+        .form-select {
+            font-size: 1.4rem;
+        }
+
+        .form-select__list {
+            width: 26rem;
+            gap: 1rem;   
+        }
+
+        .quiz__buttons {
+            width: 26rem;
+            margin-top: 3.5rem;
+            display: flex;
+        }
+
+        .quiz .swiper-button-prev {
+
+        }
+
+        .quiz .swiper-button-next {
+            top: 0;
+            left: 0;
+            width: 14rem;
+            margin-left: 3rem;
+        }
+        
+        .quiz__steps {
+            width: 26rem;
+        }
+
+        .form-select__cards.form-select__card--small {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        
+        .check {
+            padding-left: 0rem;
+            width: 7.9rem;
+            height: 9.5rem;
+            margin-left: 0.4rem;
+            margin-right: 0.4rem;
+            color: #282828;
+            font-family: 'roboto', sans-serif;
+            font-size: 1.06rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 115.4%;
+        }
+
+        .check__img {
+            max-width: 8.6rem;
+            height: 6.4rem; 
+        }
+
+        .form-select__cards.form-select__card--big {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 33rem;
+        }
+
+        .check--big {
+            padding-left: 0rem;
+            width: 7.9rem;
+            height: 16.5rem;
+            margin-left: 0.4rem;
+            margin-right: 0.4rem;
+            color: #282828;
+            font-family: 'roboto', sans-serif;
+            font-size: 1.06rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 115.4%;
+        }
+        
+        .check__img--big {
+            display: block;
+            max-width: 16rem;
+            height: 11.52rem;
+            background-size: cover;
+            width: 100%;
+            box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            
+        }
+
+        .quiz--last__slide.quiz .quiz__head-title {
+            padding-left: 1.5rem;
+        }
+
+        .input.quiz__input {
+            margin-right: 0rem;
+            margin-bottom: 2rem;
+        }
+
+        .input__field {
+            margin-right: -6rem;
+        }
+
+        .input__icon {
+            left: 1rem;
+        }
+
+        .check-last {
+            display: block;
+            width: 26rem;
+            color: #282828;
+            font-family: 'roboto', sans-serif;
+            font-size: 1.06rem;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        .quiz--last__slide.quiz .swiper-button-prev {
+            top: 8rem;
+        }
+
+        .quiz--last__slide.quiz .quiz__form-btn {
+            top: -4.5rem;
+            padding: 1.5rem 2.3rem;
+            
+        }
+        
+        .quiz--last__slide.quiz .btn__text {
+            font-size: 1.3rem;
+        }
+
+
+
+
+
+
+
+
+
+
+        .quiz__hint {
+            display: none;
+        }
+
+
+    }
+
+    
+}
+
+// .get-price {
+//     @media (max-width:$tablet) {
+//         .get-price__top {
+//             display: block;
+//         }
+
+//         br {
+//             display: none;
+//         }
+
+//         .get-price__title-desc {
+//             margin-left: 0rem;
+//             margin-top: 0rem;
+//             padding-top: 4rem;
+//             margin-bottom: 3rem;
+//         }
+
+//         .get-price__features {
+//             margin-left: 0rem;
+//             margin-top: 0rem;
+//         }
+
+//         .get-price-feature {
+//             width: 31rem;
+//         }
+
+//         .get-price-feature__desc {
+//             font-size: 1.6rem;
+//         }
+
+//         .get-price__quiz {
+//             display: block;
+//         }
+
+//         .quiz__hint {
+//             display: none;
+//         }
+
+//         .quiz {
+//             width: 100%;
+//         }
+
+//         .quiz__body {
+//             display: block;
+//         }
+
+//         .input__field {
+//             width: 76rem;
+//         }
+
+//         .quiz .swiper-button-next {
+//             left: 60rem;
+//         }
+//     }
+// }

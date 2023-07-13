@@ -33,12 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
               console.log(quiz.classList)
               quiz.classList.remove("quiz--last__slide")
               
-              
               // classList.add
             }
-            
-            
-            
           }
         }
       });
@@ -57,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Адаптация
         breakpoints: {
           768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
           },
 
           1024: {
@@ -80,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         breakpoints: {
           768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
           },
 
           1024: {

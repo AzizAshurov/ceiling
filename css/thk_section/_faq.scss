@@ -142,7 +142,27 @@
   }
 
 .faq {
+    @media (max-width:1024px) {
+        .faq-card__question-title {
+            font-size: 2.3rem;
+        }
+
+        .faq-card {
+            --closer-width: 3.7rem;
+        }
+        
+        .faq-card__answer-desc {
+            font-size: 2rem;
+        }
+    }
+
     @media (max-width:$mobile) {
+        .faq-card {
+            --closer-width: 2.2rem;
+            --closer-height: 1.4rem
+        }
+
+
         .faq::before {
             content: "";
             clip-path: polygon(75% 63%, 100% 63%, 100% 100%, 0 100%, 0 47%);

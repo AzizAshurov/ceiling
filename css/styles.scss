@@ -48,6 +48,12 @@ html {
     font-size: #{'calc(var(--fz-modifier) * var(--base-size))'};//calc(0.342466 * var(--base-size)); //10px for 1920×1000
     --tr-regular: all 0.3s ease;
     --tr: 0.3s;
+
+
+    @media (max-width:$tablet) {
+      --fz-modifier: 1.008062;
+    }
+
     @media (max-width:$mobile) {
       --fz-modifier: 3.125;
     }
