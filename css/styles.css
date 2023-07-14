@@ -6314,12 +6314,13 @@ button {
     grid-gap: 0rem;
   }
   .hero-thk .ceil-header__tel {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .hero-thk .ceil-header__slogan {
     display: flex;
     width: 30%;
     flex-wrap: wrap;
+    font-size: 1.8rem;
   }
   .hero-thk .hero-thk__content {
     display: block;
@@ -6395,7 +6396,8 @@ button {
   .hero-thk .hero-thk-script {
     font-size: 1.2rem;
     margin-left: 1rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -6522,10 +6524,10 @@ button {
     padding-top: 1.5rem;
     margin-bottom: 3rem;
   }
-  .yandex .yandex__top::before {
+  .yandex .yandex__top-title::before {
     content: "";
     width: 31rem;
-    height: 11.7rem;
+    height: 15rem;
     -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
   }
@@ -6656,8 +6658,8 @@ button {
     width: 100%;
     height: 100%;
     left: 0;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 7% 76%, 0 100%, 0 75%, 0% 75%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 7% 76%, 0 100%, 0 75%, 0% 75%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 7% 75%, 0 100%, 0 75%, 0% 75%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 7% 75%, 0 100%, 0 75%, 0% 75%);
   }
 }
 
@@ -7047,6 +7049,7 @@ button {
   .recommendation .recommendation__media-bullets {
     display: block;
     position: relative;
+    padding-top: 1rem;
   }
   .recommendation .recommendation__media-bullet:nth-child(1) {
     top: 0;
@@ -7104,12 +7107,15 @@ button {
     width: 30rem;
     height: 36rem;
     top: 72rem;
+    opacity: 1;
   }
   .recommendation .recommendation__media-img {
-    width: 200%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
     height: 100%;
-    margin-left: -18rem;
-    margin-top: 0rem;
+    margin-left: -3rem;
+    margin-top: 1rem;
   }
   .recommendation .recommendation__bottom-title {
     font-size: 2.5rem;
@@ -7117,6 +7123,9 @@ button {
     padding-top: 1.5rem;
     padding-bottom: 0rem;
     margin-left: 0rem;
+  }
+  .recommendation .recommendation__bottom {
+    padding-top: 1rem;
   }
   .recommendation .recommendation__bottom:before {
     content: "";

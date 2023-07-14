@@ -339,6 +339,7 @@
         .recommendation__media-bullets {
             display: block;
             position: relative;
+            padding-top: 1rem;
         }
 
         .recommendation__media-bullet:nth-child(1) {
@@ -406,14 +407,15 @@
             width: 30rem;
             height: 36rem;
             top: 72rem;
-            
+            opacity: 1;
         }
 
         .recommendation__media-img {
-            width: 200%;
+            object-fit: cover;
+            width: 100%;
             height: 100%;
-            margin-left: -18rem;
-            margin-top: 0rem;
+            margin-left: -3rem;
+            margin-top: 1rem;
         }
 
         .recommendation__bottom-title {
@@ -422,6 +424,10 @@
             padding-top: 1.5rem;
             padding-bottom: 0rem;
             margin-left: 0rem;
+        }
+
+        .recommendation__bottom {
+            padding-top: 1rem;
         }
 
         .recommendation__bottom:before {
