@@ -7045,6 +7045,7 @@ button {
   content: "";
   background-image: url(/img/thank-u/recommendation/circle.png);
   background-repeat: no-repeat;
+  background-size: contain;
   display: block;
   -o-object-fit: contain;
      object-fit: contain;
@@ -7595,6 +7596,7 @@ button {
 .rewies-top-slide__nav .swiper-button-prev::before {
   content: "";
   background-image: url(/img/components/swiper-btn/prev.svg);
+  background-repeat: no-repeat;
   width: 0.6rem;
   filter: brightness(0) invert(1);
   height: 1rem;
@@ -7615,6 +7617,7 @@ button {
 .rewies-top-slide__nav .swiper-button-next::after {
   content: "";
   background-image: url(/img/components/swiper-btn/prev.svg);
+  background-repeat: no-repeat;
   width: 0.6rem;
   filter: brightness(0) invert(1);
   height: 1rem;
@@ -7657,6 +7660,7 @@ button {
 .rewies-bottom-slide__nav2 .swiper-button-prev::before {
   content: "";
   background-image: url(/img/components/swiper-btn/prev.svg);
+  background-repeat: no-repeat;
   width: 0.6rem;
   filter: brightness(0) invert(1);
   height: 1rem;
@@ -7677,6 +7681,7 @@ button {
 .rewies-bottom-slide__nav2 .swiper-button-next::after {
   content: "";
   background-image: url(/img/components/swiper-btn/prev.svg);
+  background-repeat: no-repeat;
   width: 0.6rem;
   height: 1rem;
   filter: brightness(0) invert(1);

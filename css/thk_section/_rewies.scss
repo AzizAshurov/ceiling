@@ -67,6 +67,7 @@
 .rewies-top-slide__nav .swiper-button-prev::before {
     content: "";
     background-image: url(/img/components/swiper-btn/prev.svg);
+    background-repeat: no-repeat;
     width: 0.6rem;
     filter: brightness(0) invert(1); 
     height: 1rem;
@@ -89,6 +90,7 @@
 .rewies-top-slide__nav .swiper-button-next::after {
     content: "";
     background-image: url(/img/components/swiper-btn/prev.svg);
+    background-repeat: no-repeat;
     width: 0.6rem;
     filter: brightness(0) invert(1); 
     height: 1rem;
@@ -139,6 +141,7 @@
 .rewies-bottom-slide__nav2 .swiper-button-prev::before {
     content: "";
     background-image: url(/img/components/swiper-btn/prev.svg);
+    background-repeat: no-repeat;
     width: 0.6rem;
     filter: brightness(0) invert(1); 
     height: 1rem;
@@ -161,6 +164,7 @@
 .rewies-bottom-slide__nav2 .swiper-button-next::after {
     content: "";
     background-image: url(/img/components/swiper-btn/prev.svg);
+    background-repeat: no-repeat;
     width: 0.6rem;
     height: 1rem;
     filter: brightness(0) invert(1); 
