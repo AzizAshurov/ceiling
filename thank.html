@@ -48,22 +48,24 @@
                 
             </div>  
 
-            <div class="lead__form thk__form">
-                <label for="" class="input thk__input">
-                    <input placeholder="Напишите ваш адрес" name="user_geo" type="text" class="input__field">
-                    <img src="./img/thank-u/hero/geo.svg" alt="" class="input__icon">
-                </label>
-                
-                <label for="" class="input thk__input">
-                    <input placeholder="Напишите ваш номер" name="user_tel" type="tel" class="input__field">
-                    <img src="./img/thank-u/hero/tel.svg" alt="" class="input__icon">
-                </label>
-                
-                <button type="submit" class="btn lead__form-btn" href="">
-                <span class="btn__text">Записаться на замер</span></button>
-                <p class="lead__form-bottom">Нажимая кнопку “Заказать звонок”, 
-                <br>Вы даёте согласие на обработку своих<br>персональных данных.</p>
-            </div> 
+            <form id="lead__form" action="/mail.php/" method="POST">
+                <div class="lead__form thk__form">
+                    <label for="" class="input thk__input">
+                        <input placeholder="Напишите ваш адрес" name="user_geo" type="text" class="input__field">
+                        <img src="./img/thank-u/hero/geo.svg" alt="" class="input__icon">
+                    </label>
+                    
+                    <label for="" class="input thk__input">
+                        <input placeholder="Напишите ваш номер" name="user_tel" type="tel" class="input__field">
+                        <img src="./img/thank-u/hero/tel.svg" alt="" class="input__icon">
+                    </label>
+                    
+                    <button type="submit" class="btn lead__form-btn" href="">
+                    <span class="btn__text">Записаться на замер</span></button>
+                    <p class="lead__form-bottom">Нажимая кнопку “Заказать звонок”, 
+                    <br>Вы даёте согласие на обработку своих<br>персональных данных.</p>
+                </div> 
+            </form>
         </div>
         
         <p class="hero-thk__offer-desc">Также на замере вы сможете</p>
@@ -702,6 +704,7 @@
 
 
 <script src="./js/libs/swiper.js"></script>
+<script src="./js/forms.js"></script>
 <script src="./js/libs/inputmask.js"></script>
 <script src="./js/libs/fancybox.umd.js"></script>
 <script src="./js/libs/_bayan.js"></script>

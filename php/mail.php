@@ -1,8 +1,8 @@
 <?php
 require_once('../../../../../../wp-load.php');
 
-$message_name = 'Animation school заявки';
-$message_email = 'boffeer@beefheads.ru';
+$message_name = 'Заявки';
+$message_email = 'aziz.ashurov31@yandex.ru';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Получаем все поля из формы и файл, если он есть
