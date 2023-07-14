@@ -62,6 +62,71 @@
 }
 
 .similar {
+    @media (max-width:1600px) {
+        .similar__content::before {
+            width: 70%;
+            clip-path: polygon(0 0, 100% 0%, 72% 100%, 0% 100%);
+        }
+    }
+
+    @media (max-width:1536px) {
+        .similar__content::before {
+            width: 70%;
+            clip-path: polygon(0 0, 100% 0%, 72% 100%, 0% 100%);
+        }
+    }
+
+    @media (max-width:1440px) {
+        .similar__content::before {
+            width: 70%;
+            clip-path: polygon(0 0, 100% 0%, 72% 100%, 0% 100%);
+        }
+    }
+
+    @media (max-width:1366px) {
+        .similar__content::before {
+            width: 66%;
+            clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+        }
+    }
+
+    @media (max-width:1280px) {
+        .similar__content::before {
+            width: 60%;
+            clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+        }
+    }
+
+    @media (max-width:1024px){
+        .similar__content {
+            display: block;
+        }
+
+        .similar__info {
+            margin-bottom: 0rem;
+            padding-bottom: 2rem;
+        }
+
+        .similar__content::before {
+            clip-path: none;
+            width: 50%;
+        }
+
+        .similar__info-title {
+            padding-top: 3rem;
+            font-size: 4.9rem;
+        }
+
+        .similar__info-desc {
+            font-size: 1.9rem;
+        }
+
+        .similar__info-desc--bold {
+            font-size: 2.9rem;
+        }
+
+    }
+
     @media (max-width:$tablet) {
         .similar__content {
             display: block;
@@ -82,6 +147,34 @@
             font-size: 5rem;
         }
 
+    }
+
+    @media (max-width:810px) {
+        .similar__info-title {
+            font-size: 4rem;
+        }
+
+        .similar__info-desc {
+            font-size: 1.6rem;
+        }
+
+        .similar__info-desc--bold {
+            font-size: 2.4rem;
+        }
+    }
+
+    @media (max-width:768px) {
+        .similar__info-title {
+            font-size: 4rem;
+        }
+
+        .similar__info-desc {
+            font-size: 1.6rem;
+        }
+
+        .similar__info-desc--bold {
+            font-size: 2.4rem;
+        }
     }
 
     @media (max-width:$mobile) {

@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         // Адаптация
         breakpoints: {
-          768: {
-            slidesPerView: 3,
+          650: {
+            slidesPerView: 2,
           },
 
           1024: {
@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         },
         breakpoints: {
-          768: {
-            slidesPerView: 3,
+          650: {
+            slidesPerView: 2,
           },
 
           1024: {
@@ -99,7 +99,11 @@ document.addEventListener('DOMContentLoaded', function () {
           prevEl: ".rewies-top-button-prev",
         },
         breakpoints: {
-          768: {
+          650: {
+            slidesPerView: 2,
+          },
+
+          962: {
             slidesPerView: 3,
           },
         },

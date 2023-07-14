@@ -242,8 +242,25 @@
             font-size: 2.4rem; 
         }
 
+        .hero-thk__offer {
+            margin-left: 0rem;
+        }
+
+        .hero-thk__offer-desc {
+            margin-left: 0rem;
+        }
+
         .hero-thk__offer-subtitle {
             font-size: 2.4rem; 
+        }
+
+        .hero-thk__info {
+            gap: 0rem;
+        }
+
+        .hero-thk__info-card {
+            margin-left: 1rem;
+            margin-right: 1rem;
         }
 
         .lead__form-bottom {
@@ -254,6 +271,10 @@
             font-size: 4rem;
         }
 
+        .hero-thk-script {
+            margin-left: 0rem;
+            padding-bottom: 2rem;
+        }
         
     }
     
@@ -281,14 +302,14 @@
         }
 
         .hero-thk__offer-title {
-            font-size: 3.4rem;
+            font-size: 5.3rem;
             margin-bottom: 0rem;
         }
 
         
 
         .hero-thk__offer-subtitle {
-            font-size: 1.4rem;
+            font-size: 1.8rem;
         }
 
         .thk__form {
@@ -333,7 +354,7 @@
         }
 
         .lead__form-bottom {
-            font-size: 1.2rem;
+            font-size: 1.6rem;
             margin-top: 0rem;
         }
 
@@ -354,7 +375,7 @@
         }
 
         .hero-thk__info-card-desc {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             text-align: center;
         }
         
@@ -362,6 +383,35 @@
             font-size: 1.2rem;
             margin-left: 1rem;
             margin-bottom: 2.5rem;
+        }
+    }
+
+    @media (max-width:810px) {
+        .hero-thk__offer-title {
+            font-size: 4.5rem;
+        }
+
+        .hero-thk__offer-subtitle {
+            font-size: 1.9rem;
+        }
+
+
+        .hero-thk__info {
+            gap: 0rem;
+            margin-left: 0rem;
+            margin-right: 0rem;
+        }
+
+        .hero-thk__info-card {
+            width: 24rem;
+        }
+
+        br {
+            display: none;
+        }
+
+        .hero-thk-script {
+            padding-bottom: 3rem;
         }
     }
 
@@ -400,10 +450,20 @@
 
         .hero-thk-script {
             font-size: 1.8rem;
+            padding-bottom: 3rem;
+        }
+
+        .hero-thk__info-card {
+            width: 22.6rem;
+        }
+        br {
+            display: none;
+        }
+        .hero-thk__info-card-desc {
+            text-align: center;
+            width: 19rem;
         }
     }
-
-
 
     @media (max-width:$mobile) {
         .ceil-header__container {
