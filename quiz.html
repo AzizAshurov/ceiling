@@ -54,7 +54,7 @@
                 </div>
                 <div class="quiz__body">
                     <div class="quiz__steps">
-                        <form class="swiper quiz__swiper">
+                        <form id="lead__form" action="/mail.php/" method="POST" class="swiper quiz__swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide quiz__step">
                                     <h4 class="quiz__step-title">Укажите Вашу площадь</h4>
@@ -96,7 +96,7 @@
                                                 <span class="check__box"></span>
                                                 <div class="check__media">
                                                     <picture class="check__pic">
-                                                        <img class="check__img" src="/img/land/get-price/quiz/second-step/pic1.jpg" alt="">
+                                                        <img class="check__img" src="./img/land/get-price/quiz/second-step/pic1.jpg" alt="">
                                                     </picture>
                                                 </div>
                                                 Одноуровневые
@@ -107,7 +107,7 @@
                                                 <span class="check__box"></span>
                                                 <div class="check__media">
                                                     <picture class="check__pic">
-                                                        <img class="check__img" src="/img/land/get-price/quiz/second-step/pic2.jpg" alt="">
+                                                        <img class="check__img" src="./img/land/get-price/quiz/second-step/pic2.jpg" alt="">
                                                     </picture>
                                                 </div>
                                                 Многоуровневые
@@ -118,7 +118,7 @@
                                                 <span class="check__box"></span>
                                                 <div class="check__media">
                                                     <picture class="check__pic">
-                                                        <img class="check__img" src="/img/land/get-price/quiz/second-step/pic3.jpg" alt="">
+                                                        <img class="check__img" src="./img/land/get-price/quiz/second-step/pic3.jpg" alt="">
                                                     </picture>
                                                 </div>
                                                 Парящие
@@ -129,7 +129,7 @@
                                                 <span class="check__box"></span>
                                                 <div class="check__media">
                                                     <picture class="check__pic">
-                                                        <img class="check__img" src="/img/land/get-price/quiz/second-step/pic4.jpg" alt="">
+                                                        <img class="check__img" src="./img/land/get-price/quiz/second-step/pic4.jpg" alt="">
                                                     </picture>
                                                 </div>
                                                 Резные
@@ -140,7 +140,7 @@
                                                 <span class="check__box"></span>
                                                 <div class="check__media">
                                                     <picture class="check__pic">
-                                                        <img class="check__img" src="/img/land/get-price/quiz/second-step/pic5.jpg" alt="">
+                                                        <img class="check__img" src="./img/land/get-price/quiz/second-step/pic5.jpg" alt="">
                                                     </picture>
                                                 </div>
                                                 Нужна консультация
@@ -320,8 +320,8 @@
                             <span class="quiz__button-text-prev">Назад</span></div>
                             <div class="swiper-button-next quiz__button-next">
                             <span class="quiz__button-text-next">Далее</span></div>
-                            
                         </div>
+
                         <button type="submit" class="btn quiz__form-btn" href="">
                             <span class="btn__text">Получить результаты и бонусы</span></button>
                     </div>
@@ -351,6 +351,7 @@
 
 <script src="./js/libs/swiper.js"></script>
 <script src="./js/libs/inputmask.js"></script>
+<script src="./js/forms.js"></script>
 <script src="./js/libs/fancybox.umd.js"></script>
 <script src="./js/select.js"></script>
 <script src="./js/script.js"></script>

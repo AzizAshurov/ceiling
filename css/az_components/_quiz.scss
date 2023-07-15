@@ -310,7 +310,7 @@
     border-radius: 1.5rem;
     background: #fff;
     box-shadow: 0 1px 8px 0 rgba(0,0,0,.4);
-    background-image: url(/img/land/get-price/chekbox/cheked-circle.svg);
+    background-image: url(../img/land/get-price/chekbox/cheked-circle.svg);
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center;
@@ -373,7 +373,7 @@
 
 .check__input-last:checked + .check__box-last  {
     background: #fff;
-    background-image: url(/img/land/get-price/chekbox/cheked.svg);
+    background-image: url(../img/land/get-price/chekbox/cheked.svg);
 }
 
 

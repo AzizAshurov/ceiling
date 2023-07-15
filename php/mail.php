@@ -1,5 +1,4 @@
 <?php
-require_once('../../../../../../wp-load.php');
 
 $message_name = 'Заявки';
 $message_email = 'aziz.ashurov31@yandex.ru';

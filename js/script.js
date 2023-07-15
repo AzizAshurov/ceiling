@@ -50,6 +50,10 @@ document.addEventListener('DOMContentLoaded', function () {
           clickable: true,
 
         },
+        navigation: {
+          nextEl: ".example-next",
+          prevEl: ".example-prev",
+        },
         // Адаптация
         breakpoints: {
           650: {
@@ -73,6 +77,10 @@ document.addEventListener('DOMContentLoaded', function () {
           el: ".swiper-pagination",
           clickable: true,
 
+        },
+        navigation: {
+          nextEl: ".recommendation-next",
+          prevEl: ".recommendation-prev",
         },
         breakpoints: {
           650: {

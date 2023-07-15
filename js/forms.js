@@ -34,14 +34,14 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       
       async function sendData(data) {
-        return await fetch('/php/mail.php/', {
+        return await fetch(window.location.origin + '/mail.php', {
           method: 'POST',
           headers: { 'Content-Type': 'multipart/form-data' },
           body: data,
         })
       }
 
-      async function handleFormSubmit(event) {
+    async function handleFormSubmit(event) {
         event.preventDefault()
       
         const data = serializeForm(event.target)

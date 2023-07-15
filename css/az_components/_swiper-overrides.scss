@@ -23,7 +23,7 @@
 
 .quiz .swiper-button-prev::before {
     content: "";
-    background-image: url(/img/components/swiper-btn/prev.svg);
+    background-image: url(../img/components/swiper-btn/prev.svg);
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
@@ -78,7 +78,7 @@
 
 .quiz .swiper-button-next::after {
     content: "";
-    background-image: url(/img/components/swiper-btn/next.svg);
+    background-image: url(../img/components/swiper-btn/next.svg);
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;

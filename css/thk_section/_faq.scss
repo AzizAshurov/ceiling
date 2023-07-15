@@ -76,10 +76,14 @@
     padding-left: 1rem;
     padding-right: 1rem;
 
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
+   border-radius: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.10);
     background: #F9FAFB;
+}
+
+.bayan--opened .faq-card__question  {
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
 }
 
 .faq-card__answer {
