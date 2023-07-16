@@ -2122,6 +2122,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   text-decoration: none;
   text-align: center;
   position: relative;
+  cursor: pointer;
 }
 
 .btn::after {
@@ -2164,10 +2165,10 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     opacity: 1;
   }
 }
-@media (any-hover: 992px) {
-  .btn:hover::before {
-    opacity: 0;
-  }
+
+.btn--loading {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .input {
