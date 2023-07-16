@@ -185,6 +185,12 @@
 
         .similar__content {
             display: block;
+            margin-top: -5.6rem;
+            padding-bottom: 6.9rem;
+        }
+
+        br {
+            display: none;
         }
 
         .similar__info {
@@ -203,7 +209,8 @@
         }
 
         .similar__info-desc--bold {
-            font-size: 2.5rem;
+            font-size: 2rem;
+            
         }
 
         .similar__content::before {
@@ -211,7 +218,7 @@
             width: 100%;
             height: 100%;
             left: 0;
-            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 7% 75%, 0 100%, 0 75%, 0% 75%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 65.8%, 38% 65.8%, 0 100%, 0 75%, 0% 75%);
         }
 
 

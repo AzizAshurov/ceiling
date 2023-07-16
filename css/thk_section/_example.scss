@@ -217,18 +217,27 @@
         .example__offer-title::before {
             content: "";
             position: absolute;
-            width: 31rem;
-            height: 13.7rem;
-            margin-top: -2.4rem;
-            clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+            width: 31.3rem;
+            height: 11.8rem;
+            margin-top: -1.4rem;
+            clip-path: polygon(0 0, 93% 0, 100% 100%, 0% 100%);
         }
 
         .example__offer-title {
             margin-bottom: -5.5rem;
             font-size: 2.57rem;
             font-style: normal;
-            padding-top: 2.4rem;
+            padding-top: 6.4rem;
             margin-left: 0rem;
+        }
+
+        .example__img {
+            height: 24rem;
+            width: 27.3rem;
+        }
+
+        .example__pagination.swiper-pagination {
+            margin-top: -3.2rem;
         }
     }
 }

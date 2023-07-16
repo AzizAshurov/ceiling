@@ -155,6 +155,10 @@
     margin-top: 1rem;
 }
 
+.hidden {
+    display: none;
+}
+
 .lead__form-bottom {
     color: #282828;
     text-align: center;
@@ -475,10 +479,8 @@
         }
 
         .ceil-header__slogan {
-            display: flex;
-            width: 30%;
-            flex-wrap: wrap;
-            font-size: 1.8rem;
+
+            font-size: 1.4rem;
         }
 
         .hero-thk__content {
@@ -555,7 +557,8 @@
             margin-top: 0rem;
             align-items: center;
             width: 29rem;
-            margin-left: 1.5rem;
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: 1.5rem;
         }
         

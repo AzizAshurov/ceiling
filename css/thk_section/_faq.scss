@@ -146,6 +146,7 @@
   }
 
 .faq {
+    
     @media (max-width:1024px) {
         .faq-card__question-title {
             font-size: 2.3rem;
@@ -161,15 +162,10 @@
     }
 
     @media (max-width:$mobile) {
+
         .faq-card {
             --closer-width: 2.2rem;
             --closer-height: 1.4rem
-        }
-
-
-        .faq::before {
-            content: "";
-            clip-path: polygon(75% 63%, 100% 63%, 100% 100%, 0 100%, 0 47%);
         }
 
         .faq-btn {
@@ -180,6 +176,12 @@
 
         .faq__top-title {
             font-size: 2.5rem;
+        }
+
+        .faq-card__question {
+            padding-left: 0.5rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
         }
 
         .faq-card__question-title {
@@ -193,6 +195,7 @@
         .faq__bottom {
             margin-bottom: -8rem;
         }
+
         .market-footer-wrap {
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
