@@ -152,6 +152,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
         new Inputmask(maskOptions).mask(tel);
       })
+
+  const telLinks = document.querySelectorAll('a[href^="tel:"]')
+  telLinks.forEach((tel) => {
+    tel.addEventListener('click', () => {
+      if (typeof ym == 'undefined') {
+        console.warn('Кажется, метрика не подключена');
+        return;
+      };
+
+      ym(94322465,'reachGoal','click-phone');
+    })
+  })
 })
   
   
