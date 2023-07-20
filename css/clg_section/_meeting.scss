@@ -1,35 +1,12 @@
 .meeting {
-
+    background-image: url(../img/land/meeting/meeting-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-
-.meeting::before {
-    content: "";
-    position: absolute;
-    z-index: -2;
-    height: 130%;
-    width: 100%;
-    background: #FFCF57;
-    clip-path: polygon(0 0, 100% 0, 100% 48%, 43% 48%, 0 7%);
-}
-
-
 
 .meeting__container {
 
 }
-
-.meeting__container::before {
-    content: "";
-    position: absolute;
-    z-index: -2;
-    margin-bottom: -1rem;
-    left: 0;
-    height: 73.5%;
-    width: 100%;
-    background: #129EE1;
-    clip-path: polygon(0 100%, 100% 100%, 100% 84.7%, 42.9% 84.7%, 0 12.4%);
-}
-
 
 .meeting__title {
     color: #232529;
@@ -38,14 +15,16 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
-    padding-top: 8.9rem;
+    padding-top: 9.5rem;
 }
 
 .meeting__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 24rem;
+    padding-bottom: 25rem;
 }
+
+
 
 
 .meeting__offer {

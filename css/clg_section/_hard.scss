@@ -18,7 +18,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
-    padding-top: 9.9rem;
+    padding-top: 12rem;
 }
 
 .hard__subtitle {
@@ -28,7 +28,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 148.9%;
-    padding-top: 1rem;
+    padding-top: 0.8rem;
 }
 
 .hard__desc {
@@ -42,7 +42,7 @@
 }
 
 .hard__desc:nth-of-type(2) {
-    padding-top: 2.2rem;
+    padding-top: 2.8rem;
 }
 
 .hard__desc:nth-of-type(2)::before {
@@ -74,10 +74,10 @@
 
 
 .hard__media {
-    width: 56.7rem;
-    height: 68.4rem;
-    margin-top: 11.9rem;
-    margin-left: 1.7rem;
+    width: 57.5rem;
+    height: 69.3rem;
+    margin-top: 13.6rem;
+    margin-left: 2.1rem;
 }
 
 .hard__media::after {
@@ -85,10 +85,12 @@
     background-color: #FFCE56;
     position: absolute;
     z-index: -1;
+    right: 0;
     width: 19.5%;
-    height: 64.2%;
-    margin-top: -12rem;
-    clip-path: polygon(56% 0%, 100% 0, 100% 100%, 0 100%, 0% 15%);
+    height: 73.9%;
+    margin-top: -10.4rem;
+    -webkit-clip-path: polygon(56% 0%, 100% 0, 100% 100%, 0 100%, 0% 15%);
+    clip-path: polygon(47% 0%, 100% 0, 100% 100%, 0 100%, 0% 13%);
 }
 
 .hard__media-pic {

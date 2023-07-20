@@ -1,5 +1,7 @@
 .lighting {
-
+    background: #FBFBFB;
+    position: relative;
+    z-index: 0;
 }
 
 .lighting__container {
@@ -13,8 +15,20 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
+    padding-top: 3.4rem;
 }
 
+.lighting__title::before {
+    content: "";
+    background: #F0C45B;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 13.9rem;
+    margin-top: -3rem;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 9% 100%, 0% 49%);
+}
 .lighting__subtitle {
     color: #282828;
     font-size: 2.5rem;
@@ -22,22 +36,43 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
+    padding-top: 5.2rem;
 }
 
 .lightning__gallery {
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3.8rem;
+    padding-bottom: 8.2rem;
 }
 
 .lightning-type-card {
 
 }
 
-.lighting__types__card-media {
+.lightning-type-card:nth-of-type(2) {
+margin-top: 11.1rem;
+}
 
+.lightning-type-card:nth-of-type(3) {
+    margin-top: 11.1rem;
+    }
+
+
+.lighting__types__card-media {
+    width: 26rem;
+    height: 26rem;
+    margin-top: 3.7rem;
+}
+
+.lighting__types__card-pic {
+    width: 100%;
+    height: 100%;
 }
 
 .lighting__types__card-img {
-    
+    width: 100%;
+    height: 100%;
 }
 
 .lightning-types__content {
@@ -52,6 +87,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
+    padding-top: 2.1rem;
 }
 
 .lightning-types-card__desc {

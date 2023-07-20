@@ -1,17 +1,18 @@
 .cta {
-
+    background-image: url(/img/land/may/24bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
 }
 
 .cta_container {
-
+    max-width: 38rem;
 }
 
-.cta__media {
-
-}
 
 .lead__cta {
-
+    
 }
 
 .lead__cta-title {
@@ -22,6 +23,19 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
+    padding-top: 31.5rem;
+}
+
+.lead__cta-title::before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    z-index: -1;
+    width: 43.4rem;
+    height: 59.8rem;
+    margin-left: -8.7rem;
+    margin-top: -3.4rem;
+
 }
 
 .lead__cta-subtitle {
@@ -32,6 +46,15 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
+    margin-top: 1.6rem;
+}
+
+.cta-lead__form {
+    position: relative;
+    display: grid;
+    gap: 2.4rem;
+    width: 100%;
+    margin-top: 3.7rem;
 }
 
 .lead__cta-text {
@@ -42,4 +65,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-top: 2.7rem;
+    padding-bottom: 15rem;
+}
+
+.cta__input {
+    border-radius: 8rem;
+    border: 0.1rem solid #EFEFEF;
 }
