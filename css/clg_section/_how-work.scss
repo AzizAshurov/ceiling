@@ -15,7 +15,7 @@
     font-weight: 700;
     line-height: 116.9%;
     padding-top: 2.2rem;
-    margin-left: -0.5rem;
+    margin-left: -0.2rem;
     margin-bottom: 10.3rem;
 }
 
@@ -24,7 +24,7 @@
     background: #F0C45B;
     position: absolute;
     z-index: -1;
-    width: 110.5rem;
+    width: 57.5%;
     height: 22.9rem;
     left: 0;
     top: 0;
@@ -52,6 +52,7 @@
     z-index: 3;
     background: url(../img/land/how-work/01.svg);
     background-size: contain;
+    background-repeat: no-repeat;
     width: 11.6rem;
     height: 2.9rem;
     margin-top: 14.6rem;
@@ -65,7 +66,7 @@
     z-index: 2;
     background: url(../img/land/how-work/line.png);
     background-size: contain;
-
+    background-repeat: no-repeat;
     margin-top: 1rem;
     margin-left: 1rem;
 }
@@ -78,6 +79,7 @@
     z-index: 3;
     background: url(../img/land/how-work/02.svg);
     background-size: contain;
+    background-repeat: no-repeat;
     width: 11.6rem;
     height: 2.9rem;
     margin-top: -17.2rem;
@@ -91,6 +93,7 @@
     z-index: 3;
     background: url(../img/land/how-work/03.svg);
     background-size: contain;
+    background-repeat: no-repeat;
     width: 2.96rem;
     height: 12rem;
     margin-top: -2rem;
@@ -118,6 +121,7 @@
     z-index: 3;
     background: url(../img/land/how-work/04.svg);
     background-size: contain;
+    background-repeat: no-repeat;
     width: 11.6rem;
     height: 2.9rem;
     margin-top: 14.6rem;
@@ -131,6 +135,7 @@
     z-index: 3;
     background: url(../img/land/how-work/05.svg);
     background-size: contain;
+    background-repeat: no-repeat;
     width: 11.6rem;
     height: 2.9rem;
     margin-top: 1.6rem;
@@ -166,6 +171,8 @@
     line-height: 116.9%;
     
 }
+
+
 
 
 .how-work__step-desc {

@@ -6,7 +6,7 @@
 
 .trash::before {
     content: "";
-    --clip: polygon(0 0, 100% 0%, 100% 100%, 43% 100%, 0 25%);
+    --clip: polygon(0 0, 100% 0%, 100% 100%, 42.3% 100%, 0 25.5%);
     z-index: 2;
     position: absolute;
     height: 100%;
@@ -42,7 +42,7 @@
 }
 
 .trash__offer-title {
-    margin-left: 0.6rem;
+    margin-left:-0.4rem;
     font-family: "bebas", sans-serif;
     font-weight: 700;
     font-size: 7.09rem;
@@ -74,7 +74,7 @@
     font-weight: 400;
     font-size: 1.806rem;
     line-height: 148.9%;
-    padding-top: 2.4rem;
+    padding-top: 2.6rem;
 }
 
 .trash-text--bold {
@@ -90,7 +90,7 @@
     margin-top: 11.4rem;
     padding-left: 5rem;
     margin-left: 2rem;
-    padding-bottom: 12rem;
+    padding-bottom: 10.4rem;
     
 }
 

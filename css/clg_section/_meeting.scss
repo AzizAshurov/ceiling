@@ -2,9 +2,34 @@
 
 }
 
+.meeting::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    height: 130%;
+    width: 100%;
+    background: #FFCF57;
+    clip-path: polygon(0 0, 100% 0, 100% 48%, 43% 48%, 0 7%);
+}
+
+
+
 .meeting__container {
 
 }
+
+.meeting__container::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    margin-bottom: -1rem;
+    left: 0;
+    height: 73.5%;
+    width: 100%;
+    background: #129EE1;
+    clip-path: polygon(0 100%, 100% 100%, 100% 84.7%, 42.9% 84.7%, 0 12.4%);
+}
+
 
 .meeting__title {
     color: #232529;
@@ -13,14 +38,22 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
+    padding-top: 8.9rem;
 }
 
 .meeting__content {
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 24rem;
 }
 
-.meeting__offer {
 
+.meeting__offer {
+    border-radius: 5rem;
+    background: #FFF;
+    margin-top: 6.2rem;
+    padding-bottom: 4.4rem;
+    margin-right: -2.1rem;
 }
 
 .meeting__offer-title {
@@ -30,6 +63,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 148.9%;
+    padding-top: 3.4rem;
+    margin-left: 5rem;
 }
 
 .meeting__offer-price {
@@ -39,11 +74,14 @@
     font-style: normal;
     font-weight: 700;
     line-height: 148.9%;
+    margin-top: -4rem;
+    margin-left: 5rem;
 }
 
 .meeting__text-upper {
     font-size: 4rem;
     vertical-align: super;
+    margin-left: -2rem;
 }
 
 .meeting__offer-bottom {
@@ -53,10 +91,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: 148.9%;
+    margin-top: -7.1rem;
+    margin-left: 5rem;
 }
 
 .meeting__info {
-
+    margin-left: 8rem;
+    margin-top: 6rem;
 }
 
 .meeting__info-title {
@@ -80,4 +121,5 @@
     font-style: normal;
     font-weight: 400;
     line-height: 148.9%;
+    padding-top: 1rem;
 }

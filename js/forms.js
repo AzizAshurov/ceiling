@@ -18,6 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //Осбираем данные из формы и отправляем их в mail.php
     const formData = new FormData(formNode)
+
+    let redirectUrl = '';
+    if (formData.get('redirect') != null) {
+      redirectUrl = formData.get('redirect');
+    }
+
     const response = await sendData(formData);
 
     // Меняем текст кнопки на галочку
@@ -32,6 +38,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Чистим поля формы
     formNode.reset();
 
+    setTimeout(() => {
+      if (redirectUrl != '') {
+        window.location.href = redirectUrl;
+      }
+    }, 1000)
+
     /*
     ✓  0. При отправке формы заменить текст кнопки на «отправвляем» и сделать ее некликабельной.
     ✓    1. Запомнить иходный текст кнопки
@@ -44,7 +56,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }  
 
   async function sendData(data) {
-    ym(94322465,'reachGoal','submit-form-thanks')
+    if (typeof ym != 'undefined') {
+      if (data.get('ym-event') != null) {
+        // ym(94322465,'reachGoal','submit-form-thanks')
+        ym(94322465,'reachGoal', data.get('ym_event'));
+      }
+    } else {
+      console.warn('Не подключена яндекс метрика')
+    }
+    
     const response = await fetch(window.location.origin + '/ceiling/php/mail.php', {
       method: 'POST',
       body: data,

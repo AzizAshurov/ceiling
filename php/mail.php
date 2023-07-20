@@ -7,7 +7,7 @@ $config = array(
     'telegram' => false,
     'google_sheets' => false,
     'logfile' => false,
-    'amo' => false,
+    'amo' => true,
 	'wirecrm' => false,
 );
 

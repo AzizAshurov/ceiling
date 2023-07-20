@@ -14,9 +14,38 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
+    padding-top: 9.3rem;
 }
 
-.budda__subtitle {
+
+
+
+
+.budda__list {
+    display: grid;
+    grid-template-columns: 1fr 40rem;
+}
+
+.budda__media {
+    width: 104rem;
+    height: 88rem;
+    margin-left: -24.9rem;
+    margin-top: 1rem;
+}
+
+.budda__media-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.budda__media-img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.budda__list-title {
     color: #129EE1;
     font-size: 2.5rem;
     font-family: 'roboto', sans-serif;
@@ -26,30 +55,52 @@
     border-radius: 4rem;
     background: #FFF;
     display: inline-block;
+    margin-top: 4.2rem;
+    margin-left: -39.7rem;
+    padding-top: 3.3rem;
+    padding-left: 6.3rem;
+    padding-right: 10.4rem;
+    padding-bottom: 3.2rem;
+    margin-bottom: 4.7rem;
 }
 
-.budda__list {
-
-}
-
-.budda__list-title {
+.budda__list-subtitle {
     color: #FFF;
     font-size: 5.7rem;
     font-family: 'Bebas', sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
+    margin-left: -33.8rem;
 }
 
 .budda__list-bullets {
+    display: grid;
+    gap: 1.9rem;
     color: #FFF;
     font-size: 2.1rem;
     font-family: 'roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 148.9%;
+    margin-left: -34.2rem;
+    margin-top: 1.2rem;
 }
 
+.budda__list-bullet:nth-child(2) {
+    margin-left: 3rem;
+}
 
+.budda__list-bullet:nth-child(3) {
+    margin-left: 5.9rem;
+}
+
+.budda__list-bullet:nth-child(4) {
+    margin-left: 8.9rem;
+}
+
+.budda__list-bullet:nth-child(5) {
+    margin-left: 11.8rem;
+}
 
 

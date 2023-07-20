@@ -1,3 +1,7 @@
+/*
+    Есть модификатор similar--reverse, который сделает текст справа, а картинку слева
+*/
+
 .similar {
     background-image: url(../img/thank-u/similar/similar.jpg);
     background-repeat: no-repeat;
@@ -5,6 +9,10 @@
     background-size: contain;
     background-position: bottom right;
     position: relative;
+}
+
+.similar--reverse {
+    background-position: bottom left;
 }
 
 .similar__container {
@@ -24,13 +32,21 @@
     width: 130.1rem;
     height: 100%;
     left: 0;
-    clip-path: polygon(0 0, 100% 0%, 71.5% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 73% 100%, 0% 100%);
+}
+.similar--reverse .similar__content::before {
+    left: unset;
+    right: 0;
+    transform: scale(-1);
 }
 
 .similar__info {
     margin-bottom: 14.7rem;
     position: relative;
     z-index: 1;
+}
+.similar--reverse .similar__info {
+    grid-column-start: 2;
 }
 
 .similar__info-title {

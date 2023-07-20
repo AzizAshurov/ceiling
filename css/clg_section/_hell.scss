@@ -23,7 +23,7 @@
     margin-right: auto;
     text-align: center;
     background: #F0C45B;
-    padding-top: 4.5rem;
+    padding-top: 5.5rem;
     padding-bottom: 4.5rem;
     font-family: "bebas", sans-serif;
     font-weight: 700;
@@ -31,7 +31,7 @@
     font-size: 7.09rem;
     line-height: 116.9%;
     text-transform: uppercase;
-    margin-bottom: 13.2rem;
+    margin-bottom: 12.75rem;
     
 }
 
@@ -62,7 +62,7 @@ position: relative;
     font-weight: 700;
     line-height: 116.9%;
     position: relative;
-    margin-left: 5rem;
+    margin-left: 5.5rem;
     margin-bottom: 8.8rem;
     
 }
@@ -88,17 +88,17 @@ position: relative;
     line-height: 148.9%;
     font-style: normal;
     font-weight: 400;
-    margin-left: 6.4rem;
+    margin-left: 6.8rem;
     position: relative;
 }
 
 .hell__info-desc:nth-of-type(2) {
-    padding-top: 1.1rem;
+    padding-top: 0.7rem;
 
 }
 
 .hell__info-desc:nth-of-type(3) {
-    padding-top: 1.1rem;
+    padding-top: 1rem;
 
 }
 
@@ -128,12 +128,14 @@ position: relative;
 
 .hell__media {
     display: block;
+
 }
 
 .hell__media-char {
-    margin-top: -16.4rem;
+    margin-top: -16.8rem;
     object-fit: contain;
-    padding-left: 1.1rem;
+    padding-left: 0.4rem;
+    height: 60.4rem;
 }
 
 .hell__media-desc {

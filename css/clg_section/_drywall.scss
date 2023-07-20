@@ -1,5 +1,5 @@
 .drywall {
-
+    
 }
 
 .drywall__container {
@@ -17,23 +17,60 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
+    padding-top: 3.9rem;
+}
+
+.drywall__top-title::before {
+    content: "";
+    background: #F0C45B;
+    position: absolute;
+    z-index: -1;
+    width: 72%;
+    height: 22.8rem;
+    margin-top: -4.4rem;
+    left: 0;
+    -webkit-clip-path: polygon(0 0, 89% 0, 100% 100%, 12.2% 100%, 0% 49.2%);
+    clip-path: polygon(0 0, 100% 0%, 89% 100%, 0% 100%);
+}
+
+.drywall__top-content {
+    display: grid;
+    grid-template-columns: 24rem auto;
+    margin-bottom: 4rem;
 }
 
 .drywall__top-media {
+    width: 24.3rem;
+    height: 17.5rem;
+    margin-top: 4.4rem;
+    margin-left: -3.9rem;
+}
 
+.drywall__top-pic {
+    width: 100%;
+    height: 100%;
 }
 
 .drywall__top-img {
-
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 .drywall__top-info {
+    
+}
+
+.drywall__top-info-title {
     color: #282828;
     font-size: 4rem;
     font-family: 'Bebas', sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
+    margin-top: 4rem;
+    margin-left: 5.5rem;    
 }
 
 .drywall__top-info-subtitle {
@@ -43,6 +80,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 145%;
+    margin-left: 6rem;
 }
 
 .drywall__bottom {
@@ -56,15 +94,95 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
+    padding-top: 2.8rem;
+    padding-bottom: 3.3rem;
+}
+
+.drywall__bottom-title::before {
+    content: "";
+    background: #F0C45B;
+    position: absolute;
+    z-index: -1;
+    width: 80.5%;
+    height: 11.3rem;
+    margin-top: -2.8rem;
+    left: 0;
+    -webkit-clip-path: polygon(0 0, 89% 0, 100% 100%, 12.2% 100%, 0% 49.2%);
+    clip-path: polygon(0 0, 93% 0, 100% 100%, 0% 100%);
+}
+
+.drywall__bottom-columns {
+    display: grid;
+    grid-template-columns: auto 58.7rem;
+     
+}
+
+.drywall__bottom-columns::before {
+    content: "";
+    background: #FBFBFB;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 77%;
+    left: 0;
 }
 
 .drywall__bottom-column {
 
+    padding-left: 6.4rem;
+    display: flex;
+    flex-direction: column;
 }
+
+.drywall__bottom-column:nth-of-type(2) {
+    box-shadow: -20px 0px 74px 0px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    margin-left: 0.7rem;
+    margin-right: -1rem;
+    padding-left: 9.7rem;
+    padding-bottom: 7.8rem;
+}
+
+.drywall__bottom-column-card {
+    display: flex;
+    
+    margin-left: 3.2rem;
+}
+
+.drywall__bottom-column-card:nth-of-type(1) {
+    margin-top: 5.4rem;
+}
+
+.drywall__bottom-column-card:nth-of-type(2),
+.drywall__bottom-column-card:nth-of-type(3),
+.drywall__bottom-column-card:nth-of-type(4) {
+    margin-top: -0.3rem;
+}
+
+.drywall__bottom-column-card:nth-of-type(6) {
+    margin-top: -1rem;
+}
+
+
+
+
+
+.drywall__bottom-column-card::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url(../img/land/art/check-mark.svg);
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 2.2rem;
+    margin-left: -3.84rem;
+}
+
 
 .drywall__bottom-column-text {
     color: #282828;
-    font-size: 2.6rem;
+    font-size: 2rem;
     font-family: 'roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -74,4 +192,5 @@
 .drywall__text-bold {
     color: #129EE1;
     font-weight: 700;
+    font-size: 2.6rem;
 }

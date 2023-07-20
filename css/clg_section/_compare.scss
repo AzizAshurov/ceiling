@@ -1,5 +1,7 @@
 .compare {
     background: #FBFBFB;
+    position: relative;
+    z-index: -22;
 }
 
 .compare__container {
@@ -13,62 +15,95 @@
     font-style: normal;
     font-weight: 700;
     line-height: 116.9%;
+    padding-top: 4.3rem;
+    margin-bottom: 5rem;
+}
+
+.compare__title::before {
+    content: "";
+    background: #F0C45B;
+    position: absolute;
+    z-index: -1;
+    width: 72%;
+    height: 22.8rem;
+    margin-top: -4.4rem;
+    left: 0;
+    -webkit-clip-path: polygon(0 0, 89% 0, 100% 100%, 12.2% 100%, 0% 49.2%);
+    clip-path: polygon(0 0, 89% 0, 100% 100%, 12.2% 100%, 0% 49.2%);
 }
 
 .compare__content {
-
+    display: grid;
+    grid-template-columns: 60rem 1fr;
 }
 
 .compare__media {
-
+    width: 89rem;
+    height: 68rem;
+    margin-left: -20rem;
 }
 
-.compare__bottom-img {
-
+.compare-pic {
+    width: 100%;
+    height: 100%;
 }
 
-.compare__content-text {
+.compare-img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.compare__info-title {
     color: #282828;
     font-size: 2rem;
     font-family: 'roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 148.9%;
+    padding-top: 3.2rem;
 }
 
-.compare__text-bold {
+.compare__info-bold {
     font-weight: 700;
 }
 
-.compare__info {
-
-}
-
-.compare__info-text {
+.compare__info-subtitle {
     color: #282828;
     font-size: 2rem;
     font-family: 'roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 148.9%;
-    background: #fff;
     display: inline-block;
+    margin-top: 2.1rem;
+    margin-left: -0.2rem;
+
+    border-radius: 5rem;
+    background: #FFF;
+    padding-top: 2.9rem;
+    padding-bottom: 5rem;
+    padding-left: 6rem;
+    padding-right: 6.6rem;
 }
 
-.compare__info-text-bold {
-    font-weight: 700;
-}
-
-.compare__bottom {
-
-}
-
-
-.compare__bottom-text{
+.compare__info-desc {
     color: #129EE1;
     font-size: 2rem;
     font-family: 'roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: 148.9%;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 0rem;
+    margin-bottom: -1rem;
+
+    border-radius: 5rem 5rem 0 0;
+    background: #FFF;
+    padding-top: 3.8rem;
+    padding-left: 5.8rem;
+    padding-right: 6.4rem;
+    padding-bottom: 4rem;
 }

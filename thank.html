@@ -17,7 +17,7 @@
 
 
 <!-- Hero-thk -->
-<section class="hero-thk">
+<section id="hero-thk" class="hero-thk">
 <!-- Header -->
     <header class="ceil-header">
         <div class="ceil-header__container container">
@@ -50,6 +50,7 @@
 
             <form id="lead__form" class="js_form" action="/mail.php" method="POST">
                 <div class="lead__form thk__form">
+                    <input type="hidden" name="ym_event" value="submit-form-thanks">
                     <label class="input thk__input">
                         <input placeholder="Напишите ваш адрес" name="user_geo" type="text" class="input__field">
                         <img src="./img/thank-u/hero/geo.svg" alt="" class="input__icon">
@@ -126,7 +127,7 @@
 <!-- Yandex -->
 
 <!-- Similar -->
-<section class="similar">
+<!-- <section class="similar">
     <div class="container similar__container">
         <div class="similar__content">
             <div class="similar__info">
@@ -149,10 +150,36 @@
         </div>
     </div>
 </section>
+
+<section class="similar similar--reverse">
+    <div class="container similar__container">
+        <div class="similar__content">
+            <div class="similar__info">
+                <h2 class="similar__info-title">Но ведь везде продают одни 
+                <br>и те же потолки и разницы <br>нет никакой в цене!</h2>
+                <p class="similar__info-desc">Материал везде одинаковый. А вот стоимость работ 
+                <br>зависит от качества и предоставляемых гарантий.</p>
+                <p class="similar__info-desc">Если Вы ищите самое дешевое предложение на 
+                <br>рынке, то смело можете закрывать данную статью.</p>
+                <p class="similar__info-desc">А если Вы не хотите, чтобы через полгода потолок 
+                <br>порвался, начал провисать или 
+                <br>вонять или что-то еще начало отклеиваться, то <br>читайте статью.</p>
+                <p class="similar__info-desc"><span class="similar__info-desc--bold">
+                На фото представлены 2 разные <br>исполнения обхода трубы</span></p>
+                <p class="similar__info-desc">В первом случае женщине предложили сделать за 
+                <br>дешево. Результат в виде обхода можете увидеть <br>сами.</p>
+            </div>
+
+            
+        </div>
+    </div>
+</section> -->
+
+
 <!-- Similar -->
 
 <!-- Example -->
-<section class="example">
+<!-- <section class="example">
     <div class="container example__container">
         <div class="example__offer">
             <h2 class="example__offer-title">Не верите? Подготовили еще <br>несколько примеров 
@@ -242,7 +269,7 @@
 
                     <div class="swiper-slide example__slide">
                         <a href="./img/thank-u/example/example14.JPG" data-fancybox="example">
-                            <img class="example__img" src="./img/thank-u/example/example14.jpg" alt="">
+                            <img class="example__img" src="./img/thank-u/example/example14.JPG" alt="">
                         </a>
                     </div>
 
@@ -260,15 +287,15 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- Example -->
 
 <!-- Recommendation -->
 <section class="recommendation">
     <div class="container recommendation__container">
         <div class="recommendation__offer">
-            <h2 class="recommendation__offer-title">Узнайте, почему 70% 
-            <br>наших клиентов приходят<br> по рекомендации</h2>
+            <h2 class="recommendation__offer-title">Правильно, обратиться к компании у 
+            которой 70% клиентов приходят <br>по рекомендации, так как мы:</h2>
             <p class="recommendation__offer-desc">Наши преимущества помимо 
             <br>14 лет работы и 200 000 кв. м <br>установленных потолков</p>
         </div>
@@ -368,13 +395,13 @@
 
                         <div class="swiper-slide recommendation__slide">
                             <a href="./img/thank-u/recommendation/gallery/example6.JPG" data-fancybox="recommendation">
-                                <img class="recommendation__img" src="./img/thank-u/recommendation/gallery/example6.jpg" alt="">
+                                <img class="recommendation__img" src="./img/thank-u/recommendation/gallery/example6.JPG" alt="">
                             </a>
                         </div>
     
                         <div class="swiper-slide recommendation__slide">
                             <a href="./img/thank-u/recommendation/gallery/example7.JPG" data-fancybox="recommendation">
-                                <img class="recommendation__img" src="./img/thank-u/recommendation/gallery/example7.jpg" alt="">
+                                <img class="recommendation__img" src="./img/thank-u/recommendation/gallery/example7.JPG" alt="">
                             </a>
                         </div>
 
@@ -685,8 +712,9 @@
             </div>
 
         <div class="faq__bottom">
-            <button type="submit" class="btn faq-btn" href="">
-            <span class="btn__text">Записаться на замер</span></button>
+            <a class="btn faq-btn" href="#hero-thk">
+                <span class="btn__text" >Записаться на замер</span>
+            </a>
         </div>
 
         <footer class="market-footer">

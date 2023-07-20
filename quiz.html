@@ -32,10 +32,8 @@
 
                 <div class="get-price-feature">
                     <img class="get-price__item-img" src="./img/land/get-price/stop.svg" alt="">
-                    <p class="get-price-feature__desc">ТОП-5 ошибок
-                    <br>при подборе
-                    <br>компании по монтажу 
-                    <br>натяжных потолков</p>
+                    <p class="get-price-feature__desc">Сколько на самом деле <br>стоит монтаж потолка. 
+                    Практическое пособие, <br>как не переплатить за повторный ремонт </p>
                 </div>
 
                 <div class="get-price-feature">
@@ -54,7 +52,9 @@
                 </div>
                 <div class="quiz__body">
                     <div class="quiz__steps">
-                        <form id="lead__form"  action="/mail.php/" method="POST" class="swiper quiz__swiper js_form">
+                        <form id="lead__form"  action="/mail.php" method="POST" class="swiper quiz__swiper js_form">
+                            <input type="hidden" name="redirect" value="https://beefheads.ru/ceiling/thank.html?_ym_debug=1">
+                            <input type="hidden" name="ym_event" value="submit-quiz-form">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide quiz__step">
                                     <h4 class="quiz__step-title">Укажите Вашу площадь</h4>
@@ -198,7 +198,7 @@
                                 </div>
     
                                 <div class="swiper-slide quiz__step">
-                                    <h4 class="quiz__step-title">Выберите материал</h4>
+                                    <h4 class="quiz__step-title">Выберите вид материал</h4>
                                         <div class="form-select__cards form-select__card--small">
                                                 <label class="check">
                                                     <input class="check__input" type="radio" name="step-4" checked>
@@ -301,11 +301,11 @@
                                     <h4 class="quiz__step-title">📲 Введите телефон, который привязан к WhatsApp,<br> Telegram, Viber. Чтобы мы могли отправить 
                                     💰расчёт <br>стоимости и закрепить бонус 🎁</h4>
                                     <label for="" class="input quiz__input">
-                                        <input placeholder="+7 (777)-777-77-77" name="user_tel" type="tel" class="field input__field">
+                                        <input placeholder="+7 (777)-777-77-77" name="user_tel" type="tel" class="field input__field" required>
                                         <img src="./img/land/lead/tel.svg" alt="" class="input__icon">
                                     </label>
                                     <label class="check-last">
-                                        <input class="check__input-last" type="checkbox">
+                                        <input class="check__input-last" type="checkbox" required>
                                         <span class="check__box-last"></span>
                                         Я согласен с политикой конфиденциальности
                                     </label>
@@ -335,11 +335,13 @@
             
             <div class="quiz__hint">
                 <h3 class="get-price__end-title">В конце теста вы узнаете</h3>
-                <p class="get-price__end-subtitle">Как не дать себя обсчитать при заказе 
-                <br>натяжных потолков. 7 моментов на 
-                <br>которые следует обратить внимание 
-                <br>при замере</p>
-
+                <p class="get-price__end-subtitle">Сколько на самом деле стоит 
+                заказать натяжной потолок. И как не совершить ошибку при выборе компании </p>
+                <media class="quiz__hint-media">
+                    <picture class="quiz__hont-pic">
+                        <img class="quiz__hint-img" src="./img/land/get-price/hint-men.png" alt="">
+                    </picture>
+                </media>
                 <p class="get-price__boss-title">Андрей Гольцман</p>
                 <p class="get-price__boss-subtitle">Руководитель компании</p>
             </div>
@@ -349,6 +351,23 @@
 </section>
 <!-- quiz -->
 
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(94322465, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/94322465" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
 
 <script src="./js/libs/swiper.js"></script>
