@@ -108,7 +108,7 @@
 
 .hero__media-bullet:nth-of-type(3) {
     top: 37.6%;
-    left: 45.3%;
+    left: 44.3%;
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-right: 10rem;
@@ -182,8 +182,16 @@
 
 .hero {
     @media (max-width:1600px) {
+        .ceil-header__slogan {
+            font-size: 1.7rem;
+        }
+
         .hero__content  {
             margin-bottom: 3rem;
+        }
+
+        .hero__offer {
+            padding-top: 7rem;
         }
 
         .hero__media-bullet:nth-of-type(1) {
@@ -240,57 +248,301 @@
         .hero__content  {
             margin-bottom: 3rem;
         }
+
+        .hero__offer-title {
+            margin-bottom: 7rem;
+        }
+
+        .hero__media {
+            width: 110%;
+            left: -2rem;
+        }
+        
+        .hero__info {
+            margin-bottom: 4.4rem;
+        }
     }
 
     @media (max-width:1366px) {
         .hero__media {
-            left: 5rem;
+            width: 125%;
+            left: -12rem;
+        }
+
+        .hero__info {
+            margin-bottom: 1.6rem;
+        }
+
+        .hero__offer-title {
+            font-size: 7.8rem;
         }
 
         .hero__media-bullet:nth-of-type(1) {
-            top: 43%;
+            top: 26.4%;
+            left: 62.9%;
         }
 
         .hero__media-bullet:nth-of-type(2) {
-            top: 51.2%;
-            left: 62%;
+            top: 38.7%;
+            left: 61.5%;
         }
 
         .hero__media-bullet:nth-of-type(3) {
-            top: 48.6%;
-            left: 39.3%;
+            top: 34.6%;
+            left: 41.8%;
         }
 
+
         .hero__media-bullet:nth-of-type(4) {
-            top: 58%;
-            left: 45.5%;
+            top: 45.8%;
+            left: 44.5%;
         }
     }
 
     @media (max-width:1280px) {
         .hero__media {
-            left: 5rem;
+            width: 118%;
+            left: -7rem;
+        }
+
+        .hero__media-bullet {
+            font-size: 1.6rem;
         }
 
         .hero__media-bullet:nth-of-type(1) {
-            top: 43%;
+            top: 29%;
         }
 
         .hero__media-bullet:nth-of-type(2) {
-            top: 51.2%;
+            top: 41.2%;
             left: 62%;
         }
 
         .hero__media-bullet:nth-of-type(3) {
-            top: 48.6%;
-            left: 39.3%;
+            top: 38.6%;
+            left: 39%;
         }
 
         .hero__media-bullet:nth-of-type(4) {
-            top: 58%;
+            top: 50%;
             left: 45.5%;
         }
     }
+
+    @media (max-width:1024px) {
+        .ceil-header {
+            padding-top: 2rem;
+        }
+
+        .ceil-header__slogan {
+            font-size: 2rem;
+        }
+
+        .hero__offer {
+            padding-top: 4rem;
+        }
+
+        .hero__content {
+            margin-bottom: 1rem;
+        }
+
+        .hero__offer-title {
+            margin-bottom: 2rem;
+        }
+
+        .hero__media {
+            width: 140%;
+            left: -19.3rem;
+        }
+
+        .hero__offer-title {
+            font-size: 7rem;
+        }
+
+        .hero__media-bullet:nth-of-type(1) {
+            top: 24%;
+        }
+
+        .hero__media-bullet:nth-of-type(2) {
+            top: 37.2%;
+        }
+
+        .hero__media-bullet:nth-of-type(3) {
+            top: 32%;
+        }
+
+        .hero__media-bullet:nth-of-type(4) {
+            top: 45%;
+        }
+
+        .hero__info {
+            margin-bottom: -1.3rem;
+        }
+
+    }
+
+    @media (max-width:$tablet) {
+        
+    }
+
+    @media (max-width:810px) {
+        
+        .hero__content {
+            display: block;
+        }
+
+        .hero__offer {
+            text-align: center;
+        }
+
+        .hero__media {
+            width: 100%;
+            position: relative;
+            left: -8rem;
+            padding-top: 3.8rem;
+        }
+
+        .hero__media-bullet:nth-of-type(1) {
+            top: 16%;
+            left: 58%;
+        }
+
+        .hero__media-bullet:nth-of-type(2) {
+            top: 32%;
+            left: 57%;
+        }
+
+        .hero__media-bullet:nth-of-type(3) {
+            top: 23%;
+            left: 25%;
+        }
+
+        .hero__media-bullet:nth-of-type(4) {
+            top: 41%;
+            left: 37%;
+        }
+
+        .hero__info {
+            margin-top: -1.5rem;
+            padding-top: 0rem;
+            margin-bottom: -4.6rem;
+        }
+
+        .hero__info-card-desc {
+            font-size: 1.6rem;
+        }
+    }
+
+    @media (max-width:768px) {
+        .hero__media-bullet:nth-of-type(1) {
+            top: 16%;
+            left: 58%;
+        }
+
+        .hero__media-bullet:nth-of-type(2) {
+            top: 32%;
+            left: 57%;
+        }
+
+        .hero__media-bullet:nth-of-type(3) {
+            top: 23%;
+            left: 23%;
+        }
+
+        .hero__media-bullet:nth-of-type(4) {
+            top: 41%;
+            left: 35%;
+        }
+    }
+
+    @media (max-width:$mobile) {
+        .ceil-header__container {
+            grid-gap: 0rem;
+          }
+
+        .ceil-header__tel {
+            font-size: 1.3rem;
+        }
+
+        .ceil-header__slogan {
+
+            font-size: 1.4rem;
+        }
+
+        .hero__content {
+            margin-bottom: 1.5rem;
+        }
+
+        .hero__offer {
+            text-align: left;
+            margin-bottom: 0.9rem;
+        }
+
+        .hero__offer-title {
+            font-size: 3.5rem;
+        }
+
+        .hero__media-bullet {
+            display: none;
+        }
+
+        .hero__info {
+            display: block;
+        }
+
+        .hero__offer-title {
+            margin-bottom: 4.4rem;
+        }
+
+        .hero__offer-btn {
+            padding: 2.1rem 6.4rem;
+        }
+
+        .btn__text {
+            font-size: 1.5rem;
+        }
+
+        .hero__media {
+            width: 30rem;
+            height: 40rem;
+            left: -1rem;
+            padding-top: 0rem;
+        }
+
+        .hero__media-char {
+            height: 100%;
+            width: 100%;
+        }
+
+        .hero__info-card {
+            align-items: center;
+            padding-top: 3.3rem;
+            padding-right: 2rem;
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero__info-card-icon {
+            height: 3.4rem;
+        }
+
+        .hero__info-card-desc {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .hero__info-card-desc br {
+            display: none;
+        }
+    }
+
+
+
+
+
+
+
+    
 }
 
 

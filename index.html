@@ -13,14 +13,20 @@
 
 <body>
 
-<!-- Header -->
-
- 
-
-<!-- Header -->
-
 <!-- Hero -->
     <section class="hero">
+<!-- Header -->
+    <header class="ceil-header">
+        <div class="ceil-header__container container">
+            <span class="ceil-header__slogan">
+                Натяжные потолки
+            </span>
+            <div class="ceil-header__contacts">
+                <a href="tel:+79876543210" class="ceil-header__tel">+7 (987) 654-32-10</a>
+            </div>
+        </div>
+    </header>
+<!-- Header -->
         <div class="container hero__container">
             
             <div class="hero__content">
@@ -32,11 +38,14 @@
                 </div>
 
                 <div class="hero__media">
-                    <img class="hero__media-char" src="./img/land/hero/hero-char.png" alt="">
+                    <picture class="hero__media-pic">
+                        <source srcset="./img/land/hero/hero-char-adaptive.png" media="(max-width: 601px)">
+                        <img class="hero__media-char" src="./img/land/hero/hero-char.png" alt="">
+                    </picture>
                     <p class="hero__media-bullet">Гарантия 20 лет</p>
-                    <p class="hero__media-bullet">Установим без швов</p>
-                    <p class="hero__media-bullet">Все работы включены</p>
-                    <p class="hero__media-bullet">Уберем мусор</p>
+                        <p class="hero__media-bullet">Установим без швов</p>
+                        <p class="hero__media-bullet">Все работы включены</p>
+                        <p class="hero__media-bullet">Уберем мусор</p>
                 </div>
             </div>
 
@@ -147,6 +156,7 @@
                 
                 <div class="horror__media">
                     <picture class="horror__pic">
+                        <source srcset="./img/land/horror/men-adaptive.png" media="(max-width: 1024px)">
                         <img class="horror__media-img" src="./img/land/horror/men.png" alt="">
                     </picture>
                 </div>
@@ -321,20 +331,21 @@
                 </div>
             </div>
 
-
-            <h3 class="trust__subtitle">ЕСЛИ КОРОТКО:
-            <br>- НА 100%</h3>
-            <p class="trust__subtitle-desc">На рынке натяжных потолков, чтобы<br> 
-            выделиться но фоне других компаний, 
-            <br>достаточно быть честным и <span class="trust__text-bold">
-            делать <br>свою работу качественно.</span></p>
             <div class="trust__founder">
                 <div class="trust__founder-media">
                     <picture class="trust__founder-pic">
                         <img src="./img/land/trust/director.png" alt="" class="trust__founder-img">
                     </picture>
                 </div>
-                <div class="trust__founder-about">
+
+                <div class="trust__founder-info">
+                    <h3 class="trust__subtitle">ЕСЛИ КОРОТКО:
+                    <br>- НА 100%</h3>
+                    <p class="trust__subtitle-desc">На рынке натяжных потолков, чтобы<br> 
+                    выделиться но фоне других компаний, 
+                    <br>достаточно быть честным и <span class="trust__text-bold">
+                    делать <br>свою работу качественно.</span></p>
+
                     <p class="trust__founder-about-title"><span class="trust__founder-bold-title">
                     Меня зовут Андрей</span><br>- я владелец компании Комфорт Сервис.</p>
                     <p class="trust__founder-about-subtitle"><span class="trust__founder-bold">

@@ -156,3 +156,184 @@ position: relative;
     padding-bottom: 3rem;
     padding-right: 5.5rem;
 }
+
+.hell {
+    @media (max-width:1024px) {
+        .hell__info-title {
+            font-size: 4.5rem;
+        }
+
+        .hell__info::before {
+            margin-left: -3.2rem;
+            margin-top: 10.2rem;
+        }
+
+        .hell__info-title::before {
+            width: 47rem;
+            height: 18rem;
+        }
+
+        .hell__info-desc {
+            font-size: 1.6rem;
+            padding-bottom: 1.2rem;
+        }
+
+        .hell__info-desc br {
+            display: none;
+        }
+    }
+
+    @media (max-width:$tablet) {
+        .hell__title {
+            margin-bottom: 7.7rem;
+        }
+
+        .hell__media-char {
+            margin-top: -12.8rem;
+        }
+
+        .hell__info-title {
+            font-size: 4.2rem;
+        }
+
+        .hell__info::before {
+            margin-top: 11.2rem;
+        }
+
+        .hell__info-desc {
+            font-size: 1.7rem;
+        }
+    }
+
+    @media (max-width:810px) {
+        .hell__content {
+            display: block;
+            padding-bottom: 2rem;
+        }
+
+        .hell__info::before {
+            font-size: 30rem;
+            margin-left: -2.2rem;
+            margin-top: 5.5rem;
+        }
+
+        .hell__info-title::before {
+            width: 76rem;
+            height: 12rem;
+        }
+
+        .hell__info-title br {
+            display: none;
+        }
+
+        .hell__info-desc {
+            font-size: 2.5rem;
+        }
+
+        .hell__info-desc:nth-of-type(2) {
+            margin-left: 1rem;
+        }
+
+        .hell__info-desc:nth-of-type(3) {
+            margin-left: 1rem;
+        }
+
+        .hell__media {
+            text-align: center;
+        }
+
+        .hell__media-char {
+            margin-top: -8.8rem;
+        }
+
+        .hell__media-desc {
+            display: block;
+            font-size: 3.5rem;
+            margin-left: 0rem;
+            margin-right: 0rem;
+            margin-top: -0.4rem;
+        }
+    }
+
+    @media (max-width:$mobile) {
+        .hell__title {
+            font-size: 2.5rem;
+            margin-top: -2.1rem;
+            padding-top: 2.1rem;
+            padding-bottom: 2.9rem;
+            margin-bottom: 3.6rem;
+        }
+
+        .hell__info-title {
+            font-size: 2.5rem;
+            margin-left: 2.5rem;
+            width: 25rem;
+            margin-bottom: 5.2rem;
+        }
+
+        .hell__info-title::before {
+            width: 28.4rem;
+            height: 9.5rem;
+            left: -2.4rem;
+            right: 0;
+            top: -1.6rem;
+            border: 0.4rem solid #FFFFFF;
+        }
+
+        .hell__info-desc{
+            font-size: 1.5rem;
+            margin-left: 3.1rem;
+        }
+
+        .hell__info-desc:nth-of-type(2) {
+            margin-left: -0.5rem;
+            margin-top: -1.5rem;
+        }
+
+        .hell__info-desc:nth-of-type(3) {
+            margin-left: -0.5rem;
+            margin-top: 2.1rem;
+        }
+
+        .hell-text--hl {
+            font-size: 1.5rem;
+            padding-left: 0rem;
+            margin-left: -3.5rem;
+            margin-top: -2.4rem;
+        }
+
+        .hell__info::before {
+            font-size: 22rem;
+            margin-left: -2.2rem;
+            margin-top: 6rem;
+        } 
+
+        .hell__media-char {
+            height: 37rem;
+            margin-top: -8rem;
+            margin-left: -4.5rem;
+            position: relative;
+            z-index: -1;
+        }
+
+        .hell__media-desc br {
+            display: none;
+        }
+
+        .hell__media-desc {
+            white-space: normal;
+            margin-top: -7.5rem;
+            font-size: 1.8rem;
+            padding-right: 1rem;
+            padding-left: 1.5rem;
+            padding-top: 1rem;
+            padding-bottom: 1.5rem;
+            margin-left: -0.5rem;
+            margin-right: -0.5rem;
+        }
+
+        .hell__media {
+            padding-bottom: 1.5rem;
+        }
+    }
+}

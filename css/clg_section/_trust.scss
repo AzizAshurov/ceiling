@@ -93,7 +93,7 @@
 }
 
 .trust__subtitle-desc {
-    padding-left: 61.8rem;
+    padding-left: 4.5rem;
     padding-top: 4.4rem;
     color: #282828;
     font-size: 1.8rem;
@@ -110,15 +110,24 @@
 }
 
 .trust__founder-media {
-
+    width: 35rem;
+    height: 68rem;
 }
 
 .trust__founder-pic {
-
+    width: 100%;
+    height: 100%;
 }
 
 .trust__founder-img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
 
+.trust__founder-about {
+    
 }
 
 .trust__founder-about-title {
@@ -133,7 +142,7 @@
     background: #129EE1;
     margin-left: -24rem;
     margin-top: 2.2rem;
-    padding-bottom: 3.2rem;
+    padding-bottom: 3.7rem;
     padding-top: 3.4rem;
     padding-left: 5.8rem;
     padding-right: 6.6rem;
@@ -329,4 +338,38 @@
     font-style: normal;
     font-weight: 400;
     line-height: 148.9%;
+}
+
+.trust {
+    @media (max-width:1600px) {
+        .trust__founder-after-triangle {
+            top: 36.4%;
+        }
+
+        .trust__founder-after-triangle::before {
+            left: -0.7px;
+        }
+
+        .trust__founder-after-triangle::after {
+            left: -37.7px;
+        }
+    }
+
+    @media (max-width:1440px) {
+        .trust__founder-after-triangle {
+            top: 36.4%;
+        }
+
+        .trust__founder-after-triangle::before {
+            left: -2.7px;
+        }
+
+        .trust__founder-after-triangle::after {
+            left: -37.7px;
+        }
+    }
+
+    @media (max-width:1024px) {
+        
+    }
 }

@@ -153,3 +153,135 @@
     width: 100%;
     height: 100%;
 }
+
+.purity {
+    @media (max-width:1024px) {
+        .purity__top-title {
+            font-size: 5.5rem;
+        }
+
+        .purity__top-media {
+            margin-top: 3.3rem;
+            margin-left: 0rem;
+        }
+    }
+
+    @media (max-width:$tablet) {
+        .purity__top-title {
+            font-size: 4.4rem;
+            padding-top: 6rem;
+        }
+
+        .purity__top-media {
+            margin-top: -4.5rem;
+            margin-left: 0rem;
+        }
+
+        .purity__top-list {
+            margin-bottom: 1rem;
+        }
+
+        .purity__top-text {
+            margin-left: 0.5rem;
+        }
+
+        .purity__bottom-media {
+            margin-left: -3rem;
+        }
+    }
+
+    @media (max-width:810px) {
+        .purity__top-container {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .purity__top-title {
+            padding-top: 3rem;
+        }
+
+        .purity__top-list {
+            margin-bottom: 3rem;
+        }
+
+        .purity__top-media {
+            margin-top: -0.1rem;
+        }
+
+        .purity__bottom-container {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .purity__bottom-media {
+            margin-left: 0rem;
+        }
+
+        .purity__bottom-desc {
+            font-size: 1.6rem;
+        }
+    }
+
+    @media (max-width:768px) {
+        .purity__top-media {
+            margin-top: 1.4rem;
+        }
+    }
+
+    @media (max-width:$mobile) {
+        .purity__top-container{
+            display: block;
+        }
+
+        .purity__top-title {
+            font-size: 3rem;
+            padding-top: 4.8rem;
+            margin-left: -1.4rem;
+            padding-bottom: 1.9rem;
+        }
+
+        .purity__top-list br {
+            display: none;
+        }
+
+        .purity__top-list {
+            font-size: 1.5rem;
+        }
+
+        .purity__top-media {
+            width: 105%;
+            margin-top: -4.2rem;
+        }
+
+        .purity__bottom-container {
+            display: block;
+        }
+
+        .purity__bottom-desc br {
+            display: none;
+        }
+
+        .purity__bottom-desc {
+            font-size: 1.5rem;
+        }
+
+        .purity__bottom-desc:nth-child(1) {
+            margin-top: -0.4rem;
+        }
+
+        .purity__bottom-desc:nth-child(2){
+            margin-top: 0rem;
+            padding-top: 0.7rem;
+            padding-bottom: 7.7rem;
+        }
+
+        .purity__bottom-desc:nth-child(3){
+            margin-top: -5.9rem;
+        }
+
+        .purity__bottom-media {
+            width: 24rem;
+            height: 24rem;
+            margin-top: -0.8rem;
+            margin-left: 2rem;
+        }
+    }
+}
