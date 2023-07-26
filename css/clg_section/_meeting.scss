@@ -1,7 +1,7 @@
 .meeting {
     background-image: url(../img/land/meeting/meeting-bg.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .meeting__container {
@@ -101,4 +101,99 @@
     font-weight: 400;
     line-height: 148.9%;
     padding-top: 1rem;
+}
+
+.meeting {
+    @media (max-width:810px) {
+        .meeting__title {
+            font-size: 5rem;
+        }
+
+        .meeting__text-bold {
+            font-size: 3.5rem;
+        }
+
+        .meeting__info-subtitle br {
+            display: none;
+        }
+
+        .meeting__offer-price {
+            font-size: 5.5rem;
+        }
+
+        .meeting__offer-bottom {
+            font-size: 1.9rem;
+        }
+
+        .meeting__content {
+            padding-bottom: 14rem;
+        }
+    }
+
+    @media (max-width:$mobile) {
+        background-image: url(../img/land/meeting/meeting-bg-ad.png);
+        .meeting__title {
+            font-size: 3rem;
+            padding-top: 5.5rem;
+        }
+
+        .meeting__content {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            padding-bottom: 6.4rem;
+        }
+
+        .meeting__info {
+            margin-left: 0rem;
+            margin-top: 0rem;
+        }
+
+        .meeting__info-title {
+            font-size: 1.5rem;
+        }
+
+        .meeting__text-bold {
+            font-size: 2rem;
+        }
+
+        .meeting__info-subtitle {
+            font-size: 1.5rem;
+        }
+
+        .meeting__offer-title {
+            font-size: 1.5rem;
+            margin-left: 1.3rem;
+            padding-top: 0.4rem;
+            padding-bottom: 2rem;
+        }
+
+        .meeting__offer-price {
+            font-size: 3rem;
+            margin-left: 1.4rem;
+            padding-bottom: 4.9rem;
+        }
+
+        .meeting__offer-bottom {
+            font-size: 1.5rem;
+            margin-left: 1.4rem;
+        }
+
+        .meeting__offer-bottom br {
+            display: none;
+        }
+
+        .meeting__offer {
+            margin-top: 0.5rem;
+            margin-right: -0.8rem;
+            padding-bottom: 0.4rem;
+            margin-left: -0.8rem;
+        }
+
+        .meeting__text-upper {
+            font-size: 2rem;
+            vertical-align: super;
+            margin-left: 0rem;
+        }
+}
 }

@@ -104,3 +104,117 @@
 }
 
 
+.budda {
+    @media (max-width:1024px) {
+        .budda__list-bullets {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width:$tablet) {
+        .budda__list-bullet:nth-child(4) {
+            padding-right: 21rem;
+        }
+
+        .budda__list-bullet:nth-child(5) br {
+            display: none;
+        }
+
+        .budda__list-bullet:nth-child(5) {
+            padding-right: 21rem;
+        }
+    }
+
+    @media (max-width:810px) {
+        .budda__list {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
+
+        .budda__list-title {
+            text-align: center;
+            margin-left: 0rem;
+        }
+
+        .budda__list-subtitle{
+            margin-left: 0rem;
+        }
+
+        .budda__list-bullets {
+            margin-left: 0rem;
+            font-size: 2.2rem;
+        }
+
+        .budda__list-bullet:nth-child(2),
+        .budda__list-bullet:nth-child(3),
+        .budda__list-bullet:nth-child(4),
+        .budda__list-bullet:nth-child(5) {
+            margin-left: 0rem;
+        }
+
+        .budda__media{
+            margin-left: 0rem;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media (max-width:$mobile) {
+        .budda__title {
+            font-size: 3rem;
+            padding-top: 6.5rem;
+        }
+
+        .budda__list-title br {
+            display: none;
+        }
+
+        .budda__list-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            padding-top: 1.3rem;
+            padding-left: 1.8rem;
+            padding-right: 1.8rem;
+            padding-bottom: 0.6rem;
+            margin-bottom: 1.9rem;
+        }
+
+        .budda__list-subtitle {
+            font-size: 3rem;
+        }
+
+        .budda__list-bullets br {
+            display: none;
+        }
+
+        .budda__list-bullets {
+            font-size: 1.5rem;
+            margin-left: -2rem;
+        }
+
+        .budda__list-bullet:nth-child(4) {
+            padding-right: 0rem;
+            margin-top: -0.8rem;
+        }
+
+        .budda__list-bullet:nth-child(5) {
+            padding-right: 0rem;
+            margin-top: -1rem;
+        }
+
+        .budda__list-bullet:nth-child(2) {
+            margin-top: -0.5rem;
+        }
+
+        .budda__list-bullet:nth-child(3) {
+            margin-top: -1.2rem;
+        }
+
+        .budda__media {
+            margin-top: 4rem;
+        }
+    }
+}
+
