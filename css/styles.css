@@ -2238,7 +2238,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   border-radius: 2.1rem;
   background: #fff;
   width: 21rem;
-  height: 21rem;
+  height: 100%;
   padding-left: 1.7rem;
   display: flex;
   flex-direction: column;
@@ -2651,7 +2651,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   }
   .get-price .get-price-feature {
     width: 31rem;
-    height: 21rem;
+    height: 100%;
   }
   .get-price .get-price-feature__desc {
     font-size: 1.8rem;
