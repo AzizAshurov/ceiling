@@ -139,12 +139,12 @@
     background: #fff;
     margin-left: 0.7rem;
     margin-right: -1rem;
-    padding-left: 9.7rem;
+    padding-left: 10.7rem;
     padding-bottom: 7.8rem;
 }
 
 .drywall__bottom-column-card {
-    display: flex;
+    display: block;
     
     margin-left: 3.2rem;
 }
@@ -187,10 +187,257 @@
     font-style: normal;
     font-weight: 400;
     line-height: 148.9%;
+    margin-top: -2.6rem;
 }
 
 .drywall__text-bold {
     color: #129EE1;
     font-weight: 700;
     font-size: 2.6rem;
+    margin-top: 2.4rem;
+}
+
+.drywall {
+    @media (max-width:1600px) {
+        .drywall__bottom-title::before {
+            width: 86.2%;
+        }
+
+        .drywall__bottom-columns::before {
+            height: 96.3rem;
+        }
+    }
+
+    @media (max-width:1536px) {
+        .drywall__bottom-title::before {
+            width: 87.8%;
+        }
+    }
+
+    @media (max-width:1366px) {
+        .drywall__bottom-title::before {
+            width: 92.4%;
+        }
+    }
+
+    @media (max-width:1280px) {
+        .drywall__bottom-title::before {
+            width: 95.4%;
+        }
+    }
+
+    @media (max-width:1024px) {
+        .drywall__bottom-column {
+            padding-left: 3.1rem;
+        }
+
+        .drywall__bottom-columns::before {
+            height: 88.3rem;
+        }
+
+        .drywall__bottom-column:nth-of-type(2) {
+            margin-right: 3.3rem;
+            padding-left: 4.7rem;
+            margin-left: 8.1rem;
+            padding-right: 1rem;
+        }
+
+        .drywall__bottom-column-text {
+            font-size: 1.8rem;
+        }
+    }
+
+    @media (max-width:$tablet) {
+        .drywall__bottom-columns {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .drywall__bottom-column:nth-of-type(2) {
+            margin-left: -2rem;
+        }
+
+        .drywall__top-title::before {
+            width: 78%;
+        }
+    }
+
+    @media (max-width:810px) {
+        .drywall__top-title {
+            font-size: 4.8rem;
+        }
+
+        .drywall__top-title::before {
+            height: 20.8rem;
+        }
+
+        .drywall__top-info-title {
+            margin-left: 0rem;
+        }
+
+        .drywall__top-info-subtitle {
+            margin-left: 0rem;
+        }
+
+        .drywall__bottom-title {
+            font-size: 3.9rem;
+        }
+
+        .drywall__bottom-column-text br {
+            display: none;
+        }
+
+        .drywall__bottom-column {
+            padding-right: 5rem;
+        }
+
+        .drywall__bottom-title::before {
+            width: 94.4%;
+        }
+
+        .drywall__bottom-columns::before {
+            height: 98.9rem;
+        }
+    }
+
+    @media (max-width:768px) {
+        .drywall__bottom-columns::before {
+            height: 103.1rem;
+        }
+
+        .drywall__bottom-column-text {
+            font-size: 1.9rem;
+        }
+
+        .drywall__text-bold {
+            font-size: 2.2rem;
+        }
+
+        .drywall__bottom-column:nth-of-type(2) {
+            padding-left: 2.7rem;
+        }
+
+        .drywall__bottom-title {
+            font-size: 3.7rem;
+        }
+
+        .drywall__top-title {
+            font-size: 4.6rem;
+        }
+    }
+
+    @media (max-width:$mobile) {
+        .drywall__top-title-adaptive {
+            font-size: 3.5rem;
+            padding-right: 18rem;
+        }
+
+        .drywall__top-title {
+            font-size: 2.5rem;
+            padding-top: 5.2rem;
+            margin-left: -0.5rem;
+        }
+
+        .drywall__top-title::before {
+            margin-top: -2.4rem;
+            height: 14.3rem;
+            width: 90%;
+            clip-path: polygon(0 0, 89.9% 0, 100% 100%, 0% 100%);
+        }
+
+        .drywall__top-content {
+            display: block;
+            
+        }
+
+        .drywall__top-media {
+            margin-left: 1.9rem;
+        }
+
+        .drywall__top-info-title {
+            font-size: 2.2rem;
+            margin-top: 1.4rem;
+            text-align: center;
+            margin-bottom: -1rem;
+        }
+
+        .drywall__top-info-subtitle {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .drywall__bottom-title {
+            font-size: 2.5rem;
+            padding-bottom: 2.9rem;
+            padding-top: 2.9rem;
+        }
+
+        .drywall__bottom-title::before {
+            margin-top: -1.9rem;
+            height: 9.8rem;
+            width: 97.4%;
+            clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+        }
+
+        .drywall__bottom-columns {
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .drywall__bottom-column-card:nth-of-type(1) {
+            margin-top: 1rem;
+        }
+
+        .drywall__bottom-column-text {
+            font-size: 1.5rem;
+            margin-top: -1.9rem;
+        }
+
+        .drywall__bottom-column-card {
+            margin-left: 2.4rem;
+            display: block;
+        }
+
+        .drywall__text-bold {
+            font-size: 1.8rem;
+        }
+
+        .drywall__bottom-column {
+            padding-left: 0.1rem;
+            padding-right: 0rem;
+        }
+
+        .drywall__bottom-column-card::before {
+            width: 1.5rem; 
+            height: 1.5rem;
+            margin-top: 1.6rem;
+            margin-left: -2.94rem;
+        }
+
+        .drywall__bottom-column-card:nth-of-type(2), 
+        .drywall__bottom-column-card:nth-of-type(3), 
+        .drywall__bottom-column-card:nth-of-type(4) {
+            margin-top: -1.7rem;
+
+        }
+
+        .drywall__bottom-column:nth-of-type(2) {
+            padding-left: 2rem;
+            margin-left: -0.5rem;
+            margin-right: -0.5rem;
+            padding-right: 2rem;
+            padding-bottom: 0.8rem;
+        }
+
+        .drywall__bottom-column:nth-of-type(2) .drywall__text-bold {
+            line-height: 2.68rem;
+        }
+
+        .drywall__bottom-column:nth-of-type(2) .drywall__bottom-column-card::before {
+            margin-top: 2.2rem;
+        }
+
+        .drywall__bottom-column:nth-of-type(2) .drywall__bottom-column-card {
+            margin-bottom: -0.7rem;
+        }
+    }
 }
