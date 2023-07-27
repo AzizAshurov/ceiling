@@ -86,9 +86,9 @@
 }
 
 .facepalm__media {
-    width: 120rem;
+    width: 69rem;
     height: 79rem;
-    margin-left: -37rem;
+    margin-left: -11rem;
     margin-top: -33rem;
 }
 
@@ -155,4 +155,199 @@
     font-weight: 400;
     line-height: 145%;
     margin-top: -2.4rem;
+}
+
+.facepalm {
+    @media (max-width:1280px) {
+        .facepalm__media {
+            width: 66rem;
+        }
+    }
+
+    @media (max-width:1024px) {
+        .facepalm__title {
+            font-size: 5rem;
+            padding-left: 3rem;
+        }
+
+        .facepalm__content {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .facepalm__info-title {
+            font-size: 2.7rem;
+        }
+
+        .facepalm__info-title br {
+            display: none;
+        }
+
+        .facepalm__info-subtitle {
+            font-size: 2rem;
+        }
+
+        .facepalm__info-desc {
+            font-size: 2rem;
+        }
+
+        .facepalm__media {
+            margin-left: -8rem;
+        }
+
+        .facepalm__text-hl::before {
+            width: 35%;
+        }
+    }
+
+    @media (max-width:$tablet) {
+        .facepalm__media {
+            margin-top: -29rem;
+        }
+    }
+
+    @media (max-width:810px) {
+        .facepalm__title {
+            font-size: 5.7rem;
+            padding-left: 0rem;
+            text-align: center;
+        }
+
+        .facepalm__info-title {
+            font-size: 2.5rem;
+        }
+
+        .facepalm__media {
+            width: 50rem;
+            height: 60rem;
+            margin-top: -12rem;
+        }
+
+        .facepalm__info-title {
+            font-size: 2.4rem;
+        }
+
+        .facepalm__info-subtitle {
+            font-size: 1.9rem;
+        }
+
+        .facepalm__info-desc {
+            font-size: 1.8rem;
+        }
+
+        .facepalm__text-hl::before {
+            width: 39%;
+            height: 10rem;
+        }
+
+        .facepalm__better {
+            padding-left: 5rem;
+        }
+
+        .facepalm__better-desc br {
+            display: none;
+        }
+
+        .facepalm__worse {
+            padding-right: 5rem;
+        }
+
+        .facepalm__worse-desc br {
+            display: none;
+        }
+    }
+
+    @media (max-width:$mobile) {
+        .facepalm__title {
+            font-size: 2.5rem;
+            padding-top: 2.6rem;
+            margin-left: -4.7rem;
+            padding-bottom: 2.3rem;
+        }
+
+        .facepalm__title::before {
+            height: 12.5rem;
+            width: 96%;
+            clip-path: polygon(0 0, 88% 0, 100% 100%, 0% 100%);
+        }
+
+        .facepalm__content {
+            display: block;
+        }
+
+        .facepalm__info-title {
+            font-size: 1.8rem;
+        }
+
+        .facepalm__info-subtitle {
+            font-size: 1.5rem;
+        }
+
+        .facepalm__info-desc {
+            font-size: 1.5rem;
+            padding-top: 0.3rem;
+        }
+
+        .facepalm__text-hl::before {
+            margin-top: -1rem;
+            height: 7rem;
+            width: 85%;
+        }
+
+        .facepalm__media {
+            width: 30rem;
+            height: 37rem;
+            margin-top: -1rem;
+            margin-left: -1rem;
+            z-index: -1;
+            position: relative;
+        }
+
+        .facepalm__position {
+            display: block;
+            margin-top: -4.2rem;
+            background: none;
+            box-shadow: none;
+            margin-bottom: -5rem;
+        }
+
+        .facepalm__better-title {
+            font-size: 2rem;
+        }
+
+        .facepalm__better-desc {
+            font-size: 1.5rem;
+            margin-top: -1rem;
+        }
+
+        .facepalm__worse-title {
+            font-size: 2rem;
+        }
+
+        .facepalm__worse-desc {
+            font-size: 1.5rem;
+            margin-top: -0.8rem;
+        }
+
+        .facepalm__better {
+            padding-left: 1.5rem;
+            padding-right: 1rem;
+            padding-top: 0.4rem;
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.4rem;
+            background: #FFF;
+            border-radius: 4rem;
+            box-shadow: 0rem 1.5rem 7.4rem 0rem rgba(0, 0, 0, 0.05);
+        }
+
+        .facepalm__worse {
+            margin-left: 0rem;
+            padding-left: 1.5rem;
+            padding-right: 3.4rem;
+            padding-top: 0.4rem;
+            padding-bottom: 0.4rem;
+            background: #FFF;
+            border-radius: 4rem;
+            box-shadow: 0rem 1.5rem 7.4rem 0rem rgba(0, 0, 0, 0.05);
+        }
+    }
 }
