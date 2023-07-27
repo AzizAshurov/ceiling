@@ -198,6 +198,15 @@ function scrollTosectionToScroll(percents = 9) {
 scrollTosectionToScroll(0);
 // end Заклинание на плавные якоря
 
+  // Получаем элемент кнопки по её ID
+  const reloadButton = document.getElementById("reloadButton");
+
+  // Добавляем обработчик события клика на кнопку
+  reloadButton.addEventListener("click", function () {
+    // Обновляем страницу при клике на кнопку
+    window.location.reload();
+  });
+
 })
   
   

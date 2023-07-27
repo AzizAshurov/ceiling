@@ -61,7 +61,7 @@
                         <img src="./img/thank-u/hero/tel.svg" alt="" class="input__icon">
                     </label>
                     
-                    <button type="submit" class="btn lead__form-btn" href="">
+                    <button type="submit" class="btn lead__form-btn" href="#hero-thk" id="reloadButton">
                     <span class="btn__text">Записаться на замер</span></button>
                     <p class="lead__form-bottom">Нажимая кнопку “Заказать звонок”, 
                     <br>Вы даёте согласие на обработку своих<br>персональных данных.</p>
@@ -811,69 +811,6 @@ console.log(c);
 
 </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-    function getCookie(c_name) {
-        if (document.cookie.length > 0) {
-            c_start = document.cookie.indexOf(c_name + "=");
-            if (c_start != -1) {
-                c_start = c_start + c_name.length + 1;
-                c_end = document.cookie.indexOf(";", c_start);
-                if (c_end == -1) {
-                    c_end = document.cookie.length;
-                }
-                return unescape(document.cookie.substring(c_start, c_end));
-            }
-        }
-        return "";
-    }
-    var url_string = window.location.href;
-    var url = new URL(url_string);
-    var c = url.searchParams.get("salebot");
-
-
-
-    if (c == null){
-        idtg = getCookie('idtg');
-        console.log('coocie = '+idtg);
-        if (idtg.length>3){
-            if (location.href.indexOf("?") === -1) {
-                window.location = location.href += "?salebot="+idtg;
-            }
-            else {
-                window.location = location.href += "&salebot="+idtg;
-            }
-        }
-    }else{
-        //тут можно добавить обработку вебхука id tg
-        
-            
-    };
-
-    if(c != 'null'){
-            datasend = {
-                    "message": "work_success",
-                    "client_id": c
-                };
-                token = '8c17b8ec61b4516b9c2e93c51469452b'
-                url = 'https://chatter.salebot.pro/api/' + token + '/callback'
-                $.ajax({
-                    url: url,
-                    method: 'post',
-                    dataType: 'html',
-                    data: datasend,
-                });
-        
-    }else{
-        
-    
-        
-            
-    };
-    console.log(c);
-
-
-</script>
 
 
 

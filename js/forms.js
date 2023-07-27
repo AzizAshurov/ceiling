@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const forms = document.querySelectorAll('.js_form');
   
   async function handleSubmitForm(event) {
-    event.preventDefault();
+    // event.preventDefault();
 
     // Берем текущую форму и кнопки отправки внутри нее
     const formNode = event.target;
