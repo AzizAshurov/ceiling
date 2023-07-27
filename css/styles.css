@@ -9033,6 +9033,71 @@ button {
   line-height: 116.9%;
 }
 
+@media (max-width: 1600px) {
+  .lighting .lighting__title::before {
+    margin-top: -3.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .lighting .lighting__types__card-media {
+    width: 21rem;
+    height: 21rem;
+    margin-top: 0rem;
+  }
+}
+@media (max-width: 810px) {
+  .lighting .lightning__gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .lighting .lighting__types__card-media {
+    width: 25rem;
+    height: 25rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .lighting .lightning-type-card:nth-of-type(2),
+  .lighting .lightning-type-card:nth-of-type(3) {
+    margin-top: 0rem;
+  }
+  .lighting .lightning-types-card__desc br {
+    display: none;
+  }
+}
+@media (max-width: 601px) {
+  .lighting .lighting__title {
+    font-size: 2.5rem;
+    padding-top: 1.7rem;
+  }
+  .lighting .lighting__subtitle br {
+    display: none;
+  }
+  .lighting .lighting__subtitle {
+    font-size: 1.5rem;
+    padding-top: 1.8rem;
+  }
+  .lighting .lightning__gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .lighting .lighting__title::before {
+    margin-top: -2rem;
+    height: 6.7rem;
+    width: 97%;
+    -webkit-clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
+  }
+  .lighting .lighting__types__card-media {
+    width: 14rem;
+    height: 14rem;
+  }
+  .lighting .lightning-types-card__title {
+    font-size: 1.2rem;
+  }
+  .lighting .lightning-types-card__desc {
+    font-size: 1.2rem;
+  }
+}
+
 .bracing__header {
   display: grid;
   grid-template-columns: 1fr 1fr;

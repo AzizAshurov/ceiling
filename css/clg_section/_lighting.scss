@@ -100,3 +100,83 @@ margin-top: 11.1rem;
     line-height: 116.9%;
 }
 
+
+.lighting {
+    @media (max-width:1600px) {
+        .lighting__title::before {
+            margin-top: -3.5rem;
+        }
+    }
+
+    @media (max-width:1024px) {
+        .lighting__types__card-media {
+            width: 21rem;
+            height: 21rem;
+            margin-top: 0rem;
+        }
+    }
+
+    @media (max-width:810px) {
+        .lightning__gallery {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .lighting__types__card-media {
+            width: 25rem;
+            height: 25rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .lightning-type-card:nth-of-type(2),
+        .lightning-type-card:nth-of-type(3) {
+            margin-top: 0rem;
+        }
+
+        .lightning-types-card__desc br {
+            display: none;
+        }
+    }
+
+    @media (max-width:$mobile) {
+        .lighting__title {
+            font-size: 2.5rem;
+            padding-top: 1.7rem;
+        }
+
+        .lighting__subtitle br {
+            display: none;
+        }
+
+        .lighting__subtitle {
+            font-size: 1.5rem;
+            padding-top: 1.8rem;
+        }
+
+        .lightning__gallery {
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .lighting__title::before {
+            margin-top: -2rem;
+            height: 6.7rem;
+            width: 97%;
+            clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
+        }
+
+        .lighting__types__card-media {
+            width: 14rem;
+            height: 14rem;
+        }
+
+        .lightning-types-card__title {
+            font-size: 1.2rem;
+        }
+
+        .lightning-types-card__desc {
+            font-size: 1.2rem;
+        }
+    }
+}
+
