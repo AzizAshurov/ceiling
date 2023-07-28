@@ -201,6 +201,25 @@
         }
     }
 
+    @media (max-width:810px) {
+        .bracing__footer {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .bracing__footer-content-title {
+            padding-top: 3rem;
+        }
+
+        .bracing__footer-content  br {
+            display: none;
+        }
+
+        .bracing__footer-content {
+            margin-left: 0rem;
+        }
+    }
+
     @media (max-width:768px) {
         .bracing__header-offer {
             margin-left: 8.5rem;
@@ -210,10 +229,99 @@
     @media (max-width:$mobile) {
         .bracing__header {
             display: block;
+            padding-bottom: 1rem;
         }
 
         .bracing__header-title {
-            
+            font-size: 2.5rem;
+            padding-top: 2rem;
+            margin-bottom: 0rem;
         }
+
+        .bracing__header-title::before {
+            margin-top: -2rem;
+            height: 10.1rem;
+            width: 97%;
+            clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+        }
+
+        .bracing__header-offer {
+            margin-top: 0rem;
+            margin-left: 0rem;
+        }
+
+        .bracing__header-offer-title {
+            font-size: 4rem;
+        }
+
+        .bracing__header-offer-subtitle {
+            font-size: 1.5rem;
+        }
+
+        .bracing__gallery {
+            display: block;
+        }
+
+        .bracing-card__title {
+            font-size: 1.8rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .bracing-card__desc br {
+            display: none;
+        }
+
+        .bracing-card__desc {
+            font-size: 1.5rem;
+            padding-right: 3.6rem;
+        }
+
+        .bracing-card__media {
+            padding-top: 0rem;
+            width: 100%;
+            height: 12rem;
+        }
+
+        .bracing-card__content {
+            padding-left: 1.5rem;
+            padding-bottom: 2.3rem;
+            margin-bottom: 1.6rem;
+        }
+
+        .bracing__footer-title {
+            font-size: 2.5rem;
+            margin-top: 1.3rem;
+            padding-right: 4.8rem;
+            padding-left: 0.8rem;
+            padding-top: 2rem;
+            margin-left: -1.3rem;
+            clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+        }
+
+        .bracing__footer-content-title {
+            font-size: 1.5rem;
+            padding-top: 2rem;
+        }
+
+        .bracing__footer-content-desc {
+            font-size: 1.5rem;
+        }
+
+        .bracing__footer-desc-bold {
+            font-size: 1.8rem;
+        }
+
+        .bracing__desc-bold {
+            font-size: 2.2rem;
+        }
+
+        .bracing__footer-media {
+            width: 29rem;
+            height: 25rem;
+            margin-top: -4rem;
+            margin-left: 0rem;
+        }
+
+        
     }
 }
