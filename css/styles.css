@@ -8565,7 +8565,7 @@ button {
   margin-top: 50.5rem;
   z-index: -1;
   width: 84%;
-  height: 139.2%;
+  height: 75.2%;
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
           clip-path: polygon(0 0, 0% 100%, 100% 100%);
 }
@@ -8612,7 +8612,7 @@ button {
   margin-top: 28rem;
   z-index: -1;
   width: 44.6%;
-  height: 129.4%;
+  height: 69.4%;
   -webkit-clip-path: polygon(0 65%, 100% 0, 100% 100%, 60.5% 100%);
   clip-path: polygon(0 65%, 100% 0, 100% 100%, 61% 100%);
 }
@@ -9078,6 +9078,7 @@ button {
   .lighting .lightning__gallery {
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
+    padding-bottom: 6.5rem;
   }
   .lighting .lighting__title::before {
     margin-top: -2rem;
@@ -9286,6 +9287,22 @@ button {
 
 .bracing__desc-bold {
   font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .bracing .bracing__header-title::before {
+    height: 28rem;
+  }
+}
+@media (max-width: 768px) {
+  .bracing .bracing__header-offer {
+    margin-left: 8.5rem;
+  }
+}
+@media (max-width: 601px) {
+  .bracing .bracing__header {
+    display: block;
+  }
 }
 
 .fake__content-title {

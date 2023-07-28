@@ -193,3 +193,27 @@
 .bracing__desc-bold {
     font-weight: 700;
 }
+
+.bracing {
+    @media (max-width:$tablet) {
+        .bracing__header-title::before {
+            height: 28rem;
+        }
+    }
+
+    @media (max-width:768px) {
+        .bracing__header-offer {
+            margin-left: 8.5rem;
+        }
+    }
+
+    @media (max-width:$mobile) {
+        .bracing__header {
+            display: block;
+        }
+
+        .bracing__header-title {
+            
+        }
+    }
+}
