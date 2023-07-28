@@ -9293,6 +9293,9 @@ button {
   .bracing .bracing__header-title::before {
     height: 28rem;
   }
+  .bracing .bracing__footer {
+    margin-bottom: 5rem;
+  }
 }
 @media (max-width: 810px) {
   .bracing .bracing__footer {
@@ -9481,6 +9484,87 @@ button {
   height: 100%;
 }
 
+@media (max-width: 1024px) {
+  .fake .fake__content-title::before {
+    width: 76%;
+  }
+  .fake .fake__content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 992px) {
+  .fake .fake__media {
+    margin-right: 0rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
+  }
+}
+@media (max-width: 810px) {
+  .fake .fake__content-title {
+    font-size: 4rem;
+  }
+  .fake .fake__content-title::before {
+    width: 83%;
+    height: 17.5rem;
+  }
+  .fake .fake__content-desc br {
+    display: none;
+  }
+  .fake .fake__content-desc {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 601px) {
+  .fake .fake__content-title {
+    font-size: 2.5rem;
+    padding-right: 5rem;
+  }
+  .fake .fake__content-title br {
+    display: none;
+  }
+  .fake .fake__content-title::before {
+    margin-top: -1.9rem;
+    width: 97.3%;
+    height: 12.6rem;
+    -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  }
+  .fake .fake__content {
+    display: block;
+  }
+  .fake .fake__content-desc {
+    font-size: 1.5rem;
+    padding-top: 2.1rem;
+    line-height: 2.2rem;
+  }
+  .fake .fake__content-desc:nth-of-type(2) {
+    padding-top: 0.6rem;
+  }
+  .fake .fake__content-desc:nth-of-type(3) {
+    padding-top: 0.6rem;
+  }
+  .fake .fake__content-desc:nth-of-type(3) br {
+    display: block;
+  }
+  .fake .fake__content-desc:nth-of-type(4) {
+    padding-top: 0.6rem;
+  }
+  .fake .fake__content-desc:nth-of-type(4) br {
+    display: block;
+  }
+  .fake .fake__content-desc:nth-of-type(5) {
+    padding-top: 0.6rem;
+  }
+  .fake .fake__content-desc:nth-of-type(6) {
+    padding-top: 0.6rem;
+  }
+  .fake .fake__media {
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-top: 4rem;
+  }
+}
+
 .safety__content-title {
   display: inline-block;
   color: #232529;
@@ -9574,6 +9658,109 @@ button {
      object-fit: contain;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .safety .safety__content {
+    grid-template-columns: 53rem auto;
+  }
+  .safety .safety__content-bold-hl {
+    font-size: 2.9rem;
+    margin-left: -0.8rem;
+  }
+  .safety .safety__content-title {
+    padding-left: 3rem;
+  }
+}
+@media (max-width: 992px) {
+  .safety .safety__bottom-media {
+    margin-top: 4.7rem;
+    margin-left: 0.6rem;
+    width: 41.1rem;
+    height: 56rem;
+  }
+}
+@media (max-width: 810px) {
+  .safety .safety__content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .safety .safety__content-bold-hl {
+    display: inline-block;
+  }
+  .safety .safety__content-desc {
+    font-size: 1.8rem;
+  }
+  .safety .safety__content-desc br {
+    display: none;
+  }
+  .safety .safety__bottom-media {
+    margin-top: 12rem;
+  }
+}
+@media (max-width: 768px) {
+  .safety .safety__content-title {
+    font-size: 5rem;
+  }
+  .safety .safety__content-title::before {
+    height: 19rem;
+  }
+  .safety .safety__bottom-media {
+    margin-top: 17rem;
+  }
+}
+@media (max-width: 601px) {
+  .safety .safety__content-title {
+    padding-left: 0rem;
+    font-size: 2.5rem;
+    padding-right: 5rem;
+    padding-top: 6.9rem;
+  }
+  .safety .safety__content-title br {
+    display: none;
+  }
+  .safety .safety__content-title::before {
+    margin-top: -1.9rem;
+    width: 97%;
+    height: 12.6rem;
+    -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  }
+  .safety .safety__content {
+    display: block;
+  }
+  .safety .safety__content-bold-hl {
+    font-size: 1.8rem;
+    display: block;
+  }
+  .safety .safety__content-bold {
+    font-size: 1.5rem;
+  }
+  .safety .safety__content-desc {
+    padding-top: 1.3rem;
+    font-size: 1.5rem;
+  }
+  .safety .safety__content-desc:nth-of-type(2) {
+    padding-top: 0rem;
+  }
+  .safety .safety__content-desc:nth-of-type(3) {
+    padding-top: 0.6rem;
+  }
+  .safety .safety__content-desc:nth-of-type(4) {
+    padding-top: 0.6rem;
+  }
+  .safety .safety__content-desc:nth-of-type(4) br {
+    display: block;
+  }
+  .safety .safety__bottom-media {
+    width: 20rem;
+    height: 26rem;
+    margin-top: -1.7rem;
+    margin-left: 4.6rem;
+  }
+  .safety .safety__bottom-media-img {
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
 }
 
 .toxicity__content-title {
