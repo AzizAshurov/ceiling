@@ -77,6 +77,24 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', handleSubmitForm);
   }
   forms.forEach(handleForms);
+
+  // для salebot
+  $(document).ready(function(){
+    var regex = new RegExp('[\\?&]salebot=([^&#]+)');
+    var match = regex.exec(window.location.href);
+    if (match && match.length) {
+         $('.thank__salebot input').val(decodeURIComponent(match[1]));
+     }
+  });
+
+  // для salebot
+  $(document).ready(function(){
+    var regex = new RegExp('[\\?&]salebot=([^&#]+)');
+    var match = regex.exec(window.location.href);
+    if (match && match.length) {
+         $('.quiz__salebot input').val(decodeURIComponent(match[1]));
+     }
+  });
 })
 
 

@@ -228,6 +228,8 @@ if ($config['amo']) {
         )
     );
 
+    $pipeline_id = 7056310;
+
     $send_counter = 0;
 
     $context  = stream_context_create($options);

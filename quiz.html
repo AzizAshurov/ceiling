@@ -52,10 +52,11 @@
                 </div>
                 <div class="quiz__body">
                     <div class="quiz__steps">
-                        <form id="lead__form"  action="/mail.php" method="POST" class="swiper quiz__swiper js_form">
+                        <form id="lead__form"  action="mail.php" method="POST" class="swiper quiz__swiper js_form">
                             <input type="hidden" name="redirect" value="https://beefheads.ru/ceiling/thank.html?_ym_debug=1">
                             <input type="hidden" name="ym_event" value="submit-quiz-form">
                             <div class="swiper-wrapper">
+                                <input type="hidden" class="quiz__salebot">
                                 <div class="swiper-slide quiz__step">
                                     <h4 class="quiz__step-title">Укажите Вашу площадь</h4>
                                         <div class="form-select form-control">
