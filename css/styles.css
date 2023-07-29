@@ -10068,7 +10068,25 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  z-index: -2;
+  z-index: 1;
+}
+
+.lead__cta-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13.7rem 45rem 0 44rem;
+  border-color: #fff transparent transparent transparent;
+  margin-top: -0.1rem;
+  margin-left: -26rem;
+}
+
+.cta__media {
+  position: absolute;
+  margin-left: 13.4rem;
+  width: 9.2rem;
+  height: 8rem;
 }
 
 .cta_container {
@@ -10131,6 +10149,64 @@ button {
 .cta__input {
   border-radius: 8rem;
   border: 0.1rem solid #EFEFEF;
+}
+
+@media (max-width: 1024px) {
+  .cta .lead__cta-triangle {
+    margin-left: -27rem;
+  }
+  .cta .cta__media {
+    margin-left: 12.7rem;
+  }
+}
+@media (max-width: 601px) {
+  .cta .cta__media {
+    width: 29rem;
+    height: 27rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .cta .lead__cta-triangle {
+    margin-left: -0.5rem;
+    border-width: 5rem 14.9rem 0 14.9rem;
+  }
+  .cta .lead__cta-title {
+    font-size: 3rem;
+    padding-top: 12.1rem;
+  }
+  .cta .lead__cta-title::before {
+    height: 75%;
+  }
+  .cta .lead__cta-subtitle {
+    font-size: 1.8rem;
+    margin-top: 0.6rem;
+  }
+  .cta .input__field {
+    font-size: 1.5rem;
+  }
+  .cta .btn__text {
+    font-size: 1.5rem;
+  }
+  .cta .lead__cta-title::before {
+    width: 29rem;
+  }
+  .cta .cta-lead__form {
+    margin-top: 0rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    gap: 1.3rem;
+  }
+  .cta .cta__input {
+    padding: 1.2rem 5.9rem;
+  }
+  .cta .btn {
+    padding: 1.6rem 6.7rem;
+  }
+  .cta .lead__cta-text {
+    font-size: 1.2rem;
+    padding-bottom: 7.7rem;
+  }
 }
 
 .hero-thk {
