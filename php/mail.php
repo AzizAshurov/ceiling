@@ -199,8 +199,8 @@ if ($config['amo']) {
     $paramsArray = array(
         'fields[note_2]' => '',
         // This parameters you can find at from publishing section → Wordpress shortcode
-        'form_id' => '1180234',
-        'hash'    => '786aed354e5e2b8e53ba674b64f83ede'
+        'form_id' => '1180678',
+        'hash'    => '6173c65591460d1243d29c7ab808ca93'
     ); 
 
     if (isset($_POST['user_name'])) {
@@ -212,6 +212,11 @@ if ($config['amo']) {
         $paramsArray['fields[419093_1][816111]'] = $_POST['user_tel'];
     } else {
         $paramsArray['fields[419093_1][816111]'] = '';
+    }
+    if (isset($_POST['salebot'])) {
+        $paramsArray['fields[805201_2]'] = $_POST['salebot'];
+    } else {
+        $paramsArray['fields[805201_2]'] = '';
     }
     
 

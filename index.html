@@ -299,7 +299,7 @@
             </div>
             
             <form id="lead__form" class="js_form lead__form" action="mail.php" method="POST">
-                <input type="hidden" name="salebot_id" value="">
+                <input type="hidden" name="salebot" value="">
                 <label for="" class="input">
                     <input placeholder="+7 (777)-777-77-77" name="user_tel" type="tel" class="input__field" required>
                     <img src="./img/land/lead/tel.svg" alt="" class="input__icon">
@@ -595,7 +595,7 @@
                 <div class="quiz__body">
                     <div class="quiz__steps">
                         <form id="lead__form"  action="mail.php" method="POST" class="swiper quiz__swiper js_form">
-                            <input type="hidden" name="salebot_id" value="">
+                            <input type="hidden" name="salebot" value="">
                             <input type="hidden" name="ym_event" value="submit-quiz-form">
                             <div class="swiper-wrapper">
                                 <input type="hidden" class="quiz__salebot">
@@ -1797,8 +1797,8 @@
             <div class="lead__cta">
                 <h2 class="lead__cta-title">можно всё!</h2>
                 <p class="lead__cta-subtitle">Давайте обсудим по телефону :)</p>
-                <div class="cta-lead__form">
-                    <form id="lead__form" class="js_form" action="mail.php" method="POST"></form>
+                    <form id="lead__form" class="cta-lead__form js_form" action="mail.php" method="POST">
+                        <input type="hidden" name="salebot" value="">
                         <label for="" class="input cta__input">
                             <input placeholder="+7 (777)-777-77-77" name="user_tel" type="tel" class="input__field" required>
                             <img src="./img/land/lead/tel.svg" alt="" class="input__icon">
@@ -1809,10 +1809,9 @@
                             <img src="./img/land/lead/people.svg" alt="" class="input__icon">
                         </label>
                         
-                        <a type="submit" class="btn cta-btn" href="" ><span class="btn__text">
-                        Заказать звонок</span></a>
+                        <button type="submit" class="btn cta-btn" href="" ><span class="btn__text">
+                        Заказать звонок</span></button>
                     </form>
-                </div>
                 <p class="lead__cta-text">Нажимая кнопку “Заказать звонок”, 
                 <br>Вы даёте согласие на обработку своих <br> <a href="">персональных данных.</a></p>
             </div>
@@ -1822,25 +1821,24 @@
 
 <!-- popup -->
 <div class="popup__bg"> 
-    <form action="" class="popup">
+    <form id="lead__form" action="mail.php" method="POST" class="popup js_form">
         <img src="./img/land/popup/close.svg" alt="" class="popup__close">
         <div class="lead__cta">
             <p class="lead__cta-subtitle">Давайте обсудим по телефону :)</p>
             <div class="cta-lead__form">
-                <form id="lead__form" class="js_form" action="mail.php" method="POST">
-                    <label for="" class="input cta__input">
-                        <input placeholder="+7 (777)-777-77-77" name="user_tel" type="tel" class="input__field" required>
-                        <img src="./img/land/lead/tel.svg" alt="" class="input__icon">
-                    </label>
-                    
-                    <label for="" class="input cta__input">
-                        <input placeholder="Введите свое имя" name="user_name" type="text" class="input__field">
-                        <img src="./img/land/lead/people.svg" alt="" class="input__icon">
-                    </label>
-                    
-                    <button type="submit" class="btn cta-btn" href="" ><span class="btn__text">
-                    Заказать звонок</span></button>
-                </form>
+                <input type="hidden" name="salebot" value="">
+                <label for="" class="input cta__input">
+                    <input placeholder="+7 (777)-777-77-77" name="user_tel" type="tel" class="input__field" required>
+                    <img src="./img/land/lead/tel.svg" alt="" class="input__icon">
+                </label>
+                
+                <label for="" class="input cta__input">
+                    <input placeholder="Введите свое имя" name="user_name" type="text" class="input__field">
+                    <img src="./img/land/lead/people.svg" alt="" class="input__icon">
+                </label>
+                
+                <button type="submit" class="btn cta-btn" href=""><span class="btn__text">
+                Заказать звонок</span></button>
             </div>
 
             <p class="lead__cta-text">Нажимая кнопку “Заказать звонок”, 

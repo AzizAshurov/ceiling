@@ -88,18 +88,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   console.log("salebot;", salebotID)
 
-  const salebotInputs = document.querySelectorAll('input[name="salebot_id"]');
-
-  // console.log("input[name='salebot_id']", salebotInputs)
+  const salebotInputs = document.querySelectorAll('input[name="salebot"]');
 
   salebotInputs.forEach((input) => {
-    console.log('salebot_id', salebotID);
-    input.addEventListener('submit', salebotValue);  
+    input.value = salebotID
   })
 
-  function salebotValue(event) {
-    inputHidden.value = salebotID;
-  }
+  
 
 })
 
