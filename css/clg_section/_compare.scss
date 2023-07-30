@@ -1,7 +1,7 @@
 .compare {
     background: #FBFBFB;
     position: relative;
-    z-index: -22;
+    z-index: 0;
 }
 
 .compare__container {
@@ -35,13 +35,14 @@
 .compare__content {
     display: grid;
     grid-template-columns: 60rem 1fr;
+    padding-bottom: 4rem;
 }
 
 .compare__media {
     width: 89rem;
     height: 68rem;
     margin-left: -20rem;
-    margin-top: 0.7rem;
+    margin-top: 5rem;
 }
 
 .compare-pic {
@@ -107,6 +108,10 @@
     padding-left: 5.8rem;
     padding-right: 6.4rem;
     padding-bottom: 4rem;
+}
+
+.compare .compare__btn {
+    padding: 3rem 13.9rem;
 }
 
 .compare {

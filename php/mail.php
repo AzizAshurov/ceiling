@@ -199,20 +199,21 @@ if ($config['amo']) {
     $paramsArray = array(
         'fields[note_2]' => '',
         // This parameters you can find at from publishing section → Wordpress shortcode
-        'form_id' => '1172670',
-        'hash'    => 'ba77a2b0ebdd4c553b453c6f51319aa6'
+        'form_id' => '1180234',
+        'hash'    => '786aed354e5e2b8e53ba674b64f83ede'
     ); 
 
     if (isset($_POST['user_name'])) {
-        $paramsArray['name_1'] = $_POST['user_name'];
+        $paramsArray['fields[name_1]'] = $_POST['user_name'];
     } else {
-        $paramsArray['name_1'] = '';
+        $paramsArray['fields[name_1]'] = '';
     }
     if (isset($_POST['user_tel'])) {
         $paramsArray['fields[419093_1][816111]'] = $_POST['user_tel'];
     } else {
         $paramsArray['fields[419093_1][816111]'] = '';
     }
+    
 
     foreach ($_POST as $key => $value) {
         $paramsArray['fields[note_2]'] .= $key." ".$value."\n";
@@ -227,8 +228,6 @@ if ($config['amo']) {
             'content' => $vars
         )
     );
-
-    $pipeline_id = 7056310;
 
     $send_counter = 0;
 

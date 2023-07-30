@@ -33,7 +33,7 @@
                 <div class="hero__offer">
                     <h1 class="hero__offer-title">Монтаж <br>натяжного потолка 
                     <br><span class="section-text--hl">за 2 часа</span> </h1>
-                    <a class="btn hero__offer-btn" href=""><span class="btn__text">
+                    <a class="btn hero__offer-btn" href="#get-price"><span class="btn__text">
                     Рассчитать стоимость</span></a>
                 </div>
 
@@ -297,10 +297,11 @@
                     </picture>
                 </div>
             </div>
-        
-            <div class="lead__form">
+            
+            <form id="lead__form" class="js_form lead__form" action="mail.php" method="POST">
+                <input type="hidden" name="salebot_id" value="">
                 <label for="" class="input">
-                    <input placeholder="+7 (777)-777-77-77" name="user_tel" type="tel" class="input__field">
+                    <input placeholder="+7 (777)-777-77-77" name="user_tel" type="tel" class="input__field" required>
                     <img src="./img/land/lead/tel.svg" alt="" class="input__icon">
                 </label>
                 
@@ -311,7 +312,7 @@
                 
                 <button type="submit" class="btn lead__form-btn" href="">
                 <span class="btn__text">Получить консультацию</span></button>
-            </div>  
+                </form>  
         </div>
     </section>
 <!-- lead -->
@@ -553,7 +554,7 @@
 <!-- how-work -->
 
 <!-- get-price -->
-<section class="get-price">
+<section id="get-price" class="get-price">
     <div class="container get-price_container">
         <div class="get-price__top">
             <div class="get-price__title">
@@ -593,10 +594,11 @@
                 </div>
                 <div class="quiz__body">
                     <div class="quiz__steps">
-                        <form id="lead__form"  action="/mail.php" method="POST" class="swiper quiz__swiper js_form">
-                            <input type="hidden" name="redirect" value="https://beefheads.ru/ceiling/thank.html?_ym_debug=1">
+                        <form id="lead__form"  action="mail.php" method="POST" class="swiper quiz__swiper js_form">
+                            <input type="hidden" name="salebot_id" value="">
                             <input type="hidden" name="ym_event" value="submit-quiz-form">
                             <div class="swiper-wrapper">
+                                <input type="hidden" class="quiz__salebot">
                                 <div class="swiper-slide quiz__step">
                                     <h4 class="quiz__step-title">Укажите Вашу площадь</h4>
                                         <div class="form-select form-control">
@@ -633,7 +635,7 @@
                                     <h4 class="quiz__step-title">Какого типа нужны натяжные потолки?</h4>
                                         <div class="form-select__cards form-select__card--small">
                                             <label class="check">
-                                                <input class="check__input" type="radio" name="step-2" checked>
+                                                <input class="check__input" type="radio" name="step-2" value="Одноуровневые" checked>
                                                 <span class="check__box"></span>
                                                 <div class="check__media">
                                                     <picture class="check__pic">
@@ -644,7 +646,7 @@
                                             </label>
                                             
                                             <label class="check">
-                                                <input class="check__input" type="radio" name="step-2">
+                                                <input class="check__input" type="radio" name="step-2" value="Многоуров-е">
                                                 <span class="check__box"></span>
                                                 <div class="check__media">
                                                     <picture class="check__pic">
@@ -655,7 +657,7 @@
                                             </label>
 
                                             <label class="check">
-                                                <input class="check__input" type="radio" name="step-2">
+                                                <input class="check__input" type="radio" name="step-2" value="Парящие">
                                                 <span class="check__box"></span>
                                                 <div class="check__media">
                                                     <picture class="check__pic">
@@ -666,7 +668,7 @@
                                             </label>
 
                                             <label class="check">
-                                                <input class="check__input" type="radio" name="step-2">
+                                                <input class="check__input" type="radio" name="step-2" value="Резные">
                                                 <span class="check__box"></span>
                                                 <div class="check__media">
                                                     <picture class="check__pic">
@@ -677,7 +679,7 @@
                                             </label>
 
                                             <label class="check">
-                                                <input class="check__input" type="radio" name="step-2">
+                                                <input class="check__input" type="radio" name="step-2" value="Нужна консультация">
                                                 <span class="check__box"></span>
                                                 <div class="check__media">
                                                     <picture class="check__pic">
@@ -693,7 +695,7 @@
                                     <h4 class="quiz__step-title">Выберите тип освещения</h4>
                                         <div class="form-select__cards form-select__card--big">
                                                 <label class="check--big">
-                                                    <input class="check__input" type="radio" name="step-3" checked>
+                                                    <input class="check__input" type="radio" name="step-3" value="Люстра" checked>
                                                     <span class="check__box"></span>
                                                     <div class="check__media">
                                                         <picture class="check__pic">
@@ -704,7 +706,7 @@
                                                 </label>
 
                                                 <label class="check--big">
-                                                    <input class="check__input" type="radio" name="step-3">
+                                                    <input class="check__input" type="radio" name="step-3" value="Точечные светильники">
                                                     <span class="check__box"></span>
                                                     <div class="check__media">
                                                         <picture class="check__pic">
@@ -715,7 +717,7 @@
                                                 </label>
 
                                                 <label class="check--big">
-                                                    <input class="check__input" type="radio" name="step-3">
+                                                    <input class="check__input" type="radio" name="step-3" value="Люстра + Точечные светильники">
                                                     <span class="check__box"></span>
                                                     <div class="check__media">
                                                         <picture class="check__pic">
@@ -726,7 +728,7 @@
                                                 </label>
 
                                                 <label class="check--big">
-                                                    <input class="check__input" type="radio" name="step-3">
+                                                    <input class="check__input" type="radio" name="step-3" value="Контурный свет">
                                                     <span class="check__box"></span>
                                                     <div class="check__media">
                                                         <picture class="check__pic">
@@ -742,7 +744,7 @@
                                     <h4 class="quiz__step-title">Выберите вид материал</h4>
                                         <div class="form-select__cards form-select__card--small">
                                                 <label class="check">
-                                                    <input class="check__input" type="radio" name="step-4" checked>
+                                                    <input class="check__input" type="radio" name="step-4" value="Глянцевый" checked>
                                                     <span class="check__box"></span>
                                                     <div class="check__media">
                                                         <picture class="check__pic">
@@ -753,7 +755,7 @@
                                                 </label>
                                                 
                                                 <label class="check">
-                                                    <input class="check__input" type="radio" name="step-4">
+                                                    <input class="check__input" type="radio" name="step-4" value="Матовый">
                                                     <span class="check__box"></span>
                                                     <div class="check__media">
                                                         <picture class="check__pic">
@@ -764,7 +766,7 @@
                                                 </label>
 
                                                 <label class="check">
-                                                    <input class="check__input" type="radio" name="step-4" >
+                                                    <input class="check__input" type="radio" name="step-4" value="Сатиновый">
                                                     <span class="check__box"></span>
                                                     <div class="check__media">
                                                         <picture class="check__pic">
@@ -775,7 +777,7 @@
                                                 </label>
 
                                                 <label class="check">
-                                                    <input class="check__input" type="radio" name="step-4">
+                                                    <input class="check__input" type="radio" name="step-4" value="Нужна консультация">
                                                     <span class="check__box"></span>
                                                     <div class="check__media">
                                                         <picture class="check__pic">
@@ -792,7 +794,7 @@
                                         <div class="form-select__cards">
                                             <div class="form-select__cards form-select__card--big">
                                                     <label class="check--big">
-                                                        <input class="check__input" type="radio" name="step-5" checked>
+                                                        <input class="check__input" type="radio" name="step-5" value="На этой неделе" checked>
                                                         <span class="check__box"></span>
                                                         <div class="check__media">
                                                             <picture class="check__pic">
@@ -803,7 +805,7 @@
                                                     </label>
 
                                                     <label class="check--big">
-                                                        <input class="check__input" type="radio" name="step-5">
+                                                        <input class="check__input" type="radio" name="step-5" value="В течение 2-3 нед">
                                                         <span class="check__box"></span>
                                                         <div class="check__media">
                                                             <picture class="check__pic">
@@ -814,7 +816,7 @@
                                                     </label>
 
                                                     <label class="check--big">
-                                                        <input class="check__input" type="radio" name="step-5">
+                                                        <input class="check__input" type="radio" name="step-5" value="В течение 1-3 мес">
                                                         <span class="check__box"></span>
                                                         <div class="check__media">
                                                             <picture class="check__pic">
@@ -825,7 +827,7 @@
                                                     </label>
 
                                                     <label class="check--big">
-                                                        <input class="check__input" type="radio" name="step-5">
+                                                        <input class="check__input" type="radio" name="step-5" value="Интересуюсь на будущее">
                                                         <span class="check__box"></span>
                                                         <div class="check__media">
                                                             <picture class="check__pic">
@@ -1060,9 +1062,13 @@
                     <br>подходящее решение для вашего ремонта.</p>
 
                     <p class="compare__info-desc">
-                    <a class="compare__info-btn" href="">Оставьте свои контактные данные 
+                    <a class="compare__info-btn open-popup" href="#popup">Оставьте свои контактные данные 
                     <br>и менеджер перезвонит вам в 
                     <br>ближайшее время:</a></p>
+
+                    <a class="btn compare__btn open-popup" href="#popup" ><span class="btn__text">
+                    Оставить данные</span></a>
+
                 </div>
 
             <div class="compare__media">
@@ -1792,8 +1798,38 @@
                 <h2 class="lead__cta-title">можно всё!</h2>
                 <p class="lead__cta-subtitle">Давайте обсудим по телефону :)</p>
                 <div class="cta-lead__form">
+                    <form id="lead__form" class="js_form" action="mail.php" method="POST"></form>
+                        <label for="" class="input cta__input">
+                            <input placeholder="+7 (777)-777-77-77" name="user_tel" type="tel" class="input__field" required>
+                            <img src="./img/land/lead/tel.svg" alt="" class="input__icon">
+                        </label>
+                        
+                        <label for="" class="input cta__input">
+                            <input placeholder="Введите свое имя" name="user_name" type="text" class="input__field">
+                            <img src="./img/land/lead/people.svg" alt="" class="input__icon">
+                        </label>
+                        
+                        <a type="submit" class="btn cta-btn" href="" ><span class="btn__text">
+                        Заказать звонок</span></a>
+                    </form>
+                </div>
+                <p class="lead__cta-text">Нажимая кнопку “Заказать звонок”, 
+                <br>Вы даёте согласие на обработку своих <br> <a href="">персональных данных.</a></p>
+            </div>
+        </div>
+    </section>
+<!-- cta -->
+
+<!-- popup -->
+<div class="popup__bg"> 
+    <form action="" class="popup">
+        <img src="./img/land/popup/close.svg" alt="" class="popup__close">
+        <div class="lead__cta">
+            <p class="lead__cta-subtitle">Давайте обсудим по телефону :)</p>
+            <div class="cta-lead__form">
+                <form id="lead__form" class="js_form" action="mail.php" method="POST">
                     <label for="" class="input cta__input">
-                        <input placeholder="+7 (777)-777-77-77" name="user_tel" type="tel" class="input__field">
+                        <input placeholder="+7 (777)-777-77-77" name="user_tel" type="tel" class="input__field" required>
                         <img src="./img/land/lead/tel.svg" alt="" class="input__icon">
                     </label>
                     
@@ -1802,16 +1838,20 @@
                         <img src="./img/land/lead/people.svg" alt="" class="input__icon">
                     </label>
                     
-                    <a class="btn cta-btn" href=""><span class="btn__text">
-                    Заказать звонок</span></a>
-                </div>
-
-                <p class="lead__cta-text">Нажимая кнопку “Заказать звонок”, 
-                <br>Вы даёте согласие на обработку своих <br> <a href="">персональных данных.</a></p>
+                    <button type="submit" class="btn cta-btn" href="" ><span class="btn__text">
+                    Заказать звонок</span></button>
+                </form>
             </div>
+
+            <p class="lead__cta-text">Нажимая кнопку “Заказать звонок”, 
+            <br>Вы даёте согласие на обработку своих <br> <a href="">персональных данных.</a></p>
         </div>
-    </section>
-<!-- cta -->
+    </form>
+</div>
+<!-- popup -->
+
+
+
 
 <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
@@ -1832,9 +1872,17 @@
  <!-- /Yandex.Metrika counter -->
 
 <script src="./js/libs/swiper.js"></script>
+<script src="./js/forms.js"></script>
+<script src="./js/popup.js"></script>
 <script src="./js/libs/inputmask.js"></script>
 <script src="./js/libs/fancybox.umd.js"></script>
 <script src="./js/select.js"></script>
 <script src="./js/script.js"></script>
+
+
+
+
+
+
 </body>
 </html>

@@ -78,23 +78,29 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   forms.forEach(handleForms);
 
-  // для salebot
-  $(document).ready(function(){
-    var regex = new RegExp('[\\?&]salebot=([^&#]+)');
-    var match = regex.exec(window.location.href);
-    if (match && match.length) {
-         $('.thank__salebot input').val(decodeURIComponent(match[1]));
-     }
-  });
+  // отправляем значение salebot
 
-  // для salebot
-  $(document).ready(function(){
-    var regex = new RegExp('[\\?&]salebot=([^&#]+)');
-    var match = regex.exec(window.location.href);
-    if (match && match.length) {
-         $('.quiz__salebot input').val(decodeURIComponent(match[1]));
-     }
-  });
+  const myKeysValues = window.location.search;
+  
+  const urlParams = new URLSearchParams(myKeysValues);
+
+  const salebotID = urlParams.get('salebot');
+
+  console.log("salebot;", salebotID)
+
+  const salebotInputs = document.querySelectorAll('input[name="salebot_id"]');
+
+  // console.log("input[name='salebot_id']", salebotInputs)
+
+  salebotInputs.forEach((input) => {
+    console.log('salebot_id', salebotID);
+    input.addEventListener('submit', salebotValue);  
+  })
+
+  function salebotValue(event) {
+    inputHidden.value = salebotID;
+  }
+
 })
 
 

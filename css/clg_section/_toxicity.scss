@@ -166,6 +166,13 @@
 
 
 .toxicity {
+    @media (max-width:1600px) {
+        .toxicity__body {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+
     @media (max-width:1024px) {
         .toxicity__content-title {
             font-size: 5rem;

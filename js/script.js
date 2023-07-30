@@ -198,6 +198,9 @@ function scrollTosectionToScroll(percents = 9) {
 scrollTosectionToScroll(0);
 // end Заклинание на плавные якоря
 
+
+
+
   
 
 })

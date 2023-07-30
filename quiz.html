@@ -53,7 +53,7 @@
                 <div class="quiz__body">
                     <div class="quiz__steps">
                         <form id="lead__form"  action="mail.php" method="POST" class="swiper quiz__swiper js_form">
-                            <input type="hidden" name="redirect" value="https://beefheads.ru/ceiling/thank.html?_ym_debug=1">
+                            <input type="hidden" name="salebot_id" value="">
                             <input type="hidden" name="ym_event" value="submit-quiz-form">
                             <div class="swiper-wrapper">
                                 <input type="hidden" class="quiz__salebot">
@@ -93,7 +93,7 @@
                                     <h4 class="quiz__step-title">Какого типа нужны натяжные потолки?</h4>
                                         <div class="form-select__cards form-select__card--small">
                                             <label class="check">
-                                                <input class="check__input" type="radio" name="step-2" checked>
+                                                <input class="check__input" type="radio" name="step-2" value="Одноуровневые" checked>
                                                 <span class="check__box"></span>
                                                 <div class="check__media">
                                                     <picture class="check__pic">
@@ -104,7 +104,7 @@
                                             </label>
                                             
                                             <label class="check">
-                                                <input class="check__input" type="radio" name="step-2">
+                                                <input class="check__input" type="radio" name="step-2" value="Многоуров-е">
                                                 <span class="check__box"></span>
                                                 <div class="check__media">
                                                     <picture class="check__pic">
@@ -115,7 +115,7 @@
                                             </label>
 
                                             <label class="check">
-                                                <input class="check__input" type="radio" name="step-2">
+                                                <input class="check__input" type="radio" name="step-2" value="Парящие">
                                                 <span class="check__box"></span>
                                                 <div class="check__media">
                                                     <picture class="check__pic">
@@ -126,7 +126,7 @@
                                             </label>
 
                                             <label class="check">
-                                                <input class="check__input" type="radio" name="step-2">
+                                                <input class="check__input" type="radio" name="step-2" value="Резные">
                                                 <span class="check__box"></span>
                                                 <div class="check__media">
                                                     <picture class="check__pic">
@@ -137,7 +137,7 @@
                                             </label>
 
                                             <label class="check">
-                                                <input class="check__input" type="radio" name="step-2">
+                                                <input class="check__input" type="radio" name="step-2" value="Нужна консультация">
                                                 <span class="check__box"></span>
                                                 <div class="check__media">
                                                     <picture class="check__pic">
@@ -153,7 +153,7 @@
                                     <h4 class="quiz__step-title">Выберите тип освещения</h4>
                                         <div class="form-select__cards form-select__card--big">
                                                 <label class="check--big">
-                                                    <input class="check__input" type="radio" name="step-3" checked>
+                                                    <input class="check__input" type="radio" name="step-3" value="Люстра" checked>
                                                     <span class="check__box"></span>
                                                     <div class="check__media">
                                                         <picture class="check__pic">
@@ -164,7 +164,7 @@
                                                 </label>
 
                                                 <label class="check--big">
-                                                    <input class="check__input" type="radio" name="step-3">
+                                                    <input class="check__input" type="radio" name="step-3" value="Точечные светильники">
                                                     <span class="check__box"></span>
                                                     <div class="check__media">
                                                         <picture class="check__pic">
@@ -175,7 +175,7 @@
                                                 </label>
 
                                                 <label class="check--big">
-                                                    <input class="check__input" type="radio" name="step-3">
+                                                    <input class="check__input" type="radio" name="step-3" value="Люстра + Точечные светильники">
                                                     <span class="check__box"></span>
                                                     <div class="check__media">
                                                         <picture class="check__pic">
@@ -186,7 +186,7 @@
                                                 </label>
 
                                                 <label class="check--big">
-                                                    <input class="check__input" type="radio" name="step-3">
+                                                    <input class="check__input" type="radio" name="step-3" value="Контурный свет">
                                                     <span class="check__box"></span>
                                                     <div class="check__media">
                                                         <picture class="check__pic">
@@ -202,7 +202,7 @@
                                     <h4 class="quiz__step-title">Выберите вид материал</h4>
                                         <div class="form-select__cards form-select__card--small">
                                                 <label class="check">
-                                                    <input class="check__input" type="radio" name="step-4" checked>
+                                                    <input class="check__input" type="radio" name="step-4" value="Глянцевый" checked>
                                                     <span class="check__box"></span>
                                                     <div class="check__media">
                                                         <picture class="check__pic">
@@ -213,7 +213,7 @@
                                                 </label>
                                                 
                                                 <label class="check">
-                                                    <input class="check__input" type="radio" name="step-4">
+                                                    <input class="check__input" type="radio" name="step-4" value="Матовый">
                                                     <span class="check__box"></span>
                                                     <div class="check__media">
                                                         <picture class="check__pic">
@@ -224,7 +224,7 @@
                                                 </label>
 
                                                 <label class="check">
-                                                    <input class="check__input" type="radio" name="step-4" >
+                                                    <input class="check__input" type="radio" name="step-4" value="Сатиновый">
                                                     <span class="check__box"></span>
                                                     <div class="check__media">
                                                         <picture class="check__pic">
@@ -235,7 +235,7 @@
                                                 </label>
 
                                                 <label class="check">
-                                                    <input class="check__input" type="radio" name="step-4">
+                                                    <input class="check__input" type="radio" name="step-4" value="Нужна консультация">
                                                     <span class="check__box"></span>
                                                     <div class="check__media">
                                                         <picture class="check__pic">
@@ -252,7 +252,7 @@
                                         <div class="form-select__cards">
                                             <div class="form-select__cards form-select__card--big">
                                                     <label class="check--big">
-                                                        <input class="check__input" type="radio" name="step-5" checked>
+                                                        <input class="check__input" type="radio" name="step-5" value="На этой неделе" checked>
                                                         <span class="check__box"></span>
                                                         <div class="check__media">
                                                             <picture class="check__pic">
@@ -263,7 +263,7 @@
                                                     </label>
 
                                                     <label class="check--big">
-                                                        <input class="check__input" type="radio" name="step-5">
+                                                        <input class="check__input" type="radio" name="step-5" value="В течение 2-3 нед">
                                                         <span class="check__box"></span>
                                                         <div class="check__media">
                                                             <picture class="check__pic">
@@ -274,7 +274,7 @@
                                                     </label>
 
                                                     <label class="check--big">
-                                                        <input class="check__input" type="radio" name="step-5">
+                                                        <input class="check__input" type="radio" name="step-5" value="В течение 1-3 мес">
                                                         <span class="check__box"></span>
                                                         <div class="check__media">
                                                             <picture class="check__pic">
@@ -285,7 +285,7 @@
                                                     </label>
 
                                                     <label class="check--big">
-                                                        <input class="check__input" type="radio" name="step-5">
+                                                        <input class="check__input" type="radio" name="step-5" value="Интересуюсь на будущее">
                                                         <span class="check__box"></span>
                                                         <div class="check__media">
                                                             <picture class="check__pic">
@@ -370,6 +370,7 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/94322465" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
+<!-- скрип от тех спеца  -->
 <script>
     function createCookie(name, value, days) {
         var expires;
@@ -394,7 +395,7 @@
         createCookie('idtg', c, 1);
     }
 </script>
-
+<!-- скрип от тех спеца  -->
 
 
 <script src="./js/libs/swiper.js"></script>
